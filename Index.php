@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="./CSS/style.css" type="text/css">
 </head>
 <body>
-
-    
+<?php
+    include_once('addon/header.php');
+?>
+   
+<?php
+    include_once('addon/Footer.php');
+?>
 </body>
 </html>
