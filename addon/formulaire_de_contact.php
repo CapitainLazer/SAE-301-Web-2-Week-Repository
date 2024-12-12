@@ -1,4 +1,7 @@
 <html lang="fr">
+    <head>
+        <link rel="stylesheet" href="/CSS/style.css">
+    </head>
 <h1>Contactez-nous</h1>
     <form method="post">
         <label>Nom</label>
