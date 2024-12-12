@@ -1,7 +1,13 @@
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <link rel="stylesheet" href="/CSS/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+<body>
 <h1>Contactez-nous</h1>
     <form method="post">
         <label>Nom</label>
@@ -17,6 +23,6 @@
         <input type="submit">
     </form>
 <?php
-
 ?>
+</body>
 </html>
