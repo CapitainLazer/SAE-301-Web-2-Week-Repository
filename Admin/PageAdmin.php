@@ -2,7 +2,7 @@
     include("../config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
-    $requete='SELECT * FROM `evenements`';
+    $requete='SELECT * FROM evenements';
     $resultats=$bdd->query($requete);
     $tabEvenement=$resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
@@ -54,10 +54,10 @@
             
             <div>
                 <h3>Ajout d'un évènement</h3>
-                <form action="ajouterEvenement.php" method="POST">
+                <form action="ajouter.php" method="POST">
                     Nom : <input type="text" name="nom" required /><br>
-                    Date de début : <input type="date" name="dtdebut" required/><br>
-                    Date de fin : <input type="date" name="dtfin" required/><br>
+                    Date de début : <input type="date" name="date_debut" required/><br>
+                    Date de fin : <input type="date" name="date_fin" required/><br>
                     Description : <input type="text" name="descriptions" required /><br>
                     Lieu : <select name="lieu" required>
                     <?php
@@ -68,6 +68,7 @@
                         endforeach;
                     ?>
                     </select><br/><br/>
+                    <input type="hidden" name=choix value="eve">
                     <input type="submit" value="Ajouter l'évènement"/>
                 </form>
             </div>
@@ -110,8 +111,9 @@
             
             <div>
                 <h3>Ajout d'un type d'évènement</h3>
-                <form action="ajouterTypes.php" method="POST">
+                <form action="ajouter.php" method="POST">
                     Nom : <input type="text" name="nom" required /><br>
+                    <input type="hidden" name=choix value="types">
                     <input type="submit" value="Ajouter le type d'évènement"/>
                 </form>
             </div>
@@ -138,10 +140,11 @@
             
             <div>
                 <h3>Ajout d'un lieu</h3>
-                <form action="ajouterLieu.php" method="POST">
+                <form action="ajouter.php" method="POST">
                     Lieu : <input type="text" name="lieu" required /><br>
                     Ville : <input type="text" name="ville" required /><br>
                     Département : <input type="text" name="departement" required /><br>
+                    <input type="hidden" name=choix value="lieu">
                     <input type="submit" value="Ajouter le lieu"/>
                 </form>
             </div>
@@ -167,8 +170,9 @@
             
             <div>
                 <h3>Ajout d'un camion</h3>
-                <form action="ajouterCamion.php" method="POST">
-                    Nom du camion : <input type="text" name="lieu" required /><br>
+                <form action="ajouter.php" method="POST">
+                    Nom du camion : <input type="text" name="nom" required /><br>
+                    <input type="hidden" name=choix value="camion">
                     <input type="submit" value="Ajouter le camion"/>
                 </form>
             </div>

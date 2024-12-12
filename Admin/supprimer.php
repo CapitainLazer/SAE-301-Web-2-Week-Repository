@@ -23,6 +23,6 @@
     }
 
     // redirection
-    header('Location: admin.php');
+    header('Location: PageAdmin.php');
     exit();
 ?>
