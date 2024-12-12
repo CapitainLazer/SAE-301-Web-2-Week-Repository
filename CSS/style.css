@@ -9,6 +9,16 @@ body {
     background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
 }
 
+/*La police des titres*/
+@font-face {
+    font-family: 'Frula';
+    src: url("../fonts/Frula.ttf");
+}
+
+h1{
+    font-family: 'Frula';
+}
+
 /* HEADER */
 .header {
     display: flex;
