@@ -4,39 +4,31 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffe6e6;
+    background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
 }
 
-
+/* HEADER */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #ffe6e6;
+    flex-direction: column; /* Centrer le contenu dans la colonne pour les petits écrans */
+    padding: 20px;
 }
 
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 0;
-    height: 30px;
+.logo img {
+    height: 150px;
     width: auto;
 }
-
-.navbar-brand svg {
-    width: 30px;
-    height: 30px;
-}
-
 
 .nav {
     display: flex;
     gap: 25px;
+    align-items: center;
+    justify-content: center; /* Centrer les liens */
+    margin-top: 20px;
 }
 
 .nav-link {
@@ -54,8 +46,108 @@ body {
     color: #fff;
 }
 
-
 .user-icon {
     font-size: 24px;
     cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centrer les éléments en colonne pour les petits écrans */
+    padding: 20px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser */
+}
+
+.foot-link {
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.foot-link:hover {
+    background-color: #ffd9d9;
+    color: red;
+    border-color: #ffd9d9;
+}
+
+.logo-footer img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.text-footer {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* Pour les écrans de 768px ou moins */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column; /* Mettre les liens de navigation en colonne */
+        gap: 25px; /* Espacement entre les éléments */
+    }
+
+    .foot {
+        flex-direction: column; /* Met les liens du footer en colonne */
+        gap: 10px; /* Réduit l'espacement entre les éléments */
+    }
+
+    .foot-link {
+        font-size: 14px; /* Réduit la taille des liens pour les petits écrans */
+        padding: 8px 16px; /* Réduit la taille des boutons */
+    }
+
+    .logo img {
+        height: 120px; /* Réduit la taille du logo pour les petits écrans */
+    }
+
+    .logo-footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .text-footer {
+        font-size: 14px; /* Réduit la taille du texte dans le footer */
+    }
+}
+
+/* Pour les écrans très petits (mobiles en portrait) */
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 14px; /* Réduit la taille des liens */
+        padding: 6px 12px; /* Réduit la taille des boutons */
+    }
+
+    .logo img {
+        height: 100px; /* Réduit la taille du logo pour les petits appareils */
+    }
+
+    .text-footer {
+        font-size: 12px; /* Réduit la taille du texte footer pour mobile */
+    }
 }
