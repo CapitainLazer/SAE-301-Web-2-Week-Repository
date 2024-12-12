@@ -14,7 +14,7 @@
 
 
     if ($_POST["mail"]==$admin["mail"] && $_POST["mdp"]==$admin["mdp"]) {
-        header('Location: admin.php');
+        header('Location: PageAdmin.php');
         exit();
     }
 
