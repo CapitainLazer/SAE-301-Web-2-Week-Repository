@@ -12,9 +12,9 @@
     </p><br>
         <div class="row">
             <ul class="foot flex-row">
-                <li><a href="#" class="foot-link">Accueil</a></li>
-                <li><a href="#" class="foot-link">Horaires des séances</a></li>
-                <li><a href="#" class="foot-link">Notre cinéma</a></li>
+                <li><a href="#" class="foot-link">Partenaires</a></li>
+                <li><a href="#" class="foot-link">Contact</a></li>
+                <li><a href="#" class="foot-link">Archives</a></li>
             </ul>
             <ul class="foot flex-row">
                 <li><a class="logo-footer" href="https://www.facebook.com/mumoxcentrepompidou/"><img src="./images/facebook-new.png"></a></li>
@@ -23,5 +23,5 @@
                 <li><a class="logo-footer" href="https://www.youtube.com/channel/UC2lgTNCAbu5Pr31qlPSCrQQ"><img src="./images/youtube-play.png"></a></li>
             </ul>
         </div>
-    </div>
+    </div>  
 </footer>
