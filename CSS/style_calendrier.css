@@ -1,0 +1,30 @@
+body {
+    font-family: 'Coolvetica';
+    background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.fc-h-event {
+    background-color: #D63542;
+    border: 1px solid #D63542;
+    display: block;
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url("../fonts/Coolvetica_Rg.otf");
+}
+
+.fc-view-harness {
+    background-color: #ffe6e6;
+}
+
+.fc .fc-button-primary {
+    background-color: #D63542;
+    border: 1px solid #D63542;
+}
