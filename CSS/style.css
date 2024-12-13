@@ -190,11 +190,6 @@ h1{
 }
 /*Page index*/
 
-.video{
-    width: 100%; 
-    max-width: 100%; 
-}
-
 .camion {
     border-radius: 8px;
     height: 495px;
@@ -442,4 +437,48 @@ input:focus {
 .btn-submit:hover {
     background-color: white;
     color :#D63542;
+}
+
+/* Pédagogie */
+
+.collection-text {
+    background: #D63542;
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis */
+    color: white;
+
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
+  
+
+    background-color: rgba(214, 53, 66, 0.6); /* Couleur semi-transparente */
+    gap: 20px;
+    padding: 70px;
+    border-radius: 8px;
+    backdrop-filter: blur(100px);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img-fluid{
+    width: 500px;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FFB1B6;
 }
