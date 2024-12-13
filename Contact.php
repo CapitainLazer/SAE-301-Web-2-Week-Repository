@@ -17,33 +17,33 @@ include_once('addon/header.php');
     <!--Le Formulaire de contacts-->
     <section id="zoneFormulaire" class="container rounded">
         <h1>Contactez<stlyle style='font-family: Arial;'>-</stlyle>nous</h1> <!--Modification de la police pour le tiret " - " -->
-            <form method="post" class="row d-flex flex-column p-3">
+            <form method="post" class="row d-flex flex-column justify-content-center">
 
-                <div class="col-5 my-3">
+                <div class="col-8 my-3">
                     <label>Nom</label>
                     <br>
                     <input class="w-100" type="text" name="nom" required placeholder="Nom">
                 </div>
 
-                <div class="col-5 my-3">
+                <div class="col-8 my-3">
                     <label>Prenom</label>
                     <br>
                     <input class="w-100" type="text" name="nom" required placeholder="Prénom">
                 </div>
 
-                <div class="col-5 my-3">
+                <div class="col-8 my-3">
                     <label>Email</label>
                     <br>
                     <input class="w-100" type="email" name="email" required placeholder="votreemail@mail.com">
                 </div>
 
-                <div class="col-5 my-3">
+                <div class="col-8 my-3">
                     <label>Téléphone</label>
                     <br>
                     <input class="w-100" type="" name="" required>
                 </div>
 
-                <div class="col-5 my-3">
+                <div class="col-8 my-3">
                     <label>Date</label>
                     <br>
                     <input class="w-100" type="date" name="" required>
@@ -61,7 +61,7 @@ include_once('addon/header.php');
                     Pour en savoir plus sur l'utilisation de vos données, consultez notre <em>RGPD et Politique de confidentialité</em>.</p>
                 </div>
 
-                <div class="d-flex flex-row gap-3">
+                <div class="d-flex flex-xl-row flex-column flex-gap-3">
                     <div class="col-3 my-3">
                         <input type="submit" value="Envoyer" class="boutonForm">
                     </div>

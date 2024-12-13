@@ -34,6 +34,7 @@ label{
     color: white;
 }
 
+/*Animation des boutons Envoyer et Vider du formulaire*/
 .boutonForm{
     background: none;
     text-decoration: none;
