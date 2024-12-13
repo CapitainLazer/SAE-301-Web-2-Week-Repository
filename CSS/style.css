@@ -64,9 +64,9 @@ label{
 }
 
 /*Nom des champs du formulaire de Contact*/
-label{
+.nomChampFormulaire{
     font-size: 18px;
-    font-family: 'Frula';
+    font-family: 'Coolvetica';
 }
 
 /* HEADER */

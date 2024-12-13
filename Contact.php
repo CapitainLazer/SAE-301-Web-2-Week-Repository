@@ -21,39 +21,39 @@ include_once('addon/header.php');
             <form method="post" class="row d-flex flex-column justify-content-center">
 
                 <div class="col-8 my-3">
-                    <label>Nom</label>
+                    <label class="nomChampFormulaire">Nom</label>
                     <br>
-                    <input class="w-100" type="text" name="nom" required placeholder="Nom">
+                    <input class="w-100" type="text" name="userNom" required placeholder="Nom">
                 </div>
 
                 <div class="col-8 my-3">
-                    <label>Prenom</label>
+                    <label class="nomChampFormulaire">Prenom</label>
                     <br>
-                    <input class="w-100" type="text" name="nom" required placeholder="Prénom">
+                    <input class="w-100" type="text" name="userPrenom" required placeholder="Prénom">
                 </div>
 
                 <div class="col-8 my-3">
-                    <label>Email</label>
+                    <label class="nomChampFormulaire">Email</label>
                     <br>
-                    <input class="w-100" type="email" name="email" required placeholder="votreemail@mail.com">
+                    <input class="w-100" type="email" name="userEmail" required placeholder="votreemail@mail.com">
                 </div>
 
                 <div class="col-8 my-3">
-                    <label>Téléphone</label>
+                    <label class="nomChampFormulaire">Téléphone</label>
                     <br>
-                    <input class="w-100" type="" name="" required>
+                    <input class="w-100" type="tel" name="userTelNumber" required placeholder="06 11 11 11 11">
                 </div>
 
                 <div class="col-8 my-3">
-                    <label>Date</label>
+                    <label class="nomChampFormulaire">Date</label>
                     <br>
-                    <input class="w-100" type="date" name="" required>
+                    <input class="w-100" type="date" name="dateMessage" required>
                 </div>
 
                 <div class="col-8 my-3">
-                    <label>Message</label>
+                    <label class="nomChampFormulaire">Message</label>
                     <br>
-                    <textarea class="w-100" name="message" required></textarea>
+                    <textarea class="w-100" name="userMessage" required placeholder="Indiquez-nous votre message ..."></textarea>
                 </div>
 
                 <div class="col-8 my-3 d-flex flex-row gap-3">
@@ -75,29 +75,6 @@ include_once('addon/header.php');
 
             </form>
 <main>
-
-    <!--Le Formulaire de contacts-->
-    <section class="container rounded" style="background-color: #D63542;">
-        <h1>Contactez<stlyle style='font-family: Arial;'>-</stlyle>nous</h1> <!--Modification de lapolice pour le tiret " - " -->
-        <div class="row d-flex flex-row">
-            <form method="post" class="col-8">
-                    <label>Nom</label>
-                    <input type="text" name="nom" required placeholder="NOM">
-                    <label>Prenom</label>
-                    <input type="text" name="nom" required placeholder="PRENOM">
-                    <label>Email</label>
-                    <input type="email" name="email" required>
-                    <label>Téléphone</label>
-                    <input type="" name="" required>
-                    <label>Message</label>
-                    <textarea name="message" required></textarea>
-                    <input type="submit" class="btn btn-primary">
-            </form>
-        </div>
-            
-    </section>
-
-</main>
 
 <?php
 include_once('addon/Footer.php');
