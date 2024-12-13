@@ -475,7 +475,6 @@ input:focus {
     color :#D63542;
 }
 
-<<<<<<< HEAD
 /*Complement*/
 
 .rounded {
@@ -484,7 +483,7 @@ input:focus {
 
 .mr-30 {
     margin-right:30px;
-=======
+}
 /* Pédagogie */
 
 .collection-text {
@@ -527,5 +526,5 @@ input:focus {
     text-align: center;
     border-radius: 8px;
     background-color: #FFB1B6;
->>>>>>> 7597cd6381292910144c12e28fac28983a471fce
+
 }
