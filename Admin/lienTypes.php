@@ -31,7 +31,7 @@
                         <?php
                     endforeach;
                 ?>
-            <input type="submit" value="Modifier"/>
+            <input type="submit" value=">Ajouter"/>
         </form><br>
     </body>
 </html>
