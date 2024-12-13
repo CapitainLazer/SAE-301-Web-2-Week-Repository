@@ -22,7 +22,7 @@
                         <a class="nav-link" href="#">MuMo x Pompidou</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pédagogique</a>
+                        <a class="nav-link" href="Pedagogie.php">Pédagogique</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">À Propos</a>
