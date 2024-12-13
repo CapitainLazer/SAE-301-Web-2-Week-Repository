@@ -343,6 +343,20 @@ h1{
     align-self: center; 
   }
 
+  .hr-with-text {
+    display: flex;
+    align-items: center; 
+}
+
+.custom-hr {
+    width: 50px; 
+    height: 10px; 
+    background-color: black;
+    border: none;
+    opacity: 1;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 /* Page connexion */
 .section_connexion {
     margin: 50px auto;
