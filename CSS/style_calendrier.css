@@ -4,7 +4,6 @@ body {
 }
 
 #calendar {
-    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     color: black !important;
@@ -38,8 +37,27 @@ body {
 .fc .fc-button-primary {
     background-color: #D63542;
     border: 1px solid #D63542;
+    color: #ffe6e6;
+}
+
+.fc:hover .fc-button-primary:hover{
+    background-color: #ffe6e6;
+    border: 1px solid #ffe6e6;
+    color: #D63542;
 }
 
 a {
     text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        min-height: 535px;
+    }
+}
+@media (min-width: 769px) {
+    #calendar {
+        max-height: auto;
+        max-width: 900px;
+    }
 }
