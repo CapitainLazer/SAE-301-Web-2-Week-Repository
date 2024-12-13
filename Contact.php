@@ -73,6 +73,27 @@ include_once('addon/header.php');
 
 
             </form>
+<main>
+
+    <!--Le Formulaire de contacts-->
+    <section class="container rounded" style="background-color: #D63542;">
+        <h1>Contactez<stlyle style='font-family: Arial;'>-</stlyle>nous</h1> <!--Modification de lapolice pour le tiret " - " -->
+        <div class="row d-flex flex-row">
+            <form method="post" class="col-8">
+                    <label>Nom</label>
+                    <input type="text" name="nom" required placeholder="NOM">
+                    <label>Prenom</label>
+                    <input type="text" name="nom" required placeholder="PRENOM">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                    <label>Téléphone</label>
+                    <input type="" name="" required>
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
+                    <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+            
     </section>
 
 </main>

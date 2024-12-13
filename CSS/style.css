@@ -58,7 +58,12 @@ label{
     object-fit: cover;
 }
 
-  
+/*Nom des champs du formulaire de Contact*/
+label{
+    font-size: 18px;
+    font-family: 'Frula';
+}
+
 /* HEADER */
 .header {
     display: flex;
