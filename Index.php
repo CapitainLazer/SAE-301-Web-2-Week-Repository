@@ -12,61 +12,9 @@
     <?php
         include_once('addon/header.php');
     ?>
-
            <iframe class="video" src="https://www.youtube.com/watch?v=T6YVgEpRU6Q" frameborder="0" allowfullscreen></iframe>
     
             <div class="content">
-    <video src="https://www.youtube.com/watch?v=Us72CpwwGAk" controls width="100%"></video>
-    <div class="content">
-        <section class="content">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="camion">
-                        <img src ="images/camion.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="texte">                 
-                        <p>
-                            <p>Le MuMo (Musée Mobile) est un musée itinérant créé pour rendre l'art contemporain accessible à tous, notamment aux populations éloignées des institutions culturelles traditionnelles. Conçu à l'origine par Ingrid Brochard en 2011, le MuMo s'installe dans des camions transformés en espaces d'exposition. Il se déplace dans des écoles, des quartiers ruraux ou urbains, et offre une expérience artistique immersive.
-                                Les œuvres présentées, souvent réalisées par des artistes contemporains renommés, couvrent divers médiums comme la peinture, la sculpture, la photographie ou l'installation. L'objectif est de démocratiser l'art, stimuler la curiosité et éveiller la sensibilité artistique, en particulier chez les enfants. Grâce à son format nomade, le MuMo transcende les frontières géographiques et sociales pour promouvoir l'art comme un bien commun. </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-                    
-        <div class="section">
-            <div class="hr-with-text">
-                <hr class="custom-hr">
-                <span><h2>En ce moment</h2></span>
-            </div>
-            <p>Nos prochains événements</p>
-            <div class="calendar">
-              <div class="calendar-item">
-                <h3>Limoges (87)</h3>
-                <p>Au quartier Vigenal - En partenariat avec le Centre Social Vital - du 19 au 24 décembre</p>
-                <p>Devant la salle municipale du Vigenal - 5 Rue Georges Jacquet</p>
-                <p>Portes ouvertes le samedi 21 décembre de 10h30 à 12h00 - 14h00 à 17h30</p>
-                <button>Voir plus</button>
-              </div>
-              <div class="calendar-item">
-                <h3>Limoges (87)</h3>
-                <p>Au quartier Val de L'Aurence - En partenariat avec le Centre Social Alchimies - les 26 et 27 décembre</p>
-                <p>Devant la BFM du Val de L’Aurence</p>
-                <p>Portes ouvertes le jeudi 26 et le vendredi 27 décembre de 10h à 12h et de 14h à 17h00</p>
-                <button>Voir plus</button>
-              </div>
-              <div class="calendar-item">
-                <h3>Agen (47)</h3>
-                <p>Communauté d'Agglomération d’Agen</p>
-                <p>Quai du Gravier</p>
-                <p>Portes ouvertes le lundi 30 décembre de 16h00 à 18h00</p>
-                <button>Voir plus</button>
-              </div>
-            </div>
-          </div>
-          
 
 <!-- Section 1 : Image et Texte du Camion -->
 <section class="content">
