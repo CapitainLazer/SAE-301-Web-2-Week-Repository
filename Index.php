@@ -85,9 +85,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6  col-md-12 col-sm-12">
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6 d-flex flex-colomn align-items-center">
                     <div class="collection-info">
-                        <img src="images/mumo.webp" class="img-fluid rounded" alt="Image des collections permanentes au musée" />
+                        <img src="images/mumo.webp" class="img-fluid rounded" style="height:470px; object-fit: cover;"alt="Image des collections permanentes au musée" />
                     </div>
                 </div>
             </div>
