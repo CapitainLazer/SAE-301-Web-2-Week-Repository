@@ -149,13 +149,13 @@ CREATE TABLE `evenements` (
 --
 
 INSERT INTO `evenements` (`id_eve`, `nom_evenements`, `dates_debut`, `description_evenements`, `id_loc`, `id_camion`, `dates_fin`) VALUES
-(1, 'Le dessin dans tous ses états Miramont de Guyenne', '2024-12-02', 'Portes ouvertes mardi 3 décembre de 16h45 à 18h', 1, 2, '2024-12-04'),
-(2, 'Le dessin dans tous ses états Saint-Bonnet-de-Bellac', '2024-12-09', 'Portes ouvertes lundi 9 décembre de 16h45 à 18h', 2, 2, '2024-12-09'),
-(3, 'Le dessin dans tous ses états Le Dorat', '2024-12-10', 'Portes ouvertes mercredi 11 décembre de 16h à 18h', 3, 2, '2024-12-11'),
-(4, 'Le dessin dans tous ses états Limoges', '2024-12-12', 'Portes ouvertes le vendredi 13, le lundi 16 décembre de 15h30 à 17h00 et le mercredi 18 décembre de 15h30 à 18h', 4, 2, '2024-12-18'),
-(5, 'Le dessin dans tous ses états Limoges', '2024-12-19', 'Portes ouvertes le samedi 21 décembre de 10h30 à 12h puis de 14h à 17h30', 5, 2, '2024-12-24'),
-(6, 'Le dessin dans tous ses états Limoges', '2024-12-26', 'Portes ouvertes le jeudi 26 et vendredi 27 décembre de 10h à 12h puis de 14h à 17h', 6, 2, '2024-12-27'),
-(7, 'Le dessin dans tous ses états Agen', '2024-12-30', 'Portes ouvertes le lundi 30, le mardi 31 décembre de 16h à 18h, le mercredi 1er janvier de 10h à 12h puis de 14h à 17h, le jeudi 2 janvier de 15h à 17h et le vendredi 3 janvier de 16h à 18h', 7, 2, '2025-01-03');
+(1, 'Le dessin dans tous ses états', '2024-12-02', 'Portes ouvertes mardi 3 décembre de 16h45 à 18h', 1, 2, '2024-12-04'),
+(2, 'Le dessin dans tous ses états', '2024-12-09', 'Portes ouvertes lundi 9 décembre de 16h45 à 18h', 2, 2, '2024-12-09'),
+(3, 'Le dessin dans tous ses états', '2024-12-10', 'Portes ouvertes mercredi 11 décembre de 16h à 18h', 3, 2, '2024-12-11'),
+(4, 'Le dessin dans tous ses états', '2024-12-12', 'Portes ouvertes le vendredi 13, le lundi 16 décembre de 15h30 à 17h00 et le mercredi 18 décembre de 15h30 à 18h', 4, 2, '2024-12-18'),
+(5, 'Le dessin dans tous ses états', '2024-12-19', 'Portes ouvertes le samedi 21 décembre de 10h30 à 12h puis de 14h à 17h30', 5, 2, '2024-12-24'),
+(6, 'Le dessin dans tous ses états', '2024-12-26', 'Portes ouvertes le jeudi 26 et vendredi 27 décembre de 10h à 12h puis de 14h à 17h', 6, 2, '2024-12-27'),
+(7, 'Le dessin dans tous ses états', '2024-12-30', 'Portes ouvertes le lundi 30, le mardi 31 décembre de 16h à 18h, le mercredi 1er janvier de 10h à 12h puis de 14h à 17h, le jeudi 2 janvier de 15h à 17h et le vendredi 3 janvier de 16h à 18h', 7, 2, '2025-01-03');
 
 -- --------------------------------------------------------
 

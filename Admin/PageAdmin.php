@@ -42,7 +42,7 @@
                     <?php
                         foreach($tabEvenement as $Evenement):
                     ?>
-                        <option value="<?php echo $Evenement["id_eve"];?>"><?php echo $Evenement["nom_evenements"];?></option>
+                        <option value="<?php echo $Evenement["id_eve"];?>"><?php echo $Evenement["nom_evenements"]." / ".$Evenement["dates_debut"];?></option>
                     <?php
                         endforeach;
                     ?>
@@ -59,6 +59,15 @@
                     Date de début : <input type="date" name="date_debut" required/><br>
                     Date de fin : <input type="date" name="date_fin" required/><br>
                     Description : <input type="text" name="descriptions" required /><br>
+                    Camion : <select name="camion" required>
+                    <?php
+                        foreach($tabcamion as $camion):
+                    ?>
+                        <option value="<?php echo $camion["id_camion"];?>"><?php echo $camion["nom_camion"];?></option>
+                    <?php
+                        endforeach;
+                    ?>
+                    </select><br/>
                     Lieu : <select name="lieu" required>
                     <?php
                         foreach($tablieu as $lieu):
@@ -75,12 +84,12 @@
 
             <div>
                 <h3>Modification d'un évènement</h3>
-                <form action="adminModificationProduit.php" method="POST">
+                <form action="modifEvenement.php" method="POST">
                     <select name="id" size=12>
                     <?php
                         foreach($tabEvenement as $Evenement):
                     ?>
-                        <option value="<?php echo $Evenement["id_eve"];?>"><?php echo $Evenement["nom_evenements"];?></option>
+                        <option value="<?php echo $Evenement["id_eve"];?>"><?php echo $Evenement["nom_evenements"]." / ".$Evenement["dates_debut"];?></option>
                     <?php
                         endforeach;
                     ?>

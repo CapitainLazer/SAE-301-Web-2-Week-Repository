@@ -5,7 +5,7 @@
     $id=$_POST["id_eve"];
     $types=$_POST["types"];
 
-    $requete_preparee= $bdd->prepare('INSERT INTO type_evenement(id_type_evenement, id_eve, id_type) VALUES (:id_eve,:types)');
+    $requete_preparee= $bdd->prepare('INSERT INTO type_evenement(id_type_evenement, id_eve, id_type) VALUES (NULL,:id_eve,:types)');
     $requete_preparee->bindValue(':id_eve', $id, PDO::PARAM_INT);
 
     foreach($types as $t):

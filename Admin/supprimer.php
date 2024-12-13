@@ -3,6 +3,8 @@
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
     if ($_POST["choix"]=="eve") {
+        $requete='DELETE FROM type_evenement WHERE id_eve='.$_POST["id"];
+        $nbsuppression=$bdd->exec($requete);
         $requete='DELETE FROM evenements WHERE id_eve='.$_POST["id"];
         $nbsuppression=$bdd->exec($requete);
     }
