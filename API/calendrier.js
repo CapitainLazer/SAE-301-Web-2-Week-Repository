@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'Fr',
             initialView: 'dayGridMonth',
             events: function(fetchInfo, successCallback, failureCallback) {
                 $.ajax({
-                    url: 'API_Calendrier.php',
+                    url: './API/API_Calendrier.php',
                     method: 'GET',
                     dataType: 'json',
                     success: function(data) {
