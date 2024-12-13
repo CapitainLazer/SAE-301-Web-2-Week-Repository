@@ -19,6 +19,11 @@ h1{
     font-family: 'Frula';
 }
 
+/*Mise en forme du Formulaire de contact*/
+#zoneFormulaire{
+    max-width: 60vw;
+}
+
 /* HEADER */
 .header {
     display: flex;
