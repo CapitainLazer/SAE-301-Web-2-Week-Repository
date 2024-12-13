@@ -190,10 +190,12 @@ h1{
     max-width: 100%; 
 }
 
+
 .camion {
     border-radius: 8px;
-    height: 495px;
+    height: auto;
     width: 615px;
+    
 }
 
 .texte {
@@ -214,7 +216,8 @@ h1{
     gap: 20px;
     padding: 70px;
     border-radius: 8px;
-    backdrop-filter: blur(100px); /* Applique un flou de 30px derrière l'élément */
+    backdrop-filter: blur(100px); 
+    
 }
 
 .texte::before {
