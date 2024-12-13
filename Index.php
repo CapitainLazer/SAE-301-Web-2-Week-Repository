@@ -12,11 +12,10 @@
     <?php
         include_once('addon/header.php');
     ?>
-<<<<<<< HEAD
+
            <iframe class="video" src="https://www.youtube.com/watch?v=T6YVgEpRU6Q" frameborder="0" allowfullscreen></iframe>
     
             <div class="content">
-=======
     <video src="https://www.youtube.com/watch?v=Us72CpwwGAk" controls width="100%"></video>
     <div class="content">
         <section class="content">
@@ -68,7 +67,6 @@
             </div>
           </div>
           
->>>>>>> 2106afda006a6e97614dc3e482d3f9958172376e
 
 <!-- Section 1 : Image et Texte du Camion -->
 <section class="content">
