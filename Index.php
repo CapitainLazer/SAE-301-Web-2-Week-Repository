@@ -12,7 +12,7 @@
     <?php
         include_once('addon/header.php');
     ?>
-        <iframe src="https://www.youtube.com/watch?v=Us72CpwwGAk" frameborder="0" allowfullscreen></iframe>
+           <iframe src="https://www.youtube.com/watch?v=Us72CpwwGAk" frameborder="0" allowfullscreen></iframe>
     
     <div class="content">
         <section class="content">
@@ -65,6 +65,7 @@
         <div class="section pompidou">
             <div class="text">
                 <h2>Mumo/Pompidou</h2>
+                <p>Plus qu’un partenariat ...</p>
                 <section class="content">
             <div class="row">
                 <div class="col-12 col-md-6">
@@ -81,16 +82,31 @@
                     </div>
                 </div>
             </div>
+            
+           
+        </section>
+        <h2>A propos</h2>
+        <section class="section">
+            <h2>À propos</h2>
+            <p>Découvrez notre collection unique d'œuvres d'art modernes, chacune ayant une histoire fascinante à raconter.</p>
+            <div class="about-images">
+                <div class="image-card">
+                    <img src="./images/oeuvre1.png" alt="">
+                    <p>Immagine (2011)<br><span>Maurizio Cattelan</span></p>
+                </div>
+                <div class="image-card">
+                    <img src="./images/oeuvre2.png" alt="">
+                    <p>MapaMapa (2013)<br><span>Sébastien Cordoléani</span></p>
+                </div>
+                <div class="image-card">
+                    <img src="./images/oeuvre3.png" alt="">
+                    <p>Six Dogs Jumping (with Children Watching) (2012)<br><span>John Baldessari</span></p>
+                </div>
+            </div>
         </section>
      </div>             
-
-            <h2>À propos</h2>
-            <div class="about">
-                <img src="image_placeholder.jpg" alt="Image à propos 1">
-                <img src="image_placeholder.jpg" alt="Image à propos 2">
-                <img src="image_placeholder.jpg" alt="Image à propos 3">
-            </div>
-    </div>
+     
+</div>
     <?php
         include_once('addon/Footer.php');
     ?>
