@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Coolvetica';
+    src: url("../fonts/Coolvetica_Rg.otf");
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Coolvetica';
     background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
 }
 
@@ -197,7 +202,18 @@ h1{
 }
 
 .texte {
+    background: #D63542;
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis */
     color: white;
+
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    width: 600px; 
+    margin: 20px;
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
+  
+
     background-color: rgba(214, 53, 66, 0.6); /* Couleur semi-transparente */
     display: flex;
     gap: 20px;
@@ -326,7 +342,7 @@ h1{
     flex: 1;
     border-radius: 8px;
     padding: 15px;
-      }
+    }
 
 .bouton h3 {
     font-size: 1.2rem;
@@ -349,7 +365,7 @@ h1{
     align-self: center; 
   }
 
-  .hr-with-text {
+.hr-with-text {
     display: flex;
     align-items: center; 
 }
@@ -425,5 +441,5 @@ input:focus {
 
 .btn-submit:hover {
     background-color: white;
-    color :#D63542
+    color :#D63542;
 }
