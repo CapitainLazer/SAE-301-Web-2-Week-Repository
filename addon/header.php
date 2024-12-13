@@ -16,7 +16,7 @@
                         <a class="nav-link" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calendrier.php">Evènements Calendrier</a>
+                        <a class="nav-link" href="calendrier.php">Événements Calendrier</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">MuMo x Pompidou</a>
