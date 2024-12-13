@@ -14,11 +14,6 @@ body {
     background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
 }
 
-.video {
-    width: 100%;
-    height: auto;
-}
-
 /*La police des titres*/
 @font-face {
     font-family: 'Frula';
@@ -189,6 +184,11 @@ label{
     .texte {
         padding: 70px;
     }
+
+    .video {
+        width: 100%;
+        height: 50em;
+    }
 }
 
 
@@ -233,6 +233,11 @@ label{
     .texte {
         padding: 35px;
     }
+
+    .video {
+        width: 100%;
+        height: 30em;
+    }
 }
 
 /* Pour les écrans très petits (mobiles en portrait) */
@@ -261,6 +266,11 @@ label{
 
     .texte {
         padding: 15px;
+    }
+
+    .video {
+        width: 100%;
+        height: 20em;
     }
 }
 /*Page index*/
