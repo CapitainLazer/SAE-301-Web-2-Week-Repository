@@ -280,7 +280,7 @@ height: 495px;
     flex-direction: column; 
     justify-content: space-between; 
     flex: 1;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -302,13 +302,14 @@ height: 495px;
     background-color: #d14a4a;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
     align-self: center; 
   }
 
 .calendar-item button:hover {
-    background-color: #b13838;
+    background-color: white;
+    color : #EB0013;
   }
 
 .bouton{
@@ -343,5 +344,61 @@ height: 495px;
 
 .h:hover {
     background-color: #b13838;
+}
+/* Page connexion */
+.section_connexion {
+    margin: 50px auto;
+    background-color: rgba(247, 169, 168, 0.3);
+    border-radius: 8px;
+    padding: 40px 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.section_connexion h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Frula';
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff4d4d;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+.btn-submit {
+    padding: 10px 15px;
+    background-color: #d14a4a;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color :#D63542
 }

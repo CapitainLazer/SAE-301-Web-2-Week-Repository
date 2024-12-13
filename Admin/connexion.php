@@ -10,18 +10,20 @@
   </head>
   <body>       
         <?php include_once('../addon/header2.php'); ?>
-        <h2>Connexion à votre compte</h2>
-        <form action='verifconnexion.php' method="POST">
-            <div>
-                <label>Mail*</label>
-                <input type="text" name="mail" required placeholder="nom.prenom@mail.com">
-            </div>
-            <div>
-                <label>Mot de Passe*</label>
-                <input type="password" name="mdp" required placeholder="mot de passe">
-            </div>
-            <input type="submit" value="Connexion">
-        </form>
+        <section class="section_connexion">
+            <h2>Connexion a votre compte</h2>
+            <form action="verifconnexion.php" method="POST" class="form-container">
+                <div class="form-group">
+                    <label for="mail">Mail*</label>
+                    <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="mdp">Mot de Passe*</label>
+                    <input type="password" id="mdp" name="mdp" required placeholder="mot de passe">
+                </div>
+                <button type="submit" class="btn-submit">Connexion</button>
+            </form>
+        </section>
         <br>
         <?php include_once('../addon/Footer2.php'); ?>
     </body>
