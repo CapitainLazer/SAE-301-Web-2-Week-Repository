@@ -4,7 +4,6 @@ body {
 }
 
 #calendar {
-    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     color: black !important;
@@ -49,4 +48,16 @@ body {
 
 a {
     text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        min-height: 535px;
+    }
+}
+@media (min-width: 769px) {
+    #calendar {
+        max-height: auto;
+        max-width: 900px;
+    }
 }
