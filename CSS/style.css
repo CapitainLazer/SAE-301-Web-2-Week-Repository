@@ -22,8 +22,42 @@ h1{
 /*Mise en forme du Formulaire de contact*/
 #zoneFormulaire{
     max-width: 60vw;
+    padding: 1.8em;
+    background-color: rgba(245, 49, 62, 0.651); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 8px rgb(245, 49, 62);
 }
 
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.boutonForm{
+    background: none;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 45px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boutonForm:hover{
+    background: #ffdfdf;
+    color:rgb(245, 49, 62);
+    border: 2px solid rgb(245, 49, 62);
+}
+
+.decoImg{
+    background-image: url(images/camion_MuMo.png);
+    object-fit: cover;
+}
+
+  
 /* HEADER */
 .header {
     display: flex;
