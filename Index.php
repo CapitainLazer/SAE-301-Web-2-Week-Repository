@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php include_once('addon/header.php');?>
-    <iframe class="video" src="https://www.youtube.com/watch?v=T6YVgEpRU6Q" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" src="https://youtu.be/Us72CpwwGAk?si=qZzTa3i6zCPyoksm" frameborder="0" allowfullscreen></iframe>
     
     <div class="content">
         <!-- Section 1 : Image et Texte du Camion -->
