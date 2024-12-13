@@ -6,7 +6,7 @@
         <title>Mumo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <link rel="icon" type="image/png" href="images/favicon-mumo.png">
+        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
 </head>
 <body>
     <?php
@@ -34,7 +34,10 @@
         </section>
                     
         <div class="section">
-            <h2>Calendrier</h2>
+            <div class="hr-with-text">
+                <hr class="custom-hr">
+                <span><h2>En ce moment</h2></span>
+            </div>
             <p>Nos prochains événements</p>
             <div class="calendar">
               <div class="calendar-item">
@@ -64,7 +67,10 @@
 
         <div class="section pompidou">
             <div class="text">
-                <h2>Mumo/Pompidou</h2>
+                <div class="hr-with-text">
+                    <hr class="custom-hr">
+                    <span><h2>Mumo/Pompidou</h2></span>
+                </div>
                 <p>Plus qu’un partenariat ...</p>
                 <section class="content">
             <div class="row">
@@ -87,7 +93,10 @@
             </div>
         </section>
         <section class="section">
-            <h2>A propos</h2>
+                <div class="hr-with-text">
+                    <hr class="custom-hr">
+                    <span><h2>A propos</h2></span>
+                </div>
             <p>Quelques unes de nos  oeuvres.</p>
             <div class="about-images">
                 <div class="image-card">
