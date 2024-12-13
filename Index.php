@@ -29,12 +29,10 @@
                         </p>
                     </div>
                 </div>
-<<<<<<< HEAD
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6 d-flex flex-colomn align-items-center">
                     <div class="collection-info">
                         <img src="images/mumo.webp" class="img-fluid rounded" style="height:470px; object-fit: cover;"alt="Image des collections permanentes au musée" />
                     </div>
-=======
             </div>
         </section>
 
@@ -66,7 +64,6 @@
                     <p>Quai du Gravier</p>
                     <p>Portes ouvertes le lundi 30 décembre de 16h00 à 18h00</p>
                     <button>Voir plus</button>
->>>>>>> dd197a98d0a3778bf70f31d5145ef8d4404aeea2
                 </div>
             </div>
         </div>
