@@ -12,8 +12,7 @@
     <?php
         include_once('addon/header.php');
     ?>
-           <iframe class="video" src="https://www.youtube.com/watch?v=Us72CpwwGAk" frameborder="0" allowfullscreen></iframe>
-    
+    <video src="https://www.youtube.com/watch?v=Us72CpwwGAk" controls width="100%"></video>
     <div class="content">
         <section class="content">
             <div class="row">
