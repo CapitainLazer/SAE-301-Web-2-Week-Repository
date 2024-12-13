@@ -18,8 +18,8 @@
         <section class="content">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <div class="collection-info">
-                        <img src="images/camion.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
+                    <div class="camion">
+                        <img src ="images/camion.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
                     </div>
                 </div>
                 <div class="col">
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="bouton">
-            <button>Voir plus</button>    
+            <button class="h">Voir plus</button>    
             </div>
         </section>
         <section class="section">
@@ -105,7 +105,7 @@
             </div>
         </section>
         <div class="bouton">
-        <button>Voir plus</button>
+        <button class="h">Voir plus</button>
         </div>
      </div>             
      
