@@ -1,5 +1,5 @@
 <?php
-    include("../Config/config.php");
+    include("./Config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
     $requete='SELECT mail, mdp FROM `admin`';
@@ -8,12 +8,12 @@
     $resultats->closeCursor();
 
     if ($_POST["mail"]==$admin["mail"] && $_POST["mdp"]==$admin["mdp"]) {
-        header('Location: PageAdmin.php');
+        header('Location: ./admin/PageAdmin.php');
         exit();
     }
 
     else {
-        header('Location: ../index.php');
+        header('Location: index.php');
         exit();
     }
 ?>
