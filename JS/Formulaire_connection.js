@@ -9,4 +9,15 @@ tabs.forEach(tab=> {
     });
 });
 
-function unSelectAll(){};
+function unSelectAll(){
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    let tabbodies = document.querySelectorAll(".tab-body");
+    tabbodies.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+  }
+  
+  document.querySelector(".tab-link.active").click();
+  

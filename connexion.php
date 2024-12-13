@@ -12,18 +12,42 @@
   <body>       
         <?php include_once('./addon/header.php'); ?>
         <section class="section_connexion">
-            <h2>Connexion a votre compte</h2>
-            <form action="verifconnexion.php" method="POST" class="form-container">
-                <div class="form-group">
-                    <label for="mail">Mail*</label>
-                    <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
-                </div>
-                <div class="form-group">
-                    <label for="mdp">Mot de Passe*</label>
-                    <input type="password" id="mdp" name="mdp" required placeholder="mot de passe">
-                </div>
-                <button type="submit" class="btn-submit">Connexion</button>
-            </form>
+            <div class="tab-header">
+                <a class="tab-link active" data-ref="connexion" href="javascript:void(0)">Connexion</a>
+                <a class="tab-link" data-ref="inscription" href="javascript:void(0)">Inscription</a>
+            </div>
+            <div class="tab-body" data-id="connexion">
+                <h2>Connexion a votre compte</h2>
+                <form action="verifconnexion.php" method="POST" class="form-container">
+                    <div class="form-group">
+                        <label for="mail">Mail*</label>
+                        <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mdp">Mot de Passe*</label>
+                        <input type="password" id="mdp" name="mdp" required placeholder="mot de passe">
+                    </div>
+                    <button type="submit" class="btn-submit">Connexion</button>
+                </form>
+            </div>
+            <div class="tab-body" data-id="inscription">
+                <h2>Création de votre compte</h2>
+                <form action="___.php" method="POST" class="form-container">
+                    <div class="form-group">
+                        <label for="mail">Mail*</label>
+                        <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mdp">Mot de Passe*</label>
+                        <input type="password" id="createmdp" name="mdp" required placeholder="mot de passe">
+                    </div>
+                    <div class="form-group">
+                        <label for="mdp">Confirmez le Mot de Passe*</label>
+                        <input type="password" id="confirmmdp" name="mdp" required placeholder="mot de passe">
+                    </div>
+                    <button type="submit" class="btn-submit">Inscription</button>
+                </form>
+            </div>
         </section>
         <br>
         <?php include_once('./addon/Footer.php'); ?>
