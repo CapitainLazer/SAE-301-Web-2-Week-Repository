@@ -3,25 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Nous Contacter</title>
 </head>
 <body>
-<h1>Contactez-nous</h1>
-    <form method="post">
-        <label>Nom</label>
-        <input type="text" name="nom" required placeholder="NOM">
-        <label>Prenom</label>
-        <input type="text" name="nom" required placeholder="PRENOM">
-        <label>Email</label>
-        <input type="email" name="email" required>
-        <label>Téléphone</label>
-        <input type="" name="" required>
-        <label>Message</label>
-        <textarea name="message" required></textarea>
-        <input type="submit">
-    </form>
+
+<?php //inclus le Header
+include_once('addon/header.php');
+?>
+
+<main>
+    <!--Le Formulaire de contacts-->
+    <section id="zoneFormulaire" class="container rounded" style="background-color: #D63542;">
+        <h1>Contactez<stlyle style='font-family: Arial;'>-</stlyle>nous</h1> <!--Modification de la police pour le tiret " - " -->
+            <form method="post" class="row d-flex flex-row p-3">
+
+                <div>
+                    <label>Nom</label>
+                    <br>
+                    <input type="text" name="nom" required placeholder="NOM">
+                </div>
+
+                <div>
+                    <label>Prenom</label>
+                    <br>
+                    <input type="text" name="nom" required placeholder="PRENOM">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div>
+                    <label>Téléphone</label>
+                    <br>
+                    <input type="" name="" required>
+                </div>
+
+                <div>
+                    <label>Téléphone</label>
+                    <br>
+                    <input type="" name="" required>
+                </div>
+
+                <div>
+                    <label>Message</label>
+                    <br>
+                    <textarea name="message" required></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" class="btn btn-danger">
+                </div>
+
+            </form>
+    </section>
+
+</main>
+
 <?php
+include_once('addon/Footer.php');
 ?>
 </body>
 </html>

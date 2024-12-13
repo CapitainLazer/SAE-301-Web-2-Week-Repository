@@ -9,6 +9,21 @@ body {
     background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
 }
 
+/*La police des titres*/
+@font-face {
+    font-family: 'Frula';
+    src: url("../fonts/Frula.ttf");
+}
+
+h1{
+    font-family: 'Frula';
+}
+
+/*Mise en forme du Formulaire de contact*/
+#zoneFormulaire{
+    max-width: 60vw;
+}
+
 /* HEADER */
 .header {
     display: flex;
@@ -57,6 +72,10 @@ body {
 .user-icon {
     font-size: 24px;
     cursor: pointer;
+}
+
+.icon_nav {
+    text-decoration: none;
 }
 
 /* Footer */
@@ -166,15 +185,20 @@ body {
 }
 /*Page index*/
 
+.video{
+    width: 100%; 
+    max-width: 100%; 
+
+}
 .camion {
     display: flex;
-align-items: center;
-font-size: 0;
-height: 500px;
-width: auto;
+    align-items: center;
+    font-size: 0;
+    height: 500px;
+    width: auto;
   }
 
-  .texte {
+.texte {
     color: white;
     background-color: #D63542 ;
     display: flex;
@@ -184,30 +208,28 @@ width: auto;
   }
 
 
-  .content {
-      padding: 50px;
+.content {
+    padding: 50px;
   }
 
-  .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    background-color: #f7a9a8;
+.section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 50px 20px;
 }
 
 .section h2 {
-    font-size: 1.5rem;
-    font-family: 'Frula';
-    color: #000000;
-    display: inline-block;
-    margin-bottom: 10px;
+   font-size: 1.5rem;
+   font-family: 'Frula';
+   color: #000000;
+   display: inline-block;
+   margin-bottom: 10px;
 }
 
-  .section p {
-      font-size: 1rem;
-      line-height: 1.6;
+.section p {
+   font-size: 1rem;
+   line-height: 1.6;
   }
 
   .section p {
@@ -225,35 +247,36 @@ width: auto;
 
 .about-images img {
     width: 300px;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-card {
     text-align: center;
-    background-color: #f7a9a8;
     padding: 10px;
     border-radius: 8px;
+    background-color: #FFB1B6;
 }
 .image-card p {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  color: #333;
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #333;
+  
 }
 
 .image-card span {
-  font-size: 0.9rem;
-  color: #666;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-  .calendar {
+.calendar {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
 
-  .calendar-item {
+.calendar-item {
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
@@ -264,17 +287,17 @@ width: auto;
     padding: 15px;
   }
 
-  .calendar-item h3 {
+.calendar-item h3 {
     font-size: 1.2rem;
     color: #D63542;
   }
 
-  .calendar-item p {
+.calendar-item p {
     font-size: 0.9rem;
     margin: 0 0 10px; 
   }
 
-  .calendar-item button {
+.calendar-item button {
     margin-top: auto; 
     padding: 8px 12px;
     background-color: #d14a4a;
@@ -285,6 +308,38 @@ width: auto;
     align-self: center; 
   }
 
-  .calendar-item button:hover {
+.calendar-item button:hover {
     background-color: #b13838;
   }
+
+.bouton{
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+        flex: 1;
+        border-radius: 8px;
+        padding: 15px;
+      }
+
+.bouton h3 {
+    font-size: 1.2rem;
+    color: #D63542;
+  }
+
+.bouton p {
+    font-size: 0.9rem;
+    margin: 0 0 10px; 
+  }
+
+.bouton button{
+    margin-top: auto; 
+    padding: 8px 12px;
+    background-color: #d14a4a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center; 
+  }
+
+

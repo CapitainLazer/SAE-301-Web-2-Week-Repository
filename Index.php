@@ -12,7 +12,7 @@
     <?php
         include_once('addon/header.php');
     ?>
-           <iframe src="https://www.youtube.com/watch?v=Us72CpwwGAk" frameborder="0" allowfullscreen></iframe>
+           <iframe class="video" src="https://www.youtube.com/watch?v=Us72CpwwGAk" frameborder="0" allowfullscreen></iframe>
     
     <div class="content">
         <section class="content">
@@ -82,13 +82,13 @@
                     </div>
                 </div>
             </div>
-            
-           
+            <div class="bouton">
+            <button>Voir plus</button>    
+            </div>
         </section>
-        <h2>A propos</h2>
         <section class="section">
-            <h2>À propos</h2>
-            <p>Découvrez notre collection unique d'œuvres d'art modernes, chacune ayant une histoire fascinante à raconter.</p>
+            <h2>A propos</h2>
+            <p>Quelques unes de nos  oeuvres.</p>
             <div class="about-images">
                 <div class="image-card">
                     <img src="./images/oeuvre1.png" alt="">
@@ -100,10 +100,13 @@
                 </div>
                 <div class="image-card">
                     <img src="./images/oeuvre3.png" alt="">
-                    <p>Six Dogs Jumping (with Children Watching) (2012)<br><span>John Baldessari</span></p>
+                    <p>Six Dogs Jumping (2012)<br><span>John Baldessari</span></p>
                 </div>
             </div>
         </section>
+        <div class="bouton">
+        <button>Voir plus</button>
+        </div>
      </div>             
      
 </div>
