@@ -191,12 +191,11 @@ h1{
 
 }
 .camion {
-    display: flex;
-    align-items: center;
-    font-size: 0;
-    height: 500px;
-    width: auto;
+    border-radius: 8px;
+height: 495px;
+    width: 615px;
   }
+
 
 .texte {
     color: white;
@@ -342,4 +341,7 @@ h1{
     align-self: center; 
   }
 
+.h:hover {
+    background-color: #b13838;
 
+}
