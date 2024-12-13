@@ -27,6 +27,46 @@ h1{
 /*Mise en forme du Formulaire de contact*/
 #zoneFormulaire{
     max-width: 60vw;
+    padding: 1.8em;
+    background-color: rgba(245, 49, 62, 0.651); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 8px rgb(245, 49, 62);
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/*Animation des boutons Envoyer et Vider du formulaire*/
+.boutonForm{
+    background: none;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 45px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boutonForm:hover{
+    background: #ffdfdf;
+    color:rgb(245, 49, 62);
+    border: 2px solid rgb(245, 49, 62);
+}
+
+.decoImg{
+    background-image: url(images/camion_MuMo.png);
+    object-fit: cover;
+}
+
+/*Nom des champs du formulaire de Contact*/
+.nomChampFormulaire{
+    font-size: 18px;
+    font-family: 'Coolvetica';
 }
 
 /* HEADER */
@@ -189,11 +229,6 @@ h1{
     }
 }
 /*Page index*/
-
-.video{
-    width: 100%; 
-    max-width: 100%; 
-}
 
 
 .camion {
@@ -440,6 +475,7 @@ input:focus {
     color :#D63542;
 }
 
+<<<<<<< HEAD
 /*Complement*/
 
 .rounded {
@@ -448,4 +484,48 @@ input:focus {
 
 .mr-30 {
     margin-right:30px;
+=======
+/* Pédagogie */
+
+.collection-text {
+    background: #D63542;
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis */
+    color: white;
+
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
+  
+
+    background-color: rgba(214, 53, 66, 0.6); /* Couleur semi-transparente */
+    gap: 20px;
+    padding: 70px;
+    border-radius: 8px;
+    backdrop-filter: blur(100px);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img-fluid{
+    width: 500px;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FFB1B6;
+>>>>>>> 7597cd6381292910144c12e28fac28983a471fce
 }

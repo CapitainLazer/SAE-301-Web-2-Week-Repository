@@ -12,56 +12,69 @@
 include_once('addon/header.php');
 ?>
 
-<main>
+<main style="position: relative;" class="decoImg">
+    <!--<img src="images/camion_MuMo.png" style="width: 100vw; filter: brightness(0.4); z-index: -1;"></img>-->
+
     <!--Le Formulaire de contacts-->
-    <section id="zoneFormulaire" class="container rounded" style="background-color: #D63542;">
+    <section id="zoneFormulaire" class="container rounded">
         <h1>Contactez<stlyle style='font-family: Arial;'>-</stlyle>nous</h1> <!--Modification de la police pour le tiret " - " -->
-            <form method="post" class="row d-flex flex-row p-3">
+            <form method="post" class="row d-flex flex-column justify-content-center">
 
-                <div>
-                    <label>Nom</label>
+                <div class="col-8 my-3">
+                    <label class="nomChampFormulaire">Nom</label>
                     <br>
-                    <input type="text" name="nom" required placeholder="NOM">
+                    <input class="w-100" type="text" name="userNom" required placeholder="Nom">
                 </div>
 
-                <div>
-                    <label>Prenom</label>
+                <div class="col-8 my-3">
+                    <label class="nomChampFormulaire">Prenom</label>
                     <br>
-                    <input type="text" name="nom" required placeholder="PRENOM">
+                    <input class="w-100" type="text" name="userPrenom" required placeholder="Prénom">
                 </div>
 
-                <div>
-                    <label>Email</label>
+                <div class="col-8 my-3">
+                    <label class="nomChampFormulaire">Email</label>
                     <br>
-                    <input type="email" name="email" required>
+                    <input class="w-100" type="email" name="userEmail" required placeholder="votreemail@mail.com">
                 </div>
 
-                <div>
-                    <label>Téléphone</label>
+                <div class="col-8 my-3">
+                    <label class="nomChampFormulaire">Téléphone</label>
                     <br>
-                    <input type="" name="" required>
+                    <input class="w-100" type="tel" name="userTelNumber" required placeholder="06 11 11 11 11">
                 </div>
 
-                <div>
-                    <label>Téléphone</label>
+                <div class="col-8 my-3">
+                    <label class="nomChampFormulaire">Date</label>
                     <br>
-                    <input type="" name="" required>
+                    <input class="w-100" type="date" name="dateMessage" required>
                 </div>
 
-                <div>
-                    <label>Message</label>
+                <div class="col-8 my-3">
+                    <label class="nomChampFormulaire">Message</label>
                     <br>
-                    <textarea name="message" required></textarea>
+                    <textarea class="w-100" name="userMessage" required placeholder="Indiquez-nous votre message ..."></textarea>
                 </div>
 
-                <div>
-                    <input type="submit" class="btn btn-danger">
+                <div class="col-8 my-3 d-flex flex-row gap-3">
+                    <input type="checkbox" name="message" required></textarea>
+                    <p style="color: white; font-size: 12px;">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées à des fins commerciales. 
+                    Pour en savoir plus sur l'utilisation de vos données, consultez notre <em>RGPD et Politique de confidentialité</em>.</p>
                 </div>
+
+                <div class="d-flex flex-xl-row flex-column flex-gap-3">
+                    <div class="col-3 my-3">
+                        <input type="submit" value="Envoyer" class="boutonForm">
+                    </div>
+
+                    <div class="col-3 my-3">
+                        <input type="button" value="Vider" class="boutonForm">
+                    </div>
+                </div>
+
 
             </form>
-    </section>
-
-</main>
+<main>
 
 <?php
 include_once('addon/Footer.php');
