@@ -82,8 +82,9 @@
                     </div>
                 </div>
             </div>
+            <div class="bouton">
             <button>Voir plus</button>    
-           
+            </div>
         </section>
         <section class="section">
             <h2>A propos</h2>
@@ -103,7 +104,9 @@
                 </div>
             </div>
         </section>
+        <div class="bouton">
         <button>Voir plus</button>
+        </div>
      </div>             
      
 </div>
