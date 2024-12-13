@@ -191,12 +191,11 @@ h1{
 
 }
 .camion {
-    display: flex;
-    align-items: center;
-    font-size: 0;
-    height: 500px;
-    width: auto;
+    border-radius: 8px;
+height: 495px;
+    width: 615px;
   }
+
 
 .texte {
     color: white;
@@ -314,12 +313,12 @@ h1{
   }
 
 .bouton{
-        display: flex;
-        flex-direction: column; 
-        justify-content: space-between; 
-        flex: 1;
-        border-radius: 8px;
-        padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    flex: 1;
+    border-radius: 8px;
+    padding: 15px;
       }
 
 .bouton h3 {
@@ -338,7 +337,7 @@ h1{
     background-color: #d14a4a;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
     align-self: center; 
   }
@@ -356,6 +355,10 @@ h1{
     opacity: 1;
     margin-right: 10px;
     margin-top: 10px;
+}
+.h:hover {
+    background-color: white;
+    color : #EB0013;
 }
 /* Page connexion */
 .section_connexion {
