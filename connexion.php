@@ -31,7 +31,7 @@
                 </form>
             </div>
             <div class="tab-body" data-id="inscription">
-                <h2>Création de votre compte</h2>
+                <h2>Creation de votre compte</h2>
                 <form action="___.php" method="POST" class="form-container">
                     <div class="form-group">
                         <label for="mail">Mail*</label>
