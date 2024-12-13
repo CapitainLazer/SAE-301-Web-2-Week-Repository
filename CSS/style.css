@@ -235,27 +235,20 @@ label{
     border-radius: 8px;
     height: auto;
     width: 615px;
-    
+    object-fit: cover;
+    margin: 25px;
+    padding: 0;
 }
 
 .texte {
     background: #D63542;
-    padding: 20px;
-    border-radius: 8px; /* Coins arrondis */
+    border-radius: 20px; /* Coins arrondis */
     color: white;
-
     font-family: Arial, sans-serif;
     text-align: justify;
-    width: 600px; 
-    margin: 20px;
     box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
-  
-
-    background-color: rgba(214, 53, 66, 0.6); /* Couleur semi-transparente */
-    display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 70px;
-    border-radius: 8px;
     backdrop-filter: blur(100px); 
     
 }
@@ -482,6 +475,16 @@ input:focus {
     color :#D63542;
 }
 
+<<<<<<< HEAD
+/*Complement*/
+
+.rounded {
+    border-radius: 20px !important;
+}
+
+.mr-30 {
+    margin-right:30px;
+=======
 /* Pédagogie */
 
 .collection-text {
@@ -524,4 +527,5 @@ input:focus {
     text-align: center;
     border-radius: 8px;
     background-color: #FFB1B6;
+>>>>>>> 7597cd6381292910144c12e28fac28983a471fce
 }
