@@ -1,6 +1,6 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <header>
@@ -13,10 +13,10 @@
             <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav m-auto ">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Accueil</a>
+                        <a class="nav-link" href="../index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calendrier.php">Evènements Calendrier</a>
+                        <a class="nav-link" href="#">Evènements Calendrier</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">MuMo x Pompidou</a>
@@ -27,7 +27,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">À Propos</a>
                     </li>
-                    <a class="icon_nav" href="connexion.php">
+                    <a class="icon_nav" href="Admin/connexion.php">
                         <div class="user-icon">👤</div>
                     </a>
                 </ul>
