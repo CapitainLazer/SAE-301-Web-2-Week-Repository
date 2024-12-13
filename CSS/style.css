@@ -486,20 +486,18 @@ input:focus {
 
 .collection-text {
     background: #D63542;
-    padding: 20px;
-    border-radius: 8px; /* Coins arrondis */
+    border-radius: 8px;
     color: white;
-
     font-family: Arial, sans-serif;
     margin: 20px;
     box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
-  
-
-    background-color: rgba(214, 53, 66, 0.6); /* Couleur semi-transparente */
+    background-color: rgba(214, 53, 66, 0.6);
     gap: 20px;
-    padding: 70px;
+    padding: 50px;
     border-radius: 8px;
     backdrop-filter: blur(100px);
+    height: 100%;
+    margin-top: 0;
 }
 .container {
     max-width: 1200px;
@@ -510,18 +508,27 @@ input:focus {
 .img-fluid{
     width: 500px;
     height: auto;
+    border-radius: 5%;
 }
 
 .card {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin-bottom: 30px;
-}
-
-.card {
     text-align: center;
     border-radius: 8px;
+    background-color: transparent;
+    border: 0;
+}
+
+.card-body {
     background-color: #FFB1B6;
+}
+
+.card-header {
+    background-color: #D63542;
+    width: 25%;
+    color : white;
 }
