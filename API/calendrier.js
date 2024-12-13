@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 start: event.dates_debut,
                                 end: event.dates_fin,
                                 description: event.description_evenements,
-                                location: event.lieu + ', ' + event.ville
+                                location: event.lieu + ', ' + event.ville,
                             }));
                             successCallback(events);
                         }
@@ -30,11 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
             },
+            displayEventTime: false, // Désactiver l'affichage de l'heure
+            displayEventEnd: false, // Désactiver l'heure de fin
             eventClick: function(info) {
                 alert(
                     '' + info.event.title +
-                    '\nDu : ' + info.event.start +
-                    '\nAu : ' + info.event.end +
+                    '\nDu : ' + info.event.start.toLocaleDateString() +
+                    '\nAu : ' + (info.event.end ? info.event.end.toLocaleDateString() : 'Non spécifié') +
                     '\nLieu : ' + info.event.extendedProps.location +
                     '\nDescription : ' + info.event.extendedProps.description
                 );

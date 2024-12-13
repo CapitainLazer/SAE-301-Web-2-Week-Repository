@@ -38,6 +38,13 @@ body {
 .fc .fc-button-primary {
     background-color: #D63542;
     border: 1px solid #D63542;
+    color: #ffe6e6;
+}
+
+.fc:hover .fc-button-primary:hover{
+    background-color: #ffe6e6;
+    border: 1px solid #ffe6e6;
+    color: #D63542;
 }
 
 a {
