@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mumo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="icon" type="image/png" href="images/favicon-mumo.png">
 </head>
 <body>
-    <header>
+    <?php
+        include_once('addon/header.php');
+    ?>
         <iframe src="https://www.youtube.com/watch?v=Us72CpwwGAk" frameborder="0" allowfullscreen></iframe>
-    </header>
-
     
     <div class="content">
         <section class="content">
@@ -84,14 +84,15 @@
         </section>
      </div>             
 
-        <footer>
             <h2>À propos</h2>
             <div class="about">
                 <img src="image_placeholder.jpg" alt="Image à propos 1">
                 <img src="image_placeholder.jpg" alt="Image à propos 2">
                 <img src="image_placeholder.jpg" alt="Image à propos 3">
             </div>
-        </footer>
     </div>
+    <?php
+        include_once('addon/Footer.php');
+    ?>
 </body>
 </html>
