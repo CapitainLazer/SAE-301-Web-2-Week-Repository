@@ -18,6 +18,17 @@
     $resultats=$bdd->query($requete);
     $tabcamion=$resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
+
+    $requete='SELECT * from localisation WHERE id_loc='.$tabEve['id_loc'];
+    $resultats=$bdd->query($requete);
+    $theLieu=$resultats->fetch(PDO::FETCH_ASSOC);
+    $resultats->closeCursor();
+
+    $requete='SELECT * from camion WHERE id_camion='.$tabEve['id_camion'];
+    $resultats=$bdd->query($requete);
+    $theCamion=$resultats->fetch(PDO::FETCH_ASSOC);
+    $resultats->closeCursor();
+
 ?>
 
 
@@ -27,27 +38,41 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page modification d'un évènement</title>
+        <title>Modification d'un évènement</title>
     </head>
     <body>
-        <h1>Page modification d'un évènement</h1>
+        <h1>Modification d'un évènement</h1>
         <main>
-            <form action="modifierProduit.php" method="POST">
-                <p><label for="nom">Nom : <?php echo " ".$tabEve["nom"]; ?></label><br/>
-                <input type="text" name="nom" required value='<?php echo $tabEve["nom"]; ?>'/></p>
+            <form action="AjoutModif.php" method="POST">
+                <p><label for="nom">Nom : <?php echo " ".$tabEve["nom_evenements"]; ?></label><br/>
+                <input type="text" name="nom" required value='<?php echo $tabEve["nom_evenements"]; ?>'/></p>
 
-                <p><label for="prix">Prix : <?php echo " ".$tabEve["prix"]; ?></label><br/>
-                <input type="number" name="prix" required value='<?php echo $tabEve["prix"]; ?>'/></p>
+                <p><label for="dates_debut">Date début : <?php echo " ".$tabEve["dates_debut"]; ?></label><br/>
+                <input type="date" name="dates_debut" required value='<?php echo $tabEve["dates_debut"]; ?>'/></p>
                 
-                <p><label for="descriptions">Description : <?php echo " ".$tabEve["descriptions"]; ?></label><br/>
-                <input type="text" name="descriptions" required value='<?php echo $tabEve["descriptions"]; ?>'/></p>
+                <p><label for="dates_fin">Date fin : <?php echo " ".$tabEve["dates_fin"]; ?></label><br/>
+                <input type="date" name="dates_fin" required value='<?php echo $tabEve["dates_fin"]; ?>'/></p>
+
+                <p><label for="descriptions">Description : <?php echo " ".$tabEve["description_evenements"]; ?></label><br/>
+                <input type="text" name="descriptions" required value='<?php echo $tabEve["description_evenements"]; ?>'/></p>
                 
-                <p><label for="Localisation">Lieu : <?php echo " ".$tabEve["categorie"]; ?></label><br/>
+                <p><label for="Localisation">Lieu : <?php echo " ".$theLieu["lieu"].", ".$theLieu["ville"]." _ ".$theLieu["departement"];?></label><br/>
                 <select name="lieu" required>
                 <?php
                     foreach($tablieu as $lieu):
                 ?>
                     <option value="<?php echo $lieu["id_loc"];?>"><?php echo $lieu["lieu"]." ".$lieu["ville"]." ".$lieu["departement"];?></option>
+                <?php
+                    endforeach;
+                ?>
+                </select></p>
+
+                <p><label for="Camion">Camion : <?php echo " ".$theCamion["nom_camion"];?></label><br/>
+                <select name="camion" required>
+                <?php
+                    foreach($tabcamion as $camion):
+                ?>
+                    <option value="<?php echo $camion["id_camion"];?>"><?php echo $camion["nom_camion"];?></option>
                 <?php
                     endforeach;
                 ?>
