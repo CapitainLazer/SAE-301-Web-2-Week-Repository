@@ -69,6 +69,10 @@ h1{
     cursor: pointer;
 }
 
+.icon_nav {
+    text-decoration: none;
+}
+
 /* Footer */
 
 .footer {
