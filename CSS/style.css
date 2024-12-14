@@ -72,6 +72,17 @@ label{
     font-family: 'Coolvetica';
 }
 
+/*--Mise en forme de la section Chiffres Clés--*/
+.chiffreCle{
+    font-size: 7rem;
+    color: white;
+}
+
+.chiffreCle_texte{
+    font-size: 2rem;
+    color: white;
+}
+
 /* HEADER */
 .header {
     display: flex;
