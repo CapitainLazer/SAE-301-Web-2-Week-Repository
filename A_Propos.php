@@ -94,20 +94,20 @@
     
     
     <!-- Section : Chiffres Clés --  ! pas dans la div "content" car pas de padding pour le fond rouge ! -->
-    <section class="container" style="background: red;">
-        <div class="row d-flex flex-row justify-content-around">
+    <section class="container-fluid" style="background: red; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
+        <div class="row d-flex flex-md-row flex-column justify-content-around">
 
-            <div class="col-4 d-flex flex-column justify-content-center">
+            <div class="col-6 col-md-4 d-flex flex-column align-items-center">
                 <p class="chiffreCle">7</p>
                 <p class="chiffreCle_texte">pays visités</p>
             </div>
 
-            <div class="col-4">
+            <div class="col-6 col-md-4 d-flex flex-column align-items-center">
                 <p class="chiffreCle">270</p>
                 <p class="chiffreCle_texte">Étapes</p>
             </div>
 
-            <div class="col-4">
+            <div class="col-6 col-md-4 d-flex flex-column align-items-center">
                 <p class="chiffreCle">68 K</p>
                 <p class="chiffreCle_texte">enfants accueillis</p>
             </div>
@@ -120,36 +120,185 @@
         
 
         <!-- Section : Nos Artistes -->
-        <div class="section">
+        <section class="container">
+            <h1>Les Artistes</h1>
+            <p>Depuis sa création, le MuMo (le Musée Mobile) a donné à voir et à découvrir les projets spécifiques de 21 artistes, 
+                qui sont autant d'acteurs majeurs de la scène contemporaine internationale. </p>
+            <br>
+            <div class="row d-flex flex-row"><!--rangement en lignes "rows" -->
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/ghada_amer.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Ghada AMER</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/john_baldessari.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">John BALDESSARI</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/daniel_buren.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Daniel BUREN</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/maurizio_cattelan.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Maurizio CATTELAN</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/florence_doleac.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Florence DOLÉAC</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/pierre_huyghe.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Pierre HUYGHE</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/paul_mccarthy.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Paul McCARTHY</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/roman_signer.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Roman SIGNER</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/james_turrell.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">James TURRELL</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/tursic_ mille.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Ida Tursic & Wilfried Mille</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/nari_ward.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Nari WARD</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                    <img src="./images/artistes/lawrence_weiner.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lawrence WEINER</p>
+                    </div>
+                </div>
+
+            </div>
             
-        </div>
+        </section>
+
+        <!-- Section : Les publications -->
+        <section class="container">
+            <h1>Les Publications</h1>
+            <br>
+            <div class="row d-flex flex-row justify-content-center gap-5"><!--rangement en lignes "rows" -->
+
+                <div class="card" style="width: 22rem;"><!--div Volume 1-->
+                    <img src="./images/volume1.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 1">
+                    <div class="card-body">
+                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 1</h4>
+                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem;"><!--div Volume 2-->
+                    <img src="./images/volume2.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 2">
+                    <div class="card-body">
+                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 2</h4>
+                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem;"><!--div Volume 3-->
+                    <img src="./images/volume3.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 3">
+                    <div class="card-body">
+                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 3</h4>
+                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
 
         <!-- Section : Los Oeuvres -->
         <section class="container">
-            <div class="row">
+            <div class="row d-flex flex-column">
 
-            <div class="col-6">
-                <h1>Les oeuvres</h1>
-                <p>Chacun des artistes sollicités a réalisé ou choisi une œuvre en direction du MuMo en tenant compte d'un contexte singulier : 
-                    penser l'oeuvre dans un espace limité, prendre en compte les contraintes liées à l'itinérance du container, 
-                    mais surtout imaginer la confrontation des enfants avec leurs créations.
-                </p>
-            </div>
-
-            <div class="about-images col-6">
-
-                <div class="image-card">
-                    <img src="./images/oeuvre1.png" alt="">
+                <div class="col-6">
+                    <h1>Les oeuvres</h1>
+                    <p>Chacun des artistes sollicités a réalisé ou choisi une œuvre en direction du MuMo en tenant compte d'un contexte singulier : 
+                        penser l'oeuvre dans un espace limité, prendre en compte les contraintes liées à l'itinérance du container, 
+                        mais surtout imaginer la confrontation des enfants avec leurs créations.
+                    </p>
                 </div>
 
-                <div class="image-card">
-                    <img src="./images/oeuvre2.png" alt="">
-                </div>
+                <div class="d-flex flex-row about-images">
 
-                <div class="image-card">
-                    <img src="./images/oeuvre3.png" alt="">
-                </div>
-            </div> 
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre1.png" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre2.png" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre3.png" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre4.webp" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre5.webp" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre6.webp" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre7.webp" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre8.webp" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./images/oeuvres/oeuvre9.webp" class="card-img-top" alt="">
+                    </div>
+
+                </div> 
 
             </div>         
         </section>
