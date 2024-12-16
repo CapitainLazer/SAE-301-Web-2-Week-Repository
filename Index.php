@@ -2,7 +2,11 @@
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
-    $requete = 'SELECT * FROM evenements ORDER BY dates_debut DESC LIMIT 3';
+    $requete = 'SELECT nom_evenements, 
+        DATE_FORMAT(dates_debut, "%d/%m/%Y") AS dates_debut, 
+        DATE_FORMAT(dates_fin, "%d/%m/%Y") AS dates_fin, 
+        description_evenements
+        FROM evenements ORDER BY dates_debut DESC LIMIT 3';
     $resultats = $bdd->query($requete);
     $tabEvenement = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
@@ -55,7 +59,7 @@
                         <h3><?php echo $Evenement["nom_evenements"]?></h3>
                         <p><?php echo "Du ".$Evenement["dates_debut"]." au ".$Evenement["dates_fin"]; ?></p>
                         <p><?php echo $Evenement["description_evenements"]?> </p>
-                        <button>Voir plus</button>
+                        <a href="calendrier.php"><button>Voir plus</button></a>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -87,9 +91,7 @@
                     </div>
                 
                 </section>
-                    <div class="bouton">
-                        <button class="h">Voir plus</button>
-                    </div>
+                    <a href="pompidou.php"class="bouton"><button class="h">Voir plus</button></a>
             </div>
         </div>
 
@@ -113,9 +115,7 @@
                     <p>Six Dogs Jumping (2012)<br><span>John Baldessari</span></p>
                 </div>
             </div>
-            <div class="bouton">
-                <button class="h">Voir plus</button>
-            </div>
+            <a href="A_Propos.php" class="bouton"><button class="h">Voir plus</button></a>
         </section>
     </div>
     <?php include_once('addon/Footer.php');?>
