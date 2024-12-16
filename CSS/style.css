@@ -106,7 +106,14 @@ label{
     }
 }
 
+.livreMuMo:hover{
+    filter: contrast(170%);
+    transition: 0.3s;
+}
 
+.card-body{
+    color: black;
+}
 /* HEADER */
 .header {
     display: flex;
