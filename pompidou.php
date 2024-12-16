@@ -13,7 +13,7 @@
     <div class="container">
         <section class="content">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 info2">
                     <div class="collection-info">
                         <img src="images/mumo.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
                     </div>
@@ -31,7 +31,7 @@
         </section>
         <section class="content">
             <div class="row2">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card2">
                         <div class="card-body2">
                             <h2 class="card-title">39000</h2>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card2">
                         <div class="card-body2">
                             <h2 class="card-title">83%</h2>
@@ -51,7 +51,7 @@
         </section>
         <section class="content">
             <div class="row2">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card2">
                         <div class="card-body2">
                             <h2 class="card-title">50%</h2>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card2">
                         <div class="card-body2">
                             <h2 class="card-title">1 enfant sur 3</h2>
@@ -88,7 +88,7 @@
         </section>
         <section class="content">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 info2">
                     <div class="collection-info">
                         <img src="images/interview.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
                     </div>
