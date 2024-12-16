@@ -7,29 +7,17 @@
     <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
 </head>
 <body>
-
-    <?php //inclus le Header
-    include_once('addon/header.php');
-    ?>
-
+    <?php include_once('addon/header.php');?>
     <main class="decoImg">
-        <!--<img src="images/camion_MuMo.png" style="width: 100vw; filter: brightness(0.4); z-index: -1;"></img>-->
-
         <!--Le Formulaire de contacts-->
         <section id="zoneFormulaire" class="container rounded">
             <h1>Contactez<stlyle style='font-family: Arial;'>-</stlyle>nous</h1> <!--Modification de la police pour le tiret " - " -->
-                <form method="post" class="row d-flex flex-column justify-content-center">
+                <form action="validationcontact.php" method="POST" class="row d-flex flex-column justify-content-center">
 
                     <div class="col-10 my-3">
-                        <label class="nomChampFormulaire">Nom</label>
+                        <label class="nomChampFormulaire">Nom & Prénom</label>
                         <br>
-                        <input class="w-100" type="text" name="userNom" required placeholder="Nom">
-                    </div>
-
-                    <div class="col-10 my-3">
-                        <label class="nomChampFormulaire">Prénom</label>
-                        <br>
-                        <input class="w-100" type="text" name="userPrenom" required placeholder="Prénom">
+                        <input class="w-100" type="text" name="userNom" required placeholder="Nom & Prénom">
                     </div>
 
                     <div class="col-10 my-3">
@@ -53,7 +41,7 @@
                     <div class="col-10 my-3">
                         <label class="nomChampFormulaire">Date</label>
                         <br>
-                        <input class="w-100" type="date" name="dateMessage" required>
+                        <input class="w-100" type="date" name="dateMessage" required value="">
                     </div>
 
                     <div class="col-10 my-3">
@@ -79,13 +67,7 @@
                     </div>
                 </form>
         </section>
-</main>
-
-    <footer>   
-        <?php
-        include_once('addon/Footer.php');
-        ?>
-    </footer>
-    
+    </main>
+    <?php include_once('addon/Footer.php');?>
 </body>
 </html>
