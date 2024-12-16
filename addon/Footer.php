@@ -8,7 +8,7 @@
             <ul class="foot flex-row">
                 <li><a href="#" class="foot-link">Partenaires</a></li>
                 <li><a href="Contact.php" class="foot-link">Contact</a></li>
-                <li><a href="#" class="foot-link">Archives</a></li>
+                <li><a href="archives.php" class="foot-link">Archives</a></li>
             </ul>
             <ul class="foot flex-row">
                 <li><a class="logo-footer" href="https://www.facebook.com/mumoxcentrepompidou/"><img src="images/facebook-new.png"></a></li>
