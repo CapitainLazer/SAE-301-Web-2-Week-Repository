@@ -104,15 +104,15 @@
             <p>Quelques-unes de nos œuvres.</p>
             <div class="about-images">
                 <div class="image-card">
-                    <img src="./images/oeuvre1.png" alt="">
+                    <img src="./images/oeuvres/oeuvre1.png" alt="">
                     <p>Immagine (2011)<br><span>Maurizio Cattelan</span></p>
                 </div>
                 <div class="image-card">
-                    <img src="./images/oeuvre2.png" alt="">
+                    <img src="./images/oeuvres/oeuvre2.png" alt="">
                     <p>MapaMapa (2013)<br><span>Sébastien Cordoléani</span></p>
                 </div>
                 <div class="image-card">
-                    <img src="./images/oeuvre3.png" alt="">
+                    <img src="./images/oeuvres/oeuvre3.png" alt="">
                     <p>Six Dogs Jumping (2012)<br><span>John Baldessari</span></p>
                 </div>
             </div>
