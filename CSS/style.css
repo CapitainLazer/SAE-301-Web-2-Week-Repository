@@ -319,6 +319,16 @@ label{
     z-index: -1; /* Placer derrière le texte */
 }
 
+.archives {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+
+.videoarchi{
+    padding: 1%;
+}
+
 .section {
    display: flex;
    flex-direction: column;
