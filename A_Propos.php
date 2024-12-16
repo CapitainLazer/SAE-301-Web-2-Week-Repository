@@ -13,7 +13,7 @@
 
     <div class="content">
         <!-- Section : L'équipe du Musée -->
-            <p class="container">
+            <p class="container card shadow">
                 Né de la conviction que l'art est un outil d'ouverture, de partage et d'éveil au monde, MuMo est un musée mobile destiné 
                 à aller à la rencontre des enfants, en particulier ceux qui se trouvent éloignés de l'accès à la culture,
                 en se rendant directement sur leur lieu de vie : cour d'école, centre de loisirs, parking d'un quartier...<br>
@@ -94,7 +94,7 @@
     
     
     <!-- Section : Chiffres Clés --  ! pas dans la div "content" car pas de padding pour le fond rouge ! -->
-    <section class="container-fluid" style="background: #d63542; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
+    <section class="container-fluid shadow" style="background: #d63542; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
         <div class="row d-flex flex-md-row flex-column justify-content-around">
 
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
@@ -218,7 +218,7 @@
         <section class="container">
             <h1>Les Publications</h1>
             <br>
-            <div class="row d-flex flex-row justify-content-center gap-5"><!--rangement en lignes "rows" -->
+            <div class="row d-flex flex-row justify-content-center gap-5 card-group"><!--rangement en lignes "rows" -->
 
                 <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 1-->
                     <a href="https://www.lespressesdureel.com/ouvrage.php?id=2698&menu=0" style="text-decoration: none;">
@@ -256,7 +256,7 @@
     </div>
 
         <!-- Section : Le Film -->
-        <section class="container-fluid" style="max-width: 1920px;">
+        <section class="container-fluid shadow" style="max-width: 1920px;">
             <div class="row d-flex flex-md-row flex-column" style="background: #d63542; color: white;">
                 <div class="col-md-7 col-12 texteFilm">
                     <h1>Le film</h1>

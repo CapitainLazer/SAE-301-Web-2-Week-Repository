@@ -6,7 +6,7 @@
     </p><br>
         <div class="row">
             <ul class="foot flex-row">
-                <li><a href="#" class="foot-link">Partenaires</a></li>
+                <li><a href="Sponsors.php" class="foot-link">Partenaires</a></li>
                 <li><a href="Contact.php" class="foot-link">Contact</a></li>
                 <li><a href="archives.php" class="foot-link">Archives</a></li>
             </ul>
