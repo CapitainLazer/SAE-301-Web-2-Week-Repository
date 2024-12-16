@@ -67,11 +67,13 @@ label{
 .chiffreCle{
     font-size: 7rem;
     color: white;
+    text-shadow: 5px 5px 5px rgb(46, 46, 46);
 }
 
 .chiffreCle_texte{
     font-size: 2rem;
     color: white;
+    text-shadow: 5px 5px 5px rgb(46, 46, 46);
 }
 
 /*--Mise ne forme de la section Le Film--*/
@@ -85,7 +87,8 @@ label{
 
 .livreMuMo:hover{
     filter: contrast(170%);
-    transition: 0.3s;
+    transition: 0.5s;
+    scale: 1.05;
 }
 
 .card-body{
