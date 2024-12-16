@@ -662,6 +662,10 @@ input:focus {
     margin: 10px;
 }
 
+.letter-spacing-15{
+    letter-spacing: 0.15rem;
+}
+
 .card-body2 {
     align-items: center;
     color: #006400; 
