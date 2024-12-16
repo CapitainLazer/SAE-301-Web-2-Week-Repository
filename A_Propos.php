@@ -13,7 +13,7 @@
 
     <div class="content">
         <!-- Section : L'équipe du Musée -->
-            <p>
+            <p class="container">
                 Né de la conviction que l'art est un outil d'ouverture, de partage et d'éveil au monde, MuMo est un musée mobile destiné 
                 à aller à la rencontre des enfants, en particulier ceux qui se trouvent éloignés de l'accès à la culture,
                 en se rendant directement sur leur lieu de vie : cour d'école, centre de loisirs, parking d'un quartier...<br>
@@ -38,49 +38,49 @@
             <br>
             <div class="row d-flex flex-row">
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/ingrid_brochard.jpg" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/ingrid_brochard.png" class="card-img-top" alt="photo de Ingrid Brochard, fondatrice du MuMo.">
                     <div class="card-body">
                         <p class="card-text">Ingrid BROCHARD | Fondatrice du MuMo</p>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/rudy_boublil.webp" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/rudy_boublil.png" class="card-img-top" alt="photo de Rudy Boublil, président du MuMo.">
                     <div class="card-body">
                         <p class="card-text">Rudy BOUBLIL | Président</p>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/jonathan_gervoson.webp" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/jonathan_gervoson.png" class="card-img-top" alt="photo de Jonathan Gervoson, secrétaire au sein de l'équipe du MuMo">
                     <div class="card-body">
                         <p class="card-text">Jonathan GERVOSON | Secrétaire</p>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/lucie_avril.jpg" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/lucie_avril.png" class="card-img-top" alt="photo de Lucie Avril, directrice opérationnelle pour le MuMo.">
                     <div class="card-body">
                         <p class="card-text">Lucie AVRIL | Directrice opérationnelle</p>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/pp_parDefaut.jpg" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/pp_parDefaut.jpg" class="card-img-top" alt="photo de substitution en l'absence d'une photo officielle de Arno Deva, directeur artisitique du MuMo.">
                     <div class="card-body">
                         <p class="card-text">Arno DEVO | Directeur artistique</p>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/louise_harrewyn.jpg" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/louise_harrewyn.png" class="card-img-top" alt="photo de Louise Harrewyn, reponsable opérationnelle pour le MuMo.">
                     <div class="card-body">
                         <p class="card-text">Louise HARREWYN | Responsable opérationnelle & Contact MuMo x Centre Pompidou</p>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
-                    <img src="./images/equipeMusee/clemence_renaud.jpg" class="card-img-top" alt="...">
+                    <img src="./images/equipeMusee/clemence_renaud.png" class="card-img-top" alt="Clémence Renaud, coordinatrice du MuMo avec les partenaires.">
                     <div class="card-body">
                         <p class="card-text">Clémence RENAUD | Coordinatrice du MuMo dédié aux Frac</p>
                     </div>
@@ -127,86 +127,86 @@
             <br>
             <div class="row d-flex flex-row"><!--rangement en lignes "rows" -->
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/ghada_amer.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Ghada AMER</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/john_baldessari.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">John BALDESSARI</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/daniel_buren.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Daniel BUREN</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/maurizio_cattelan.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Maurizio CATTELAN</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/florence_doleac.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Florence DOLÉAC</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/pierre_huyghe.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Pierre HUYGHE</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/paul_mccarthy.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Paul McCARTHY</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/roman_signer.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Roman SIGNER</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/james_turrell.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">James TURRELL</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/tursic_ mille.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Ida Tursic & Wilfried Mille</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/nari_ward.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Nari WARD</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/lawrence_weiner.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body mt-4">
                         <p class="card-text">Lawrence WEINER</p>
                     </div>
                 </div>

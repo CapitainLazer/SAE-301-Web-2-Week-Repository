@@ -1,23 +1,38 @@
-let tabs = document.querySelectorAll('tab-link:not(.desactive)');
+document.addEventListener('DOMContentLoaded', () => {
+const connexionElement = document.querySelector('.connexion');
+const inscriptionElement = document.querySelector('.inscription');
 
-tabs.forEach(tab=> {
-    tab.addEventListener('click', ()=> {
-        unSelectAll();
-        tab.classList.add('active');
-        let ref = tab.getAttribute('data-ref');
-        document.querrySelector(`tab-body[data-id="${ref}"]`).classList.add("active");
-    });
+const connexionLink = document.querySelector('.link-connexion');
+const inscriptionLink = document.querySelector('.link-inscription');
+
+/**
+ * Changer l'état des liens et des formulaires au click
+ */
+function changeStatus(){
+  if(connexionElement.classList.contains('hidden')){
+    connexionElement.classList.remove('hidden');
+    inscriptionElement.classList.add('hidden');
+
+    inscriptionLink.classList.remove('hidden');
+    connexionLink.classList.add('hidden');
+  }else{
+    inscriptionElement.classList.remove('hidden');
+    connexionElement.classList.add('hidden');
+
+    connexionLink.classList.remove('hidden');
+    inscriptionLink.classList.add('hidden');
+  }
+}
+
+
+/**
+ * Ajout des listener
+ */
+connexionLink.addEventListener("click", changeStatus());
+inscriptionLink.addEventListener("click", changeStatus());
+ 
 });
 
-function unSelectAll(){
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    let tabbodies = document.querySelectorAll(".tab-body");
-    tabbodies.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-  }
-  
-  document.querySelector(".tab-link.active").click();
-  
+
+
+
