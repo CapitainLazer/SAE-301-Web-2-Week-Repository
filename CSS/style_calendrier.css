@@ -1,9 +1,4 @@
-body {
-    font-family: 'Coolvetica';
-    background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
-}
-
-#calendar {
+#calendrier {
     margin: 0 auto;
     padding: 20px;
     color: black !important;
@@ -25,11 +20,6 @@ body {
     color: black !important;
 }
 
-@font-face {
-    font-family: 'Coolvetica';
-    src: url("../fonts/Coolvetica_Rg.otf");
-}
-
 .fc-view-harness {
     background-color: #ffe6e6;
 }
@@ -46,17 +36,13 @@ body {
     color: #D63542;
 }
 
-a {
-    text-decoration: none !important;
-}
-
 @media (max-width: 768px) {
-    #calendar {
+    #calendrier {
         min-height: 535px;
     }
 }
 @media (min-width: 769px) {
-    #calendar {
+    #calendrier {
         max-height: auto;
         max-width: 900px;
     }

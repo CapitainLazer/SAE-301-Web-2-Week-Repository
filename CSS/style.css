@@ -14,8 +14,8 @@ body {
     background: linear-gradient(#ffe6e6, #ffb1b6, 40%, #e66771, 91%, #d20808);
 }
 
-a{
-    text-decoration: none;
+a {
+    text-decoration: none !important;
 }
 
 /*La police des titres*/
