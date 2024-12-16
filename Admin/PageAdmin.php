@@ -179,16 +179,55 @@
             </form>
         </div>
 
+        <!-- Section Archives -->
+        <h2 onclick="toggleSection('archives')">Archives</h2>
+        <div id="archives" class="content">
+            <h3>Ajout dans les archives</h3>
+            <form action="ajouter.php" method="POST">
+                Lien de le l'image ou de la vidéo : <input type="text" name="lien" required /><br>
+                Description : <input type="text" name="description"/><br>
+                <input type="hidden" name=choix value="archives">
+                <input type="submit" value="Ajouter dans les archives"/>
+            </form>
+        </div>
+
+        <!-- Section Sponsors -->
+        <h2 onclick="toggleSection('sponsors')">Partenaires</h2>
+        <div id="sponsors" class="content">
+            <h3>Ajout d'un partenaire</h3>
+            <form action="ajouter.php" method="POST">
+                Nom du partenaire : <input type="text" name="nom" required /><br>
+                Lien du logo : <input type="text" name="nom" required /><br>
+                Description : <input type="text" name="nom" required /><br>
+                <fieldset>
+                    <legend>Selectioner la catégorie :</legend>
+                    <div>
+                        <input type="radio" id="Mécènes" name="categorie" value="Mécènes"/>
+                        <label for="Mécènes">Mécènes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Partenaires" name="categorie" value="Partenaires" checked/>
+                        <label for="Partenaires">Partenaires</label>
+                    </div>
+                </fieldset>
+                <input type="hidden" name=choix value="sponsors">
+                <input type="submit" value="Ajouter un partenaire"/>
+            </form>
+        </div>
+
         <script>
             // Fonction pour afficher/masquer une section
             function toggleSection(sectionId) {
                 const section = document.getElementById(sectionId);
                 if (section.style.display === 'none' || section.style.display === '') {
-                    section.style.display = 'block'; // Affiche
-                } else {
-                    section.style.display = 'none'; // Masque
+                    section.style.display = 'block';
+                }
+                else {
+                    section.style.display = 'none';
                 }
             }
         </script>
+        <br><br>
+        <a href="ListeContact.php"><button>Voir les demandes de contact</button></a>
     </body>
 </html>

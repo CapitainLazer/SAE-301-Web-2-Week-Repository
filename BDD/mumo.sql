@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 12 déc. 2024 à 09:04
+-- Généré le : lun. 16 déc. 2024 à 14:17
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -48,7 +48,7 @@ INSERT INTO `admin` (`id_admin`, `mail`, `mdp`) VALUES
 
 CREATE TABLE `archive` (
   `id_archive` int(11) NOT NULL,
-  `description` varchar(50) DEFAULT NULL,
+  `descriptions` varchar(50) DEFAULT NULL,
   `lien` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -56,7 +56,7 @@ CREATE TABLE `archive` (
 -- Déchargement des données de la table `archive`
 --
 
-INSERT INTO `archive` (`id_archive`, `description`, `lien`) VALUES
+INSERT INTO `archive` (`id_archive`, `descriptions`, `lien`) VALUES
 (1, '', 'https://youtu.be/SFd3VuDmUCg'),
 (2, ' ', 'https://youtu.be/IKBTd2hFF50'),
 (3, ' ', 'https://youtu.be/ljSe7mfJY6Y'),
@@ -128,6 +128,17 @@ CREATE TABLE `contact` (
   `telephone` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `contact`
+--
+
+INSERT INTO `contact` (`id_contact`, `mail`, `nom`, `messages`, `dates`, `object`, `telephone`) VALUES
+(1, 'test@mail.com', 'Coutant', 'test lien poo et bdd', '2024-12-02', 'test', '0610034287'),
+(2, 'testredirection@mail.com', 'Coutant', 'pourquoi ça marche pas ', '2024-12-16', 'test redirection', '0652442223'),
+(3, 'keraval.gwenael@mail.com', 'Keraval', 'contact pour une intervention dans la ville de Pontivy ', '2024-12-16', 'Demande de venu dans la ville de Pontivy', '0786947585'),
+(5, 'test@mail.com', 'test', 'test', '2024-12-13', 'test', '0615050406'),
+(6, 'test@mail.com', 'test', 'test', '2024-12-16', 'test', '2503689475');
+
 -- --------------------------------------------------------
 
 --
@@ -137,11 +148,11 @@ CREATE TABLE `contact` (
 CREATE TABLE `evenements` (
   `id_eve` int(11) NOT NULL,
   `nom_evenements` varchar(50) DEFAULT NULL,
-  `dates_debut` date DEFAULT NULL,
+  `dates_debut` datetime DEFAULT NULL,
   `description_evenements` varchar(8000) DEFAULT NULL,
   `id_loc` int(11) NOT NULL,
   `id_camion` int(11) NOT NULL,
-  `dates_fin` date NOT NULL
+  `dates_fin` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -149,13 +160,14 @@ CREATE TABLE `evenements` (
 --
 
 INSERT INTO `evenements` (`id_eve`, `nom_evenements`, `dates_debut`, `description_evenements`, `id_loc`, `id_camion`, `dates_fin`) VALUES
-(1, 'Le dessin dans tous ses états', '2024-12-02', 'Portes ouvertes mardi 3 décembre de 16h45 à 18h', 1, 2, '2024-12-04'),
-(2, 'Le dessin dans tous ses états', '2024-12-09', 'Portes ouvertes lundi 9 décembre de 16h45 à 18h', 2, 2, '2024-12-09'),
-(3, 'Le dessin dans tous ses états', '2024-12-10', 'Portes ouvertes mercredi 11 décembre de 16h à 18h', 3, 2, '2024-12-11'),
-(4, 'Le dessin dans tous ses états', '2024-12-12', 'Portes ouvertes le vendredi 13, le lundi 16 décembre de 15h30 à 17h00 et le mercredi 18 décembre de 15h30 à 18h', 4, 2, '2024-12-18'),
-(5, 'Le dessin dans tous ses états', '2024-12-19', 'Portes ouvertes le samedi 21 décembre de 10h30 à 12h puis de 14h à 17h30', 5, 2, '2024-12-24'),
-(6, 'Le dessin dans tous ses états', '2024-12-26', 'Portes ouvertes le jeudi 26 et vendredi 27 décembre de 10h à 12h puis de 14h à 17h', 6, 2, '2024-12-27'),
-(7, 'Le dessin dans tous ses états', '2024-12-30', 'Portes ouvertes le lundi 30, le mardi 31 décembre de 16h à 18h, le mercredi 1er janvier de 10h à 12h puis de 14h à 17h, le jeudi 2 janvier de 15h à 17h et le vendredi 3 janvier de 16h à 18h', 7, 2, '2025-01-03');
+(1, 'Le dessin dans tous ses états Miramont de Guyenne', '2024-12-02 00:00:00', 'Portes ouvertes mardi 3 décembre de 16h45 à 18h', 1, 2, '2024-12-04 23:59:00'),
+(2, 'Le dessin dans tous ses états Saint-Bonnet-de-Bell', '2024-12-09 00:00:00', 'Portes ouvertes lundi 9 décembre de 16h45 à 18h', 2, 2, '2024-12-09 23:59:00'),
+(3, 'Le dessin dans tous ses états Le Dorat', '2024-12-10 00:00:00', 'Portes ouvertes mercredi 11 décembre de 16h à 18h', 3, 2, '2024-12-11 23:59:00'),
+(4, 'Le dessin dans tous ses états Limoges', '2024-12-12 00:00:00', 'Portes ouvertes le vendredi 13, le lundi 16 décembre de 15h30 à 17h00 et le mercredi 18 décembre de 15h30 à 18h', 4, 2, '2024-12-18 23:59:00'),
+(5, 'Le dessin dans tous ses états Limoges', '2024-12-19 00:00:00', 'Portes ouvertes le samedi 21 décembre de 10h30 à 12h puis de 14h à 17h30', 5, 2, '2024-12-24 23:59:00'),
+(6, 'Le dessin dans tous ses états Limoges', '2024-12-26 00:00:00', 'Portes ouvertes le jeudi 26 et vendredi 27 décembre de 10h à 12h puis de 14h à 17h', 6, 2, '2024-12-27 23:59:00'),
+(7, 'Le dessin dans tous ses états Agen', '2024-12-30 00:00:00', 'Portes ouvertes le lundi 30, le mardi 31 décembre de 16h à 18h, le mercredi 1er janvier de 10h à 12h puis de 14h à 17h, le jeudi 2 janvier de 15h à 17h et le vendredi 3 janvier de 16h à 18h', 7, 2, '2025-01-03 23:59:00'),
+(11, "C'est tout un art", '2025-01-20 00:00:00', 'test modif', 5, 2, '2025-01-31 23:59:00');
 
 -- --------------------------------------------------------
 
@@ -187,12 +199,12 @@ CREATE TABLE `localisation` (
 --
 
 INSERT INTO `localisation` (`id_loc`, `lieu`, `departement`, `ville`) VALUES
-(1, 'Devant l\'ancienne caserme de pompiers - Au bout du', '47 - Lot et Garonne', 'Miramont de Guyenne'),
+(1, "Devant l\'ancienne caserme de pompiers - Au bout du", '47 - Lot et Garonne', 'Miramont de Guyenne'),
 (2, 'Place du Champs de Foire', '87 - Haute Vienne', 'Saint-Bonnet-de-Bellac'),
 (3, 'Place François Mitterrand', '87 - Haute Vienne', 'Le Dorat'),
 (4, 'Place Beaubreuil - A côté de la Maison des ARts et', '87 - Haute Vienne', 'Limoges'),
 (5, 'Devant la salle municipale du Vigenal - 5 rue Geor', '87 - Haute Vienne', 'Limoges'),
-(6, 'Devant le BFM du Val de l\'Aurence', '87 - Haute Vienne', 'Limoges'),
+(6, "Devant le BFM du Val de l'Aurence", '87 - Haute Vienne', 'Limoges'),
 (7, 'Quai du Gravier', '47 - Lot et Garonne', 'Agen');
 
 -- --------------------------------------------------------
@@ -205,7 +217,7 @@ CREATE TABLE `sponsors` (
   `id_sponsors` int(11) NOT NULL,
   `nom` varchar(50) DEFAULT NULL,
   `lien` varchar(50) DEFAULT NULL,
-  `description` varchar(50) DEFAULT NULL,
+  `descriptions` varchar(50) DEFAULT NULL,
   `categorie` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -213,13 +225,13 @@ CREATE TABLE `sponsors` (
 -- Déchargement des données de la table `sponsors`
 --
 
-INSERT INTO `sponsors` (`id_sponsors`, `nom`, `lien`, `description`, `categorie`) VALUES
-(1, 'Bolloré', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'Créé en 1822, le Groupe Bolloré figure aujourd\'hui', 'Mécènes'),
+INSERT INTO `sponsors` (`id_sponsors`, `nom`, `lien`, `descriptions`, `categorie`) VALUES
+(1, 'Bolloré', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', "Créé en 1822, le Groupe Bolloré figure aujourd'hui", 'Mécènes'),
 (2, 'Fondation Daniel & Nina Carasso', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation Daniel et Nina Carasso a été créée dé', 'Mécènes'),
-(3, 'Fondation d\'entreprise TOTAL', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation Total est partenaire de grandes insti', 'Mécènes'),
+(3, "Fondation d'entreprise TOTAL", 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation Total est partenaire de grandes insti', 'Mécènes'),
 (4, 'Fondation PSA PEUGEOT CITROËN', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation PSA Peugeot Citroën, lancée en 2011, ', 'Mécènes'),
 (5, 'Ministère de la culture et de la communication', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', '', 'Partenaires'),
-(6, 'Ministère de l\'Éducation Nationale, de l\'Enseignem', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', '', 'Partenaires'),
+(6, "Ministère de l'Éducation Nationale, de l'Enseignem", 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', '', 'Partenaires'),
 (7, 'UNESCO', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
 (8, 'ASHOKA', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
 (9, 'Préfet de la Région Île-de-France', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
@@ -228,7 +240,7 @@ INSERT INTO `sponsors` (`id_sponsors`, `nom`, `lien`, `description`, `categorie`
 (12, 'ATD Quart Monde', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
 (13, 'PLATFORM', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
 (14, 'Ministère de la Jeunesse, des Sports et de la Vie ', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(15, 'La France s\'Engage', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'Le MuMo lauréat de La France s\'engage! Le MuMo com', 'Partenaires'),
+(15, "La France s'Engage", 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', "Le MuMo lauréat de La France s'engage! Le MuMo com", 'Partenaires'),
 (16, 'Centre national des arts plastiques', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires');
 
 -- --------------------------------------------------------
@@ -277,7 +289,8 @@ INSERT INTO `type_evenement` (`id_type_evenement`, `id_eve`, `id_type`) VALUES
 (8, 5, 2),
 (9, 6, 1),
 (10, 7, 1),
-(11, 7, 2);
+(11, 7, 2),
+(14, 11, 2);
 
 --
 -- Index pour les tables déchargées
@@ -375,7 +388,7 @@ ALTER TABLE `archive`
 -- AUTO_INCREMENT pour la table `camion`
 --
 ALTER TABLE `camion`
-  MODIFY `id_camion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_camion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `compte`
@@ -387,13 +400,13 @@ ALTER TABLE `compte`
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id_contact` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_contact` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT pour la table `evenements`
 --
 ALTER TABLE `evenements`
-  MODIFY `id_eve` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_eve` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `likes`
@@ -423,7 +436,7 @@ ALTER TABLE `types`
 -- AUTO_INCREMENT pour la table `type_evenement`
 --
 ALTER TABLE `type_evenement`
-  MODIFY `id_type_evenement` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_type_evenement` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Contraintes pour les tables déchargées
