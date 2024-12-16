@@ -94,7 +94,7 @@
     
     
     <!-- Section : Chiffres Clés --  ! pas dans la div "content" car pas de padding pour le fond rouge ! -->
-    <section class="container-fluid" style="background: red; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
+    <section class="container-fluid" style="background: #d63542; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
         <div class="row d-flex flex-md-row flex-column justify-content-around">
 
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
@@ -118,7 +118,6 @@
 
     <div class="content"><!--padding pour les marges des section suivantes ...-->
         
-
         <!-- Section : Nos Artistes -->
         <section class="container">
             <h1>Les Artistes</h1>
@@ -129,84 +128,84 @@
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/ghada_amer.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Ghada AMER</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/john_baldessari.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">John BALDESSARI</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/daniel_buren.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Daniel BUREN</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/maurizio_cattelan.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Maurizio CATTELAN</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/florence_doleac.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Florence DOLÉAC</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/pierre_huyghe.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Pierre HUYGHE</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/paul_mccarthy.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Paul McCARTHY</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/roman_signer.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Roman SIGNER</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/james_turrell.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">James TURRELL</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/tursic_ mille.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Ida Tursic & Wilfried Mille</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/nari_ward.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Nari WARD</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
                     <img src="./images/artistes/lawrence_weiner.webp" class="card-img-top" alt="...">
-                    <div class="card-body mt-4">
+                    <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Lawrence WEINER</p>
                     </div>
                 </div>
@@ -221,47 +220,66 @@
             <br>
             <div class="row d-flex flex-row justify-content-center gap-5"><!--rangement en lignes "rows" -->
 
-                <div class="card" style="width: 22rem;"><!--div Volume 1-->
-                    <img src="./images/volume1.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 1">
-                    <div class="card-body">
-                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 1</h4>
-                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
-                    </div>
+                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 1-->
+                    <a href="https://www.lespressesdureel.com/ouvrage.php?id=2698&menu=0" style="text-decoration: none;">
+                        <img src="./images/volume1.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 1">
+                        <div class="card-body">
+                            <h4 class="card-title">MuMo - le Musée Mobile - Volume 1</h4>
+                            <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card" style="width: 22rem;"><!--div Volume 2-->
-                    <img src="./images/volume2.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 2">
-                    <div class="card-body">
-                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 2</h4>
-                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
-                    </div>
+                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 2-->
+                    <a href="https://www.lespressesdureel.com/ouvrage.php?id=3011" style="text-decoration: none;">
+                        <img src="./images/volume2.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 2">
+                        <div class="card-body">
+                            <h4 class="card-title">MuMo - le Musée Mobile - Volume 2</h4>
+                            <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card" style="width: 22rem;"><!--div Volume 3-->
-                    <img src="./images/volume3.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 3">
-                    <div class="card-body">
-                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 3</h4>
-                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
-                    </div>
+                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 3-->
+                    <a href="https://www.lespressesdureel.com/ouvrage.php?id=3863 " style="text-decoration: none;">
+                        <img src="./images/volume3.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 3">
+                        <div class="card-body">
+                            <h4 class="card-title">MuMo - le Musée Mobile - Volume 3</h4>
+                            <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                        </div>
+                    </a>
                 </div>
             </div>
             
         </section>
 
-        <!-- Section : Le Film -->
-        <section class="container">
-            <div>
-                <h1>Le film</h1>
-                <p></p>
-            </div>
+    </div>
 
+        <!-- Section : Le Film -->
+        <section class="container-fluid" style="max-width: 1920px;">
+            <div class="row d-flex flex-md-row flex-column" style="background: #d63542; color: white;">
+                <div class="col-md-7 col-12 texteFilm">
+                    <h1>Le film</h1>
+                    <h4>Les aventures de MuMo, le Musée Mobile</h4>
+                    <p>Trois documentaires de 26 minutes chacun ont été produits par a.p.r.e.s Production et réalisés par Gilles Coudert.
+                    Un film pour le cinéma a ensuite été monté à partir de ces documentaires, et distribué dans le réseau des salles et 
+                    les festivals. Edité en DVD, il est à la disposition des bibliothèques, médiathèques, centres d'archives, etc.<br><br>
+                    <em>Achetez le DVD en ligne</em></p>
+                </div>
+
+                <!--<img src="images/MuMo_film.jpg" class="col-5 p-0 img-fluid">-->
+
+                <div class="decoFilm col-md-5 col-12"></div>
+            </div>
         </section>
+
+    <div class="content"><!--padding pour les marges des section suivantes ...-->
 
         <!-- Section : Los Oeuvres -->
         <section class="container" style="padding: 4rem 20px 0px 20px">
             <div class="row d-flex flex-column">
 
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <h1>Les oeuvres</h1>
                     <p>Chacun des artistes sollicités a réalisé ou choisi une œuvre en direction du MuMo en tenant compte d'un contexte singulier : 
                         penser l'oeuvre dans un espace limité, prendre en compte les contraintes liées à l'itinérance du container, 

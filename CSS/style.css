@@ -74,6 +74,37 @@ label{
     color: white;
 }
 
+/*--Mise ne forme de la section Le Film--*/
+
+.decoFilm{
+    background-image: url(images/MuMo_film.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+}
+
+@media (min-width: 768px) {
+    .texteFilm{
+        margin: 0 0; 
+        padding: 6rem 11rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .texteFilm{
+        margin: 0 0; 
+        padding: 2rem;
+    }
+}
+
+.livreMuMo:hover{
+    filter: contrast(170%);
+    transition: 0.3s;
+}
+
+.card-body{
+    color: black;
+}
 /* HEADER */
 .header {
     display: flex;
@@ -659,6 +690,10 @@ input:focus {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
+}
+
+.letter-spacing-15{
+    letter-spacing: 0.15rem;
 }
 
 .card-body2 {

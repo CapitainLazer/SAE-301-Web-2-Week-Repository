@@ -7,11 +7,11 @@
                 <h2>Connexion a votre compte</h2>
                 <form action="verifconnexion.php" method="POST" class="form-container">
                     <div class="form-group">
-                        <label for="mail">Mail</label>
+                        <label for="mail"class="letter-spacing-15">Mail</label>
                         <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
-                        <label for="mdp">Mot de Passe*</label>
+                        <label for="mdp"class="letter-spacing-15">Mot de Passe*</label>
                         <input type="password" id="mdp" name="mdp" required placeholder="mot de passe">
                     </div>
                     <button type="submit" class="btn-submit">Connexion</button>
@@ -21,15 +21,15 @@
                 <h2>Creation de votre compte</h2>
                 <form action="___.php" method="POST" class="form-container">
                     <div class="form-group">
-                        <label for="mail">Mail*</label>
+                        <label for="mail"class="letter-spacing-15">Mail*</label>
                         <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
-                        <label for="mdp">Mot de Passe*</label>
+                        <label for="mdp" class="letter-spacing-15">Mot de Passe*</label>
                         <input type="password" id="createmdp" name="mdp" required placeholder="mot de passe">
                     </div>
                     <div class="form-group">
-                        <label for="mdp">Confirmez le Mot de Passe*</label>
+                        <label for="mdp"class="letter-spacing-15">Confirmez le Mot de Passe*</label>
                         <input type="password" id="confirmmdp" name="mdp" required placeholder="mot de passe">
                     </div>
                     <button type="submit" class="btn-submit">Inscription</button>
