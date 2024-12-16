@@ -277,9 +277,9 @@
 
         <!-- Section : Los Oeuvres -->
         <section class="container" style="padding: 4rem 20px 0px 20px">
-            <div class="row d-flex flex-column">
+            <div class="row d-flex flex-row">
 
-                <div class="col-md-6 col-12">
+                <div class="col-12">
                     <h1>Les oeuvres</h1>
                     <p>Chacun des artistes sollicités a réalisé ou choisi une œuvre en direction du MuMo en tenant compte d'un contexte singulier : 
                         penser l'oeuvre dans un espace limité, prendre en compte les contraintes liées à l'itinérance du container, 
@@ -287,7 +287,7 @@
                     </p>
                 </div>
 
-                <div class="d-flex flex-row about-images py-5">
+                <div class="d-flex flex-wrap about-images py-5">
 
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre1.png" class="card-img-top" alt="">
@@ -302,7 +302,7 @@
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre4.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre4.png" class="card-img-top" alt="">
                     </div>
 
                     <div class="image-card">
@@ -310,7 +310,7 @@
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre6.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre6.png" class="card-img-top" alt="">
                     </div>
 
                     <div class="image-card">
@@ -318,7 +318,7 @@
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre8.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre8.png" class="card-img-top" alt="">
                     </div>
 
                     <div class="image-card">
