@@ -1,3 +1,13 @@
+<?php
+    include("./config/config.php");
+    $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
+
+    $requete = 'SELECT * FROM evenements ORDER BY dates_debut DESC LIMIT 3';
+    $resultats = $bdd->query($requete);
+    $tabEvenement = $resultats->fetchAll(PDO::FETCH_ASSOC);
+    $resultats->closeCursor();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -40,27 +50,14 @@
             </div>
             <p>Nos prochains événements</p>
             <div class="calendar">
-                <div class="calendar-item">
-                    <h3>Limoges (87)</h3>
-                    <p>Au quartier Vigenal - En partenariat avec le Centre Social Vital - du 19 au 24 décembre</p>
-                    <p>Devant la salle municipale du Vigenal - 5 Rue Georges Jacquet</p>
-                    <p>Portes ouvertes le samedi 21 décembre de 10h30 à 12h00 - 14h00 à 17h30</p>
-                    <button>Voir plus</button>
-                </div>
-                <div class="calendar-item">
-                    <h3>Limoges (87)</h3>
-                    <p>Au quartier Val de L'Aurence - En partenariat avec le Centre Social Alchimies - les 26 et 27 décembre</p>
-                    <p>Devant la BFM du Val de L’Aurence</p>
-                    <p>Portes ouvertes le jeudi 26 et le vendredi 27 décembre de 10h à 12h et de 14h à 17h00</p>
-                    <button>Voir plus</button>
-                </div>
-                <div class="calendar-item">
-                    <h3>Agen (47)</h3>
-                    <p>Communauté d'Agglomération d’Agen</p>
-                    <p>Quai du Gravier</p>
-                    <p>Portes ouvertes le lundi 30 décembre de 16h00 à 18h00</p>
-                    <button>Voir plus</button>
-                </div>
+                <?php foreach($tabEvenement as $Evenement): ?>
+                    <div class="calendar-item">
+                        <h3><?php echo $Evenement["nom_evenements"]?></h3>
+                        <p><?php echo "Du ".$Evenement["dates_debut"]." au ".$Evenement["dates_fin"]; ?></p>
+                        <p><?php echo $Evenement["description_evenements"]?> </p>
+                        <button>Voir plus</button>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
 
@@ -104,15 +101,15 @@
             <p>Quelques-unes de nos œuvres.</p>
             <div class="about-images">
                 <div class="image-card">
-                    <img src="./images/oeuvre1.png" alt="">
+                    <img src="./images/oeuvres/oeuvre1.png" alt="">
                     <p>Immagine (2011)<br><span>Maurizio Cattelan</span></p>
                 </div>
                 <div class="image-card">
-                    <img src="./images/oeuvre2.png" alt="">
+                    <img src="./images/oeuvres/oeuvre2.png" alt="">
                     <p>MapaMapa (2013)<br><span>Sébastien Cordoléani</span></p>
                 </div>
                 <div class="image-card">
-                    <img src="./images/oeuvre3.png" alt="">
+                    <img src="./images/oeuvres/oeuvre3.png" alt="">
                     <p>Six Dogs Jumping (2012)<br><span>John Baldessari</span></p>
                 </div>
             </div>
