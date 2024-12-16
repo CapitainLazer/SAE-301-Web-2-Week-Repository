@@ -47,6 +47,26 @@
         header('Location: PageAdmin.php');
     }
 
+    if ($_POST["choix"]=="archives") {
+        $requete_preparee= $bdd->prepare('INSERT INTO archive(id_archive,descriptions,lien) 
+                                        VALUES (NULL,:lien,:descriptions)');
+        $requete_preparee->bindValue(':lien', $_POST["lien"], PDO::PARAM_STR);
+        $requete_preparee->bindValue(':descriptions', $_POST["description"], PDO::PARAM_STR);
+        $requete_preparee->execute();
+        header('Location: PageAdmin.php');
+    }
+
+    if ($_POST["choix"]=="sponsors") {
+        $requete_preparee= $bdd->prepare('INSERT INTO sponsors(id_sponsors,nom,lien,descriptions,categorie) 
+                                        VALUES (NULL,:nom,:lien,:descriptions,:categorie)');
+        $requete_preparee->bindValue(':nom', $_POST["nom"], PDO::PARAM_STR);
+        $requete_preparee->bindValue(':lien', $_POST["lien"], PDO::PARAM_STR);
+        $requete_preparee->bindValue(':descriptions', $_POST["description"], PDO::PARAM_STR);
+        $requete_preparee->bindValue(':categorie', $_POST["categorie"], PDO::PARAM_STR);
+        $requete_preparee->execute();
+        header('Location: PageAdmin.php');
+    }
+
 
     exit();
 ?>
