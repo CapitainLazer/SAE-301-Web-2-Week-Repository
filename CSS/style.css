@@ -596,6 +596,7 @@ input:focus {
 .tab-link.active {
     font-weight: bold;
   }
+
   .hidden{
     display: none;
 }
