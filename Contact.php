@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="col-3 my-3">
-                            <input type="button" value="Vider" class="boutonForm">
+                            <input type="reset" value="Vider" class="boutonForm">
                         </div>
                     </div>
                 </form>
