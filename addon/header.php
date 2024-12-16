@@ -19,13 +19,13 @@
                         <a class="nav-link" href="calendrier.php">Événements Calendrier</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MuMo x Pompidou</a>
+                        <a class="nav-link" href="">MuMo x Pompidou</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pedagogie.php">Pédagogique</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">À Propos</a>
+                        <a class="nav-link" href="A_Propos.php">À Propos</a>
                     </li>
                     <a class="icon_nav" href="connexion.php">
                         <div class="user-icon">👤</div>
