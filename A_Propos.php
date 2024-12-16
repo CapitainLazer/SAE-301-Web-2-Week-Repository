@@ -94,7 +94,7 @@
     
     
     <!-- Section : Chiffres Clés --  ! pas dans la div "content" car pas de padding pour le fond rouge ! -->
-    <section class="container-fluid" style="background: red; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
+    <section class="container-fluid" style="background: #d63542; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
         <div class="row d-flex flex-md-row flex-column justify-content-around">
 
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
@@ -220,7 +220,7 @@
             <br>
             <div class="row d-flex flex-row justify-content-center gap-5"><!--rangement en lignes "rows" -->
 
-                <div class="card" style="width: 22rem;"><!--div Volume 1-->
+                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 1-->
                     <a href="https://www.lespressesdureel.com/ouvrage.php?id=2698&menu=0" style="text-decoration: none;">
                         <img src="./images/volume1.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 1">
                         <div class="card-body">
@@ -230,20 +230,24 @@
                     </a>
                 </div>
 
-                <div class="card" style="width: 22rem;"><!--div Volume 2-->
-                    <img src="./images/volume2.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 2">
-                    <div class="card-body">
-                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 2</h4>
-                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
-                    </div>
+                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 2-->
+                    <a href="https://www.lespressesdureel.com/ouvrage.php?id=3011" style="text-decoration: none;">
+                        <img src="./images/volume2.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 2">
+                        <div class="card-body">
+                            <h4 class="card-title">MuMo - le Musée Mobile - Volume 2</h4>
+                            <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card" style="width: 22rem;"><!--div Volume 3-->
-                    <img src="./images/volume3.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 3">
-                    <div class="card-body">
-                        <h4 class="card-title">MuMo - le Musée Mobile - Volume 3</h4>
-                        <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
-                    </div>
+                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 3-->
+                    <a href="https://www.lespressesdureel.com/ouvrage.php?id=3863 " style="text-decoration: none;">
+                        <img src="./images/volume3.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 3">
+                        <div class="card-body">
+                            <h4 class="card-title">MuMo - le Musée Mobile - Volume 3</h4>
+                            <p class="card-text">Ouvrage dirigé par Ingrid Brochard </p>
+                        </div>
+                    </a>
                 </div>
             </div>
             
@@ -253,7 +257,7 @@
 
         <!-- Section : Le Film -->
         <section class="container-fluid" style="max-width: 1920px;">
-            <div class="row d-flex flex-md-row flex-column" style="background: red; color: white;">
+            <div class="row d-flex flex-md-row flex-column" style="background: #d63542; color: white;">
                 <div class="col-md-7 col-12 texteFilm">
                     <h1>Le film</h1>
                     <h4>Les aventures de MuMo, le Musée Mobile</h4>
