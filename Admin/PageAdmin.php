@@ -197,8 +197,8 @@
             <h3>Ajout d'un partenaire</h3>
             <form action="ajouter.php" method="POST">
                 Nom du partenaire : <input type="text" name="nom" required /><br>
-                Lien du logo : <input type="text" name="nom" required /><br>
-                Description : <input type="text" name="nom" required /><br>
+                Lien du logo : <input type="text" name="lien" required /><br>
+                Description : <input type="text" name="description" required /><br>
                 <fieldset>
                     <legend>Selectioner la catégorie :</legend>
                     <div>

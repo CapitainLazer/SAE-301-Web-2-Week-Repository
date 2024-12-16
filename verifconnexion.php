@@ -9,17 +9,21 @@
 
     $requete2='SELECT mail, mdp FROM `compte`';
     $resultats2=$bdd->query($requete2);
-    $compte=$resultats2->fetch(PDO::FETCH_ASSOC);
+    $compte=$resultats2->fetchALL(PDO::FETCH_ASSOC);
     $resultats2->closeCursor();
+
+    foreach($compte as $c):
+        if ($_POST["mail"]==$c["mail"] && $_POST[sha1("mdp")]==$c[sha1("mdp")]) {
+            header('Location: ./user/PageUser.php');
+            exit();
+        }
+    endforeach;
 
     if ($_POST["mail"]==$admin["mail"] && $_POST[sha1("mdp")]==$admin[sha1("mdp")]) {
         header('Location: ./admin/PageAdmin.php');
         exit();
     }
-    if ($_POST["mail"]==$compte["mail"] && $_POST[sha1("mdp")]==$compte[sha1("mdp")]) {
-        header('Location: ./user/PageUser.php');
-        exit();
-    }
+    
     else {
         header('Location: index.php');
         exit();

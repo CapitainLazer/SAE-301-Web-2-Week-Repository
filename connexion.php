@@ -5,17 +5,14 @@
         <section class="section_connexion">
             <div class="tab-body connexion" id="connexion">
                 <h2>Connexion a votre compte</h2>
-                <form action="verifconnexion.php" method="POST"
-class="form-container">
+                <form action="verifconnexion.php" method="POST" class="form-container">
                     <div class="form-group">
                         <label for="mail">Mail</label>
-                        <input type="email" id="mail" name="mail"
-required placeholder="nom.prenom@mail.com">
+                        <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="mdp">Mot de Passe*</label>
-                        <input type="password" id="mdp" name="mdp"
-required placeholder="mot de passe">
+                        <input type="password" id="mdp" name="mdp" required placeholder="mot de passe">
                     </div>
                     <button type="submit" class="btn-submit">Connexion</button>
                 </form>
@@ -25,21 +22,17 @@ required placeholder="mot de passe">
                 <form action="___.php" method="POST" class="form-container">
                     <div class="form-group">
                         <label for="mail">Mail*</label>
-                        <input type="email" id="mail" name="mail"
-required placeholder="nom.prenom@mail.com">
+                        <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="mdp">Mot de Passe*</label>
-                        <input type="password" id="createmdp"
-name="mdp" required placeholder="mot de passe">
+                        <input type="password" id="createmdp" name="mdp" required placeholder="mot de passe">
                     </div>
                     <div class="form-group">
                         <label for="mdp">Confirmez le Mot de Passe*</label>
-                        <input type="password" id="confirmmdp"
-name="mdp" required placeholder="mot de passe">
+                        <input type="password" id="confirmmdp" name="mdp" required placeholder="mot de passe">
                     </div>
-                    <button type="submit"
-class="btn-submit">Inscription</button>
+                    <button type="submit" class="btn-submit">Inscription</button>
                 </form>
             </div>
             <br>
