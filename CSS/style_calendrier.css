@@ -48,6 +48,7 @@ body {
 
 a {
     text-decoration: none !important;
+    font-family: "Coolvetica";
 }
 
 @media (max-width: 768px) {
