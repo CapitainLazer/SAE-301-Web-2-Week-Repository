@@ -248,8 +248,17 @@
             
         </section>
 
-        <!-- Section : Los Oeuvres -->
+        <!-- Section : Le Film -->
         <section class="container">
+            <div>
+                <h1>Le film</h1>
+                <p></p>
+            </div>
+
+        </section>
+
+        <!-- Section : Los Oeuvres -->
+        <section class="container" style="padding: 4rem 20px 0px 20px">
             <div class="row d-flex flex-column">
 
                 <div class="col-6">
@@ -260,7 +269,7 @@
                     </p>
                 </div>
 
-                <div class="d-flex flex-row about-images">
+                <div class="d-flex flex-row about-images py-5">
 
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre1.png" class="card-img-top" alt="">
