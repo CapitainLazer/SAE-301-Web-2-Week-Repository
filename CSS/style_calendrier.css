@@ -36,6 +36,11 @@
     color: #D63542;
 }
 
+a {
+    text-decoration: none !important;
+    font-family: "Coolvetica";
+}
+
 @media (max-width: 768px) {
     #calendrier {
         min-height: 535px;
