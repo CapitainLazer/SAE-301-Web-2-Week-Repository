@@ -49,7 +49,7 @@ label{
     padding: 15px 45px;
     border-radius: 30px;
     font-size: 18px;
-    font-family: Arial, sans-serif;
+    font-family: "Coolvetica";
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -186,7 +186,7 @@ label{
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: "Coolvetica";
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -207,7 +207,7 @@ label{
     text-align: center;
     color: white;
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: "Coolvetica";
     margin: 0;
 }
 /* Media queries pour les écrans de PC */
@@ -324,7 +324,7 @@ label{
     background: #D63542;
     border-radius: 20px; /* Coins arrondis */
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Coolvetica";
     text-align: justify;
     box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
     gap: 10px;
@@ -566,7 +566,7 @@ input:focus {
     background: #D63542;
     border-radius: 8px;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Coolvetica";
     margin: 20px;
     box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
     background-color: rgba(214, 53, 66, 0.6);
@@ -620,7 +620,60 @@ input:focus {
 .tab-link.active {
     font-weight: bold;
   }
+
   .hidden{
     display: none;
+}
 
+/* Pompidou */
+.collection-text2 {
+    background: #006C46;
+    border-radius: 8px;
+    color: white;
+    font-family: "Coolvetica";
+    margin: 20px;
+    box-shadow: 0 0 20px 10px rgba(0, 108, 70, 0.3);
+    background-color: rgba(0, 108, 70, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    backdrop-filter: blur(100px);
+    height: 100%;
+    margin-top: 0;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    background-color: rgba(146, 232, 202, 0.8);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.card-body2 {
+    align-items: center;
+    color: #006400; 
+    font-family: Arial, sans-serif;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
 }
