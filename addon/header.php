@@ -19,7 +19,7 @@
                         <a class="nav-link" href="calendrier.php">Événements Calendrier</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">MuMo x Pompidou</a>
+                        <a class="nav-link" href="pompidou.php">MuMo x Pompidou</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pedagogie.php">Pédagogique</a>
