@@ -711,3 +711,10 @@ input:focus {
 .info2{
     margin : auto;
 }
+
+/* Page Partenaire */
+.sponsor {
+    padding: 0.5%;
+    width: 8rem;
+    height: auto;
+}

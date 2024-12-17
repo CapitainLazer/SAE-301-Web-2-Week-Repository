@@ -25,23 +25,23 @@
             <h1>Partenaires</h1>
             <div class="Partenaires">
                 <?php foreach($tabCatego as $Catego): ?>
-                    <h3><?php echo $Catego["categorie"]?></h3>
-                    <?php
-                        $requete = 'SELECT nom, lien, descriptions FROM sponsors WHERE categorie=\'' . $Catego["categorie"] . '\'';
-                        $resultats = $bdd->query($requete);
-                        $tabSponso = $resultats->fetchAll(PDO::FETCH_ASSOC);
-                        $resultats->closeCursor();
-                        foreach ($tabSponso as $Sponso): 
-                        ?>
-                            <img src="<?php echo $Sponso["lien"] ?>">
+                    <div>
+                        <h3><?php echo $Catego["categorie"]?></h3>
                         <?php
-                        endforeach;
-                    ?>
+                            $requete = 'SELECT nom, lien, descriptions FROM sponsors WHERE categorie=\'' . $Catego["categorie"] . '\'';
+                            $resultats = $bdd->query($requete);
+                            $tabSponso = $resultats->fetchAll(PDO::FETCH_ASSOC);
+                            $resultats->closeCursor();
+                            foreach ($tabSponso as $Sponso): 
+                            ?>
+                                <img src="<?php echo $Sponso["lien"] ?>" class="sponsor">
+                            <?php
+                            endforeach;
+                        ?>
+                    </div>
                 <?php endforeach; ?>
             </div>
-        </div>
-
-        
+        </div>        
     </div>
     <?php include_once('addon/Footer.php');?>
 </body>
