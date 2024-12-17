@@ -7,15 +7,11 @@ try {
         $mail = filter_input(INPUT_POST, 'mail', FILTER_VALIDATE_EMAIL);
         $newmdp = $_POST['newmdp'];
         $confirmmdp = $_POST['mdp'];
-
         if (!$mail) {
             die('Adresse e-mail invalide.');
         }
         if ($newmdp !== $confirmmdp) {
             die('Les mots de passe ne correspondent pas.');
-        }
-        if (empty($newmdp)) {
-            die('Le mot de passe ne peut pas être vide.');
         }
         $checkEmail = $bdd->prepare("SELECT COUNT(*) FROM compte WHERE mail = :mail");
         $checkEmail->bindParam(':mail', $mail, PDO::PARAM_STR);
