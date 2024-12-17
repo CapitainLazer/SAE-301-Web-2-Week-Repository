@@ -38,7 +38,7 @@
             include_once('addon/header.php');
         ?>
         <main class="container">
-            <div class="filters">
+            <div class="filters" style="align-items: center;">
                 <div>
                     <label class="label" for="filter-type">Type d'événement :</label>
                     <select id="filter-type">
@@ -79,7 +79,8 @@
                         ?>
                     </select>
                 </div>
-                <button id="apply-filters">Appliquer les filtres</button>
+                <button id="apply-filters" class="boutonForm" style="padding: 10px 30px; font-size: 15px;">Appliquer les filtres</button>
+
             </div>       
             <div id="calendrier"></div>
         </main>
