@@ -564,7 +564,7 @@ label{
     margin: 0 0 10px; 
 }
 
-.bouton button{
+.bouton button, .btn{
     margin-top: auto; 
     padding: 8px 12px;
     background-color: #d14a4a;
@@ -920,11 +920,14 @@ h3 {
 .contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap:1.25rem;
+    margin-bottom: 2rem;
 }
 
 .contact-item {
-    padding: 1rem;
+    width: 275px;
+    height: auto;
+    padding: 1.5rem;
     border-radius: 15%;
     background-color: rgba(255, 255, 255, 0.5);
 }
