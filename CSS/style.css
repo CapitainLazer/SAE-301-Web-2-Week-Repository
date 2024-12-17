@@ -783,3 +783,27 @@ input:focus {
     width: 8rem;
     height: auto;
 }
+
+/* Page admin */
+/* Masque les sections au démarrage */
+.parties {
+    display: none;
+}
+
+.foot-link2 {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "Coolvetica";
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.foot-link2:hover {
+    background-color: #ffd9d9;
+    color: red;
+    border-color: #ffd9d9;
+}
