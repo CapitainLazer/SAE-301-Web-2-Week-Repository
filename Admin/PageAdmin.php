@@ -135,7 +135,7 @@
             </div>
 
             <!-- Section Localisation -->
-            <h2 onclick="toggleSection('localisation')">Localisation</h2>
+            <h2 class="foot-link2" onclick="toggleSection('localisation')">Localisation</h2>
             <div id="localisation" class="content">
                 <h3>Suppression d'un lieu</h3>
                 <form action="supprimer.php" method="POST">
@@ -161,7 +161,7 @@
             </div>
 
             <!-- Section Camions -->
-            <h2 onclick="toggleSection('camions')">Camions</h2>
+            <h2 class="foot-link2" onclick="toggleSection('camions')">Camions</h2>
             <div id="camions" class="content">
                 <h3>Suppression d'un camion</h3>
                 <form action="supprimer.php" method="POST">
@@ -185,7 +185,7 @@
             </div>
 
             <!-- Section Archives -->
-            <h2 onclick="toggleSection('archives')">Archives</h2>
+            <h2 class="foot-link2" onclick="toggleSection('archives')">Archives</h2>
             <div id="archives" class="content">
                 <h3>Ajout dans les archives</h3>
                 <form action="ajouter.php" method="POST">
@@ -197,7 +197,7 @@
             </div>
 
             <!-- Section Sponsors -->
-            <h2 onclick="toggleSection('sponsors')">Partenaires</h2>
+            <h2 class="foot-link2" onclick="toggleSection('sponsors')">Partenaires</h2>
             <div id="sponsors" class="content">
                 <h3>Ajout d'un partenaire</h3>
                 <form action="ajouter.php" method="POST">
