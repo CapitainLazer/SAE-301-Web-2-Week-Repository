@@ -20,7 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
+        <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
         <title>Demandes de Contact</title>
     </head>
     <body>
@@ -31,12 +31,12 @@
                     <?php foreach($tabContactsNN as $Contacts): ?>
                         <div class="contact-item">
                             <p>
-                                <?php echo "Demande de : ".$Contacts["nom"];?><br>
-                                <?php echo "Datant du : ".$Contacts["dates"];?><br>
-                                <?php echo "Object : ".$Contacts["object"];?><br>
-                                <?php echo "Message : <br>".$Contacts["messages"];?><br>
-                                <?php echo "Mail : ".$Contacts["mail"];?><br>
-                                <?php echo "Téléphone : ".$Contacts["telephone"];?>
+                                <?php echo "<b>Demande de : </b>".$Contacts["nom"];?><br>
+                                <?php echo "<b>Datant du : </b>".$Contacts["dates"];?><br>
+                                <?php echo "<b>Object : </b>".$Contacts["object"];?><br>
+                                <?php echo "<b>Message : </b><br>".$Contacts["messages"];?><br>
+                                <?php echo "<b>Mail : </b>".$Contacts["mail"];?><br>
+                                <?php echo "<b>Téléphone : </b>".$Contacts["telephone"];?>
                             </p>
                             <form action="statueContact.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $Contacts["id_contact"];?>">
@@ -44,26 +44,28 @@
                                     <option value="Non Traité">Non Traité</option>
                                     <option value="Traité">Traité</option>
                                 </select>
-                                <input type="submit" value="Valider">
+                                <input type="submit" value="Valider" id="btn">
                             </form>
                         </div>
                     <?php endforeach; ?>
             </div>
 
             <h2 onclick="toggleSection('statu')">Demandes traités</h2>
-            <div id="statu" class="parties contact">
+            <div id="statu" class="parties">
+                <div class="contact">
                 <?php foreach($tabContactstr as $Traite): ?>
                     <div class="contact-item">
                         <p>
-                            <?php echo "Demande de : ".$Contacts["nom"];?><br>
-                            <?php echo "Datant du : ".$Contacts["dates"];?><br>
-                            <?php echo "Object : ".$Contacts["object"];?><br>
-                            <?php echo "Message : <br>".$Contacts["messages"];?><br>
-                            <?php echo "Mail : ".$Contacts["mail"];?><br>
-                            <?php echo "Téléphone : ".$Contacts["telephone"];?>
+                            <?php echo "<b>Demande de : </b>".$Contacts["nom"];?><br>
+                            <?php echo "<b>Datant du : </b>".$Contacts["dates"];?><br>
+                            <?php echo "<b>Object : </b>".$Contacts["object"];?><br>
+                            <?php echo "<b>Message : </b><br>".$Contacts["messages"];?><br>
+                            <?php echo "<b>Mail : </b>".$Contacts["mail"];?><br>
+                            <?php echo "<b>Téléphone : </b>".$Contacts["telephone"];?>
                         </p>
                     </div>
                 <?php endforeach; ?>
+                </div>
             </div>
             <script>
                 // Fonction pour afficher/masquer une section
