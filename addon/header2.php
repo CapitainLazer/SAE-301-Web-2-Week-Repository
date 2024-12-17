@@ -2,7 +2,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid ">
-        <a class="logo" href="index.php"><img src="images/logo_MUMO.png"></a>
+        <a class="logo" href="index.php"><img src="../images/logo_MUMO.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -12,16 +12,16 @@
                         <a class="nav-link" href="../index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Evènements Calendrier</a>
+                        <a class="nav-link" href="../calendrier.php">Evènements Calendrier</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MuMo x Pompidou</a>
+                        <a class="nav-link" href="../pompidou.php">MuMo x Pompidou</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pédagogique</a>
+                        <a class="nav-link" href="../Pedagogie.php">Pédagogique</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">À Propos</a>
+                        <a class="nav-link" href="../A_Propos.php">À Propos</a>
                     </li>
                     <a class="icon_nav" href="Admin/connexion.php">
                         <div class="user-icon">👤</div>
