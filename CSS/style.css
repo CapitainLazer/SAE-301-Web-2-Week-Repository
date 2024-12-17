@@ -725,7 +725,10 @@ input:focus {
     display: none;
 }
 
-.foot-link2 {
+h2.foot-link2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid white;
     color: white;
     padding: 10px 20px;
@@ -734,11 +737,105 @@ input:focus {
     font-family: "Coolvetica";
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block;
+    width: 180px;
+    text-align: center;
+    margin: 5px;
 }
 
-.foot-link2:hover {
+h2.foot-link2:hover {
     background-color: #ffd9d9;
     color: red;
     border-color: #ffd9d9;
+}
+
+.button-link {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "Coolvetica";
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+}
+
+.button-link:hover {
+    background-color: #ffd9d9;
+    color: red;
+    border-color: #ffd9d9;
+}
+
+/* Style pour les formulaires */
+.formadmin {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9; /* Fond clair pour mettre en valeur */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Coolvetica", Arial, sans-serif;
+}
+
+/* Style pour les champs texte et date */
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Coolvetica", Arial, sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #ffd9d9;
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Style des boutons de soumission */
+.input[type="submit"] {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "Coolvetica", Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.input[type="submit"]:hover {
+    background-color: #ffd9d9;
+    color: red;
+    border-color: #ffd9d9;
+}
+
+/* Style pour les listes déroulantes */
+select {
+    cursor: pointer;
+}
+
+/* Style pour les titres de sections */
+h3 {
+    color: #333;
+    font-size: 20px;
+    font-family: "Coolvetica", Arial, sans-serif;
+    margin-top: 15px;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
 }

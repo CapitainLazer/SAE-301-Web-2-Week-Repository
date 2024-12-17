@@ -40,10 +40,10 @@
             <h1>Page d'administration</h1>
 
             <!-- Section Évènements -->
-            <h2 class="foot-link2" onclick="toggleSection('evenements')">Évènements</h2>
+            <h2 class="button-container foot-link2" onclick="toggleSection('evenements')">Évènements</h2>
             <div id="evenements" class="parties">
                 <h3>Suppression d'un évènement</h3>
-                <form action="supprimer.php" method="POST">
+                <form class="formadmin" action="supprimer.php" method="POST">
                     <select name="id" size=12>
                     <?php foreach($tabEvenement as $Evenement): ?>
                         <option value="<?php echo $Evenement["id_eve"]; ?>">
@@ -52,11 +52,11 @@
                     <?php endforeach; ?>
                     </select><br/><br/>
                     <input type="hidden" name="choix" value="eve">
-                    <input type="submit" value="Supprimer l'évènement"/>
+                    <input class="input" type="submit" value="Supprimer l'évènement"/>
                 </form> 
                 
                 <h3>Ajout d'un évènement</h3>
-                <form action="ajouter.php" method="POST">
+                <form class="formadmin" action="ajouter.php" method="POST">
                     Nom : <input type="text" name="nom" required /><br>
                     Date de début : <input type="date" name="date_debut" required/><br>
                     Date de fin : <input type="date" name="date_fin" required/><br>
@@ -80,11 +80,11 @@
                     ?>
                     </select><br/><br/>
                     <input type="hidden" name=choix value="eve">
-                    <input type="submit" value="Ajouter l'évènement"/>
+                    <input class="input"type="submit" value="Ajouter l'évènement"/>
                 </form>
 
                 <h3>Modification d'un évènement</h3>
-                <form action="modifEvenement.php" method="POST">
+                <form class="formadmin" action="modifEvenement.php" method="POST">
                     <select name="id" size=12>
                     <?php
                         foreach($tabEvenement as $Evenement):
@@ -94,15 +94,15 @@
                         endforeach;
                     ?>
                     </select><br/><br/>
-                    <input type="submit" value="Modifier l'évènement"/>
+                    <input class="input" type="submit" value="Modifier l'évènement"/>
                 </form>
             </div>
 
             <!-- Section Types -->
-            <h2 class="foot-link2" onclick="toggleSection('types')">Types</h2>
+            <h2 class="button-container foot-link2" onclick="toggleSection('types')">Types</h2>
             <div id="types" class="parties">
                 <h3>Suppression d'un type d'évènement</h3>
-                <form action="supprimer.php" method="POST">
+                <form class="formadmin" action="supprimer.php" method="POST">
                     <select name="id" size=12>
                     <?php foreach($tabtypes as $Types): ?>
                         <option value="<?php echo $Types["id_type"]; ?>">
@@ -111,22 +111,22 @@
                     <?php endforeach; ?>
                     </select><br/><br/>
                     <input type="hidden" name="choix" value="types">
-                    <input type="submit" value="Supprimer le type d'évènement"/>
+                    <input class="input" type="submit" value="Supprimer le type d'évènement"/>
                 </form>
 
                 <h3>Ajout d'un type d'évènement</h3>
-                <form action="ajouter.php" method="POST">
+                <form class="formadmin" action="ajouter.php" method="POST">
                     Nom : <input type="text" name="nom" required /><br>
                     <input type="hidden" name=choix value="types">
-                    <input type="submit" value="Ajouter le type d'évènement"/>
+                    <input class="input" type="submit" value="Ajouter le type d'évènement"/>
                 </form>
             </div>
 
             <!-- Section Localisation -->
-            <h2 onclick="toggleSection('localisation')">Localisation</h2>
+            <h2 class="button-container foot-link2" onclick="toggleSection('localisation')">Localisation</h2>
             <div id="localisation" class="parties">
                 <h3>Suppression d'un lieu</h3>
-                <form action="supprimer.php" method="POST">
+                <form class="formadmin"action="supprimer.php" method="POST">
                     <select name="id" size=12>
                     <?php foreach($tablieu as $lieu): ?>
                         <option value="<?php echo $lieu["id_loc"]; ?>">
@@ -135,24 +135,24 @@
                     <?php endforeach; ?>
                     </select><br/><br/>
                     <input type="hidden" name="choix" value="lieu">
-                    <input type="submit" value="Supprimer le lieu"/>
+                    <input class="input" type="submit" value="Supprimer le lieu"/>
                 </form> 
                 
                 <h3>Ajout d'un lieu</h3>
-                <form action="ajouter.php" method="POST">
+                <form class="formadmin" action="ajouter.php" method="POST">
                     Lieu : <input type="text" name="lieu" required /><br>
                     Ville : <input type="text" name="ville" required /><br>
                     Département : <input type="text" name="departement" required /><br>
                     <input type="hidden" name=choix value="lieu">
-                    <input type="submit" value="Ajouter le lieu"/>
+                    <input class="input" type="submit" value="Ajouter le lieu"/>
                 </form>
             </div>
 
             <!-- Section Camions -->
-            <h2 onclick="toggleSection('camions')">Camions</h2>
+            <h2 class="button-container foot-link2" onclick="toggleSection('camions')">Camions</h2>
             <div id="camions" class="parties">
                 <h3>Suppression d'un camion</h3>
-                <form action="supprimer.php" method="POST">
+                <form class="formadmin" action="supprimer.php" method="POST">
                     <select name="id" size=12>
                     <?php foreach($tabcamion as $camion): ?>
                         <option value="<?php echo $camion["id_camion"]; ?>">
@@ -161,34 +161,34 @@
                     <?php endforeach; ?>
                     </select><br/><br/>
                     <input type="hidden" name="choix" value="camion">
-                    <input type="submit" value="Supprimer le camion"/>
+                    <input class="input" type="submit" value="Supprimer le camion"/>
                 </form>
 
                 <h3>Ajout d'un camion</h3>
-                <form action="ajouter.php" method="POST">
+                <form class="formadmin" action="ajouter.php" method="POST">
                     Nom du camion : <input type="text" name="nom" required /><br>
                     <input type="hidden" name=choix value="camion">
-                    <input type="submit" value="Ajouter le camion"/>
+                    <input class="input" type="submit" value="Ajouter le camion"/>
                 </form>
             </div>
 
             <!-- Section Archives -->
-            <h2 onclick="toggleSection('archives')">Archives</h2>
+            <h2 class="button-container foot-link2" onclick="toggleSection('archives')">Archives</h2>
             <div id="archives" class="parties">
                 <h3>Ajout dans les archives</h3>
-                <form action="ajouter.php" method="POST">
+                <form class="formadmin" action="ajouter.php" method="POST">
                     Lien de le l'image ou de la vidéo : <input type="text" name="lien" required /><br>
                     Description : <input type="text" name="description"/><br>
                     <input type="hidden" name=choix value="archives">
-                    <input type="submit" value="Ajouter dans les archives"/>
+                    <input class="input" type="submit" value="Ajouter dans les archives"/>
                 </form>
             </div>
 
             <!-- Section Sponsors -->
-            <h2 onclick="toggleSection('sponsors')">Partenaires</h2>
+            <h2 class="button-container foot-link2" onclick="toggleSection('sponsors')">Partenaires</h2>
             <div id="sponsors" class="parties">
                 <h3>Ajout d'un partenaire</h3>
-                <form action="ajouter.php" method="POST">
+                <form class="formadmin" action="ajouter.php" method="POST">
                     Nom du partenaire : <input type="text" name="nom" required /><br>
                     Lien du logo : <input type="text" name="lien" required /><br>
                     Description : <input type="text" name="description" required /><br>
@@ -196,15 +196,15 @@
                         <legend>Selectioner la catégorie :</legend>
                         <div>
                             <input type="radio" id="Mécènes" name="categorie" value="Mécènes"/>
-                            <label for="Mécènes">Mécènes</label>
+                            <label class="label" for="Mécènes">Mécènes</label>
                         </div>
                         <div>
                             <input type="radio" id="Partenaires" name="categorie" value="Partenaires" checked/>
-                            <label for="Partenaires">Partenaires</label>
+                            <label class="label" for="Partenaires">Partenaires</label>
                         </div>
                     </fieldset>
                     <input type="hidden" name=choix value="sponsors">
-                    <input type="submit" value="Ajouter un partenaire"/>
+                    <input class="input" type="submit" value="Ajouter un partenaire"/>
                 </form>
             </div>
 
@@ -221,7 +221,7 @@
                 }
             </script>
             <br><br>
-            <a href="ListeContact.php"><button>Voir les demandes de contact</button></a>
+            <a href="ListeContact.php"><button class="button-link">Voir les demandes de contact</button></a>
         </div>
         <?php include_once('../addon/Footer2.php');?>
     </body>
