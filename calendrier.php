@@ -37,45 +37,47 @@
         <?php
             include_once('addon/header.php');
         ?>
-        <div class="filters">
-            <label class="label" for="filter-type">Type d'événement :</label>
-            <select id="filter-type">
-                <option value="">Tous</option>
-                <?php
-                    foreach ($tabTypes as $Types):
-                        ?>
-                            <option value="<?php echo $Types["id_type"];?>"><?php echo $Types["nom"];?></option>
-                        <?php
-                    endforeach;
-                ?>
-            </select>
+        <main class="container">
+            <div class="filters">
+                <label class="label" for="filter-type">Type d'événement :</label>
+                <select id="filter-type">
+                    <option value="">Tous</option>
+                    <?php
+                        foreach ($tabTypes as $Types):
+                            ?>
+                                <option value="<?php echo $Types["id_type"];?>"><?php echo $Types["nom"];?></option>
+                            <?php
+                        endforeach;
+                    ?>
+                </select>
 
-            <label class="label" for="filter-ville">Ville :</label>
-            <select id="filter-ville">
-                <option value="">Toutes</option>
-                <?php 
-                    foreach ($tabVille as $Ville):
-                        ?>
-                            <option value="<?php echo $Ville["ville"];?>"><?php echo $Ville["ville"];?></option>
-                        <?php
-                    endforeach;
-                ?>
-            </select>
+                <label class="label" for="filter-ville">Ville :</label>
+                <select id="filter-ville">
+                    <option value="">Toutes</option>
+                    <?php 
+                        foreach ($tabVille as $Ville):
+                            ?>
+                                <option value="<?php echo $Ville["ville"];?>"><?php echo $Ville["ville"];?></option>
+                            <?php
+                        endforeach;
+                    ?>
+                </select>
 
-            <label class="label" for="filter-departement">Département :</label>
-            <select id="filter-departement">
-                <option value="">Tous</option>
-                <?php 
-                    foreach ($tabDepartement as $Depart):
-                        ?>
-                            <option value="<?php echo $Depart["departement"];?>"><?php echo $Depart["departement"];?></option>
-                        <?php
-                    endforeach;
-                ?>
-            </select>
-            <button id="apply-filters">Appliquer les filtres</button>
-        </div>       
-        <div id="calendrier"></div>
+                <label class="label" for="filter-departement">Département :</label>
+                <select id="filter-departement">
+                    <option value="">Tous</option>
+                    <?php 
+                        foreach ($tabDepartement as $Depart):
+                            ?>
+                                <option value="<?php echo $Depart["departement"];?>"><?php echo $Depart["departement"];?></option>
+                            <?php
+                        endforeach;
+                    ?>
+                </select>
+                <button id="apply-filters" class="boutonForm">Appliquer les filtres</button>
+            </div>       
+            <div id="calendrier"></div>
+        </main>
         <?php
             include_once('addon/Footer.php');
         ?>
