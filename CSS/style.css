@@ -89,13 +89,24 @@ label{
 }
 
 .livreMuMo:hover{
-    filter: contrast(170%);
+    filter: contrast(130%);
     transition: 0.5s;
     scale: 1.05;
 }
 
+.livreMuMo h4{
+    font-size: 1.5rem;
+}
+
 .card-body{
     color: black;
+}
+
+/*Animation au survol d'une oeuvre*/
+.image-card:hover{
+    filter: contrast(170%);
+    transition: 0.5s;
+    scale: 1.05;
 }
 
 /*--Mise en forme des pop-ups des oeuvres--*/

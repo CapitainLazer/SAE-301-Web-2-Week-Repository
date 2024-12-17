@@ -303,27 +303,27 @@
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre4.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre4.png" class="card-img-top" alt="Baisers #1 (2011) | Ghada Amer">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre5.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre5.png" class="card-img-top" alt="Lace Lift (2011) | Nari Ward">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre6.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre6.png" class="card-img-top" alt="Red Rabbit (2011) | Paul McCarthy">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre7.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre7.webp" class="card-img-top" alt="Nous irons jusqu'au bout (2012) | Claude Lévêque">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre8.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre8.png" class="card-img-top" alt="Carnaval des rêves (2011) | Sam Samore">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre9.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre9.webp" class="card-img-top" alt="Zobop (2012), The Strokes (2012) & Zobop Gold (2013) | Jim Lambie">
                     </div>
 
                 </div> 
