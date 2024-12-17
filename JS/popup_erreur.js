@@ -26,4 +26,7 @@ window.addEventListener('load', function() {
   if (error === '4') {
     alert("Le mot de passe ou l'adresse mail est invalide.");
   }
+  if (error === '5') {
+    alert("Le compte n'existe pas.");
+  }
 });
