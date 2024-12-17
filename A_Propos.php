@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
+        <script src="JS/popUp.js"></script>
 </head>
 <body>
     <?php include_once('addon/header.php');?>
@@ -290,39 +291,39 @@
                 <div class="d-flex flex-wrap about-images py-5">
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre1.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre1.png" class="card-img-top" alt="Immagine (2011) | Maurizio Cattelan">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre2.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre2.png" class="card-img-top" alt="MapaMapa (2013) | Sébastien Cordoléani">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre3.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre3.png" class="card-img-top" alt="Six Dogs Jumping (with Children Watching) (2012) | John Baldessari">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre4.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre4.png" class="card-img-top" alt="Baisers #1 (2011) | Ghada Amer">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre5.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre5.png" class="card-img-top" alt="Lace Lift (2011) | Nari Ward">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre6.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre6.png" class="card-img-top" alt="Red Rabbit (2011) | Paul McCarthy">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre7.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre7.webp" class="card-img-top" alt="Nous irons jusqu'au bout (2012) | Claude Lévêque">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre8.png" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre8.png" class="card-img-top" alt="Carnaval des rêves (2011) | Sam Samore">
                     </div>
 
                     <div class="image-card">
-                        <img src="./images/oeuvres/oeuvre9.webp" class="card-img-top" alt="">
+                        <img src="./images/oeuvres/oeuvre9.webp" class="card-img-top" alt="Zobop (2012), The Strokes (2012) & Zobop Gold (2013) | Jim Lambie">
                     </div>
 
                 </div> 

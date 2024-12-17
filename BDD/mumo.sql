@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 16 déc. 2024 à 14:17
+-- Généré le : mar. 17 déc. 2024 à 11:12
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -57,14 +57,13 @@ CREATE TABLE `archive` (
 --
 
 INSERT INTO `archive` (`id_archive`, `descriptions`, `lien`) VALUES
-(1, '', 'https://youtu.be/SFd3VuDmUCg'),
-(2, ' ', 'https://youtu.be/IKBTd2hFF50'),
-(3, ' ', 'https://youtu.be/ljSe7mfJY6Y'),
-(4, ' ', 'https://youtu.be/xswz60N0vdw'),
-(5, ' ', 'https://vimeo.com/110291562'),
-(6, ' ', 'https://vimeo.com/108561754'),
-(7, ' ', 'https://youtu.be/77PtRD0AqQo'),
-(8, ' ', 'https://youtu.be/xU6099lcsMU');
+(1, '', 'https://www.youtube.com/embed/SFd3VuDmUCg?si=e0Nju'),
+(2, ' ', 'https://www.youtube.com/embed/IKBTd2hFF50?si=4dcoy'),
+(3, ' ', 'https://www.youtube.com/embed/ljSe7mfJY6Y?si=umIt6'),
+(4, ' ', 'https://www.youtube.com/embed/xswz60N0vdw?si=qSQgc'),
+(5, ' ', 'https://www.youtube.com/embed/77PtRD0AqQo?si=G7MyD'),
+(6, ' ', 'https://www.youtube.com/embed/xU6099lcsMU?si=Tt_Jr'),
+(7, '', 'https://www.youtube.com/embed/HrQnkFuUmbg?si=peKT5');
 
 -- --------------------------------------------------------
 
@@ -125,19 +124,20 @@ CREATE TABLE `contact` (
   `messages` varchar(8000) DEFAULT NULL,
   `dates` date DEFAULT NULL,
   `object` varchar(50) DEFAULT NULL,
-  `telephone` varchar(50) DEFAULT NULL
+  `telephone` varchar(50) DEFAULT NULL,
+  `statu` varchar(50) NOT NULL DEFAULT 'Non Traité'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `contact`
 --
 
-INSERT INTO `contact` (`id_contact`, `mail`, `nom`, `messages`, `dates`, `object`, `telephone`) VALUES
-(1, 'test@mail.com', 'Coutant', 'test lien poo et bdd', '2024-12-02', 'test', '0610034287'),
-(2, 'testredirection@mail.com', 'Coutant', 'pourquoi ça marche pas ', '2024-12-16', 'test redirection', '0652442223'),
-(3, 'keraval.gwenael@mail.com', 'Keraval', 'contact pour une intervention dans la ville de Pontivy ', '2024-12-16', 'Demande de venu dans la ville de Pontivy', '0786947585'),
-(5, 'test@mail.com', 'test', 'test', '2024-12-13', 'test', '0615050406'),
-(6, 'test@mail.com', 'test', 'test', '2024-12-16', 'test', '2503689475');
+INSERT INTO `contact` (`id_contact`, `mail`, `nom`, `messages`, `dates`, `object`, `telephone`, `statu`) VALUES
+(1, 'test@mail.com', 'Coutant', 'test lien poo et bdd', '2024-12-02', 'test', '0610034287', 'Traité'),
+(2, 'testredirection@mail.com', 'Coutant', 'pourquoi ça marche pas ', '2024-12-16', 'test redirection', '0652442223', 'Non Traité'),
+(3, 'keraval.gwenael@mail.com', 'Keraval', 'contact pour une intervention dans la ville de Pontivy ', '2024-12-16', 'Demande de venu dans la ville de Pontivy', '0786947585', 'Non Traité'),
+(5, 'test@mail.com', 'test', 'test', '2024-12-13', 'test', '0615050406', 'Non Traité'),
+(6, 'test@mail.com', 'test', 'test', '2024-12-16', 'test', '2503689475', 'Traité');
 
 -- --------------------------------------------------------
 
@@ -167,7 +167,7 @@ INSERT INTO `evenements` (`id_eve`, `nom_evenements`, `dates_debut`, `descriptio
 (5, 'Le dessin dans tous ses états Limoges', '2024-12-19 00:00:00', 'Portes ouvertes le samedi 21 décembre de 10h30 à 12h puis de 14h à 17h30', 5, 2, '2024-12-24 23:59:00'),
 (6, 'Le dessin dans tous ses états Limoges', '2024-12-26 00:00:00', 'Portes ouvertes le jeudi 26 et vendredi 27 décembre de 10h à 12h puis de 14h à 17h', 6, 2, '2024-12-27 23:59:00'),
 (7, 'Le dessin dans tous ses états Agen', '2024-12-30 00:00:00', 'Portes ouvertes le lundi 30, le mardi 31 décembre de 16h à 18h, le mercredi 1er janvier de 10h à 12h puis de 14h à 17h, le jeudi 2 janvier de 15h à 17h et le vendredi 3 janvier de 16h à 18h', 7, 2, '2025-01-03 23:59:00'),
-(11, "C'est tout un art", '2025-01-20 00:00:00', 'test modif', 5, 2, '2025-01-31 23:59:00');
+(11, 'C\'est tout un art', '2025-01-20 00:00:00', 'test modif', 5, 2, '2025-01-31 23:59:00');
 
 -- --------------------------------------------------------
 
@@ -199,12 +199,12 @@ CREATE TABLE `localisation` (
 --
 
 INSERT INTO `localisation` (`id_loc`, `lieu`, `departement`, `ville`) VALUES
-(1, "Devant l\'ancienne caserme de pompiers - Au bout du", '47 - Lot et Garonne', 'Miramont de Guyenne'),
+(1, 'Devant l\'ancienne caserme de pompiers - Au bout du', '47 - Lot et Garonne', 'Miramont de Guyenne'),
 (2, 'Place du Champs de Foire', '87 - Haute Vienne', 'Saint-Bonnet-de-Bellac'),
 (3, 'Place François Mitterrand', '87 - Haute Vienne', 'Le Dorat'),
 (4, 'Place Beaubreuil - A côté de la Maison des ARts et', '87 - Haute Vienne', 'Limoges'),
 (5, 'Devant la salle municipale du Vigenal - 5 rue Geor', '87 - Haute Vienne', 'Limoges'),
-(6, "Devant le BFM du Val de l'Aurence", '87 - Haute Vienne', 'Limoges'),
+(6, 'Devant le BFM du Val de l\'Aurence', '87 - Haute Vienne', 'Limoges'),
 (7, 'Quai du Gravier', '47 - Lot et Garonne', 'Agen');
 
 -- --------------------------------------------------------
@@ -216,7 +216,7 @@ INSERT INTO `localisation` (`id_loc`, `lieu`, `departement`, `ville`) VALUES
 CREATE TABLE `sponsors` (
   `id_sponsors` int(11) NOT NULL,
   `nom` varchar(50) DEFAULT NULL,
-  `lien` varchar(50) DEFAULT NULL,
+  `lien` varchar(255) DEFAULT NULL,
   `descriptions` varchar(50) DEFAULT NULL,
   `categorie` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -226,22 +226,22 @@ CREATE TABLE `sponsors` (
 --
 
 INSERT INTO `sponsors` (`id_sponsors`, `nom`, `lien`, `descriptions`, `categorie`) VALUES
-(1, 'Bolloré', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', "Créé en 1822, le Groupe Bolloré figure aujourd'hui", 'Mécènes'),
-(2, 'Fondation Daniel & Nina Carasso', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation Daniel et Nina Carasso a été créée dé', 'Mécènes'),
-(3, "Fondation d'entreprise TOTAL", 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation Total est partenaire de grandes insti', 'Mécènes'),
-(4, 'Fondation PSA PEUGEOT CITROËN', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', 'La Fondation PSA Peugeot Citroën, lancée en 2011, ', 'Mécènes'),
-(5, 'Ministère de la culture et de la communication', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', '', 'Partenaires'),
-(6, "Ministère de l'Éducation Nationale, de l'Enseignem", 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', '', 'Partenaires'),
-(7, 'UNESCO', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(8, 'ASHOKA', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(9, 'Préfet de la Région Île-de-France', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(10, 'Association Nationale des Conseillers Pédagogiques', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(11, 'FRAC LORRAINE', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(12, 'ATD Quart Monde', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(13, 'PLATFORM', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(14, 'Ministère de la Jeunesse, des Sports et de la Vie ', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires'),
-(15, "La France s'Engage", 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', "Le MuMo lauréat de La France s'engage! Le MuMo com", 'Partenaires'),
-(16, 'Centre national des arts plastiques', 'C:UsersuserOneDriveDocumentsMMI2eme AnnéeSAE_301sp', ' ', 'Partenaires');
+(1, 'Bolloré', './images/Sponsors/bolloré.webp', 'Créé en 1822, le Groupe Bolloré figure aujourd\'hui', 'Mécènes'),
+(2, 'Fondation Daniel & Nina Carasso', './images/Sponsors/daniel&ninacarasso.webp', 'La Fondation Daniel et Nina Carasso a été créée dé', 'Mécènes'),
+(3, 'Fondation d\'entreprise TOTAL', './images/Sponsors/fondation_total.webp', 'La Fondation Total est partenaire de grandes insti', 'Mécènes'),
+(4, 'Fondation PSA PEUGEOT CITROËN', './images/Sponsors/fondation_PSA.webp', 'La Fondation PSA Peugeot Citroën, lancée en 2011, ', 'Mécènes'),
+(5, 'Ministère de la culture et de la communication', './images/Sponsors/ministere_culture_comm.webp', '', 'Partenaires'),
+(6, 'Ministère de l\'Éducation Nationale, de l\'Enseignem', './images/Sponsors/ministere_educ_nation_et_enseignement_sup_et_recherche.webp', '', 'Partenaires'),
+(7, 'UNESCO', './images/Sponsors/unesco.webp', ' ', 'Partenaires'),
+(8, 'ASHOKA', './images/Sponsors/ashoka.webp', ' ', 'Partenaires'),
+(9, 'Préfet de la Région Île-de-France', './images/Sponsors/prefet_region-ile-de-france.webp', ' ', 'Partenaires'),
+(10, 'Association Nationale des Conseillers Pédagogiques', './images/Sponsors/asso-nation-conseil-pedago.webp', ' ', 'Partenaires'),
+(11, 'FRAC LORRAINE', './images/Sponsors/FRAC_lorraine.webp', ' ', 'Partenaires'),
+(12, 'ATD Quart Monde', './images/Sponsors/ATD-quart-monde.webp', ' ', 'Partenaires'),
+(13, 'PLATFORM', './images/Sponsors/platform.webp', ' ', 'Partenaires'),
+(14, 'Ministère de la Jeunesse, des Sports et de la Vie ', './images/Sponsors/ministère-jeune-sport-vie-asso.webp', ' ', 'Partenaires'),
+(15, 'La France s\'Engage', './images/Sponsors/france-engage.webp', 'Le MuMo lauréat de La France s\'engage! Le MuMo com', 'Partenaires'),
+(16, 'Centre national des arts plastiques', './images/Sponsors/amp.webp', ' ', 'Partenaires');
 
 -- --------------------------------------------------------
 

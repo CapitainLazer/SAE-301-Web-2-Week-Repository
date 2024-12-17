@@ -89,14 +89,90 @@ label{
 }
 
 .livreMuMo:hover{
-    filter: contrast(170%);
+    filter: contrast(130%);
     transition: 0.5s;
     scale: 1.05;
+}
+
+.livreMuMo h4{
+    font-size: 1.5rem;
 }
 
 .card-body{
     color: black;
 }
+
+/*Animation au survol d'une oeuvre*/
+.image-card:hover{
+    filter: contrast(170%);
+    transition: 0.5s;
+    scale: 1.05;
+}
+
+/*--Mise en forme des pop-ups des oeuvres--*/
+
+/* Styles pour le conteneur de la pop-up */
+#popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Contenu de la pop-up */
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: linear-gradient(#ffe6e6, #ffb1b6, 50%, #e66771);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Style de l'image */
+.popup-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px  rgb(46, 46, 46);
+}
+
+/* Texte sous l'image */
+.popup-content p {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    color:black;
+}
+
+/* Bouton fermer */
+#close-popup {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: "Coolvetica";
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    background: #ffdfdf;
+    color:rgb(245, 49, 62);
+    border: 2px solid rgb(245, 49, 62);
+}
+
 /* HEADER */
 .header {
     display: flex;
@@ -838,4 +914,17 @@ h3 {
     font-size: 20px;
     font-weight: bold;
     color: black;
+}
+
+/* Liste demande contact */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-item {
+    padding: 1rem;
+    border-radius: 15%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
