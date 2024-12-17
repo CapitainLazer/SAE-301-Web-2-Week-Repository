@@ -18,19 +18,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
         <title>Demandes de Contact</title>
-        <style>
-            /* Masque les sections au démarrage */
-            .content {
-                display: none;
-            }
-
-            /* Style optionnel pour un effet visuel */
-            h2 {
-                cursor: pointer;
-                color: blue;
-            }
-        </style>
     </head>
     <body>
         <h1>Demandes non traités</h1>
@@ -56,8 +46,8 @@
                 <?php endforeach; ?>
         </div>
 
-        <h2 onclick="toggleSection('localisation')">Demandes traités</h2>
-        <div id="localisation" class="content">
+        <h2 onclick="toggleSection('statu')">Demandes traités</h2>
+        <div id="statu" class="parties">
         <?php foreach($tabContactstr as $Traite): ?>
                     <div class="contact-item">
                         <p><?php echo "Demande de : ".$Traite["nom"];?></p>

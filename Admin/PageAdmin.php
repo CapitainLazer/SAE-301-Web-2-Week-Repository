@@ -33,18 +33,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
-        <style>
-            /* Masque les sections au démarrage */
-            .content {
-                display: none;
-            }
-
-            /* Style optionnel pour un effet visuel */
-            h2 {
-                cursor: pointer;
-                color: blue;
-            }
-        </style>
     </head>
     <body>
         <?php include_once('../addon/header2.php');?>
@@ -53,7 +41,7 @@
 
             <!-- Section Évènements -->
             <h2 class="foot-link2" onclick="toggleSection('evenements')">Évènements</h2>
-            <div id="evenements" class="content">
+            <div id="evenements" class="parties">
                 <h3>Suppression d'un évènement</h3>
                 <form action="supprimer.php" method="POST">
                     <select name="id" size=12>
@@ -112,7 +100,7 @@
 
             <!-- Section Types -->
             <h2 class="foot-link2" onclick="toggleSection('types')">Types</h2>
-            <div id="types" class="content">
+            <div id="types" class="parties">
                 <h3>Suppression d'un type d'évènement</h3>
                 <form action="supprimer.php" method="POST">
                     <select name="id" size=12>
@@ -136,7 +124,7 @@
 
             <!-- Section Localisation -->
             <h2 onclick="toggleSection('localisation')">Localisation</h2>
-            <div id="localisation" class="content">
+            <div id="localisation" class="parties">
                 <h3>Suppression d'un lieu</h3>
                 <form action="supprimer.php" method="POST">
                     <select name="id" size=12>
@@ -162,7 +150,7 @@
 
             <!-- Section Camions -->
             <h2 onclick="toggleSection('camions')">Camions</h2>
-            <div id="camions" class="content">
+            <div id="camions" class="parties">
                 <h3>Suppression d'un camion</h3>
                 <form action="supprimer.php" method="POST">
                     <select name="id" size=12>
@@ -186,7 +174,7 @@
 
             <!-- Section Archives -->
             <h2 onclick="toggleSection('archives')">Archives</h2>
-            <div id="archives" class="content">
+            <div id="archives" class="parties">
                 <h3>Ajout dans les archives</h3>
                 <form action="ajouter.php" method="POST">
                     Lien de le l'image ou de la vidéo : <input type="text" name="lien" required /><br>
@@ -198,7 +186,7 @@
 
             <!-- Section Sponsors -->
             <h2 onclick="toggleSection('sponsors')">Partenaires</h2>
-            <div id="sponsors" class="content">
+            <div id="sponsors" class="parties">
                 <h3>Ajout d'un partenaire</h3>
                 <form action="ajouter.php" method="POST">
                     Nom du partenaire : <input type="text" name="nom" required /><br>

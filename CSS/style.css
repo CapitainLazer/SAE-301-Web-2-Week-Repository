@@ -720,6 +720,10 @@ input:focus {
 }
 
 /* Page admin */
+/* Masque les sections au démarrage */
+.parties {
+    display: none;
+}
 
 .foot-link2 {
     border: 2px solid white;
