@@ -27,14 +27,14 @@
             </div>
             <div class="tab-body hidden inscription" id="inscription">
                 <h2>Creation de votre compte</h2>
-                <form action="___.php" method="POST" class="form-container">
+                <form action="creeutilisateur.php" method="POST" class="form-container">
                     <div class="form-group">
                         <label for="mail"class="letter-spacing-15">Mail*</label>
                         <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="mdp" class="letter-spacing-15">Mot de Passe*</label>
-                        <input type="password" id="createmdp" name="mdp" required placeholder="mot de passe">
+                        <input type="password" id="createmdp" name="newmdp" required placeholder="mot de passe">
                     </div>
                     <div class="form-group">
                         <label for="mdp"class="letter-spacing-15">Confirmez le Mot de Passe*</label>
