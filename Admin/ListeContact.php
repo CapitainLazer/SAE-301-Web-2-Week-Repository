@@ -78,7 +78,7 @@
                 }
             </script>
             <br><br>
-            <a href="PageAdmin.php"><button>Retour à la page Admin</button></a>
+            <a href="PageAdmin.php"><button class="button-link">Retour à la page Admin</button></a>
         </div>
         <?php include_once('../addon/Footer2.php');?>
     </body>
