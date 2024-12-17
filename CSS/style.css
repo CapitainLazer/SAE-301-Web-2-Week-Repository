@@ -931,3 +931,19 @@ h3 {
     border-radius: 15%;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+/* Filtre */
+.filters>div>.label {
+    font-size: 15px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+#filter-ville, #filter-type, #filter-departement {
+    width: auto !important;
+    padding: 4px 6px;
+}
