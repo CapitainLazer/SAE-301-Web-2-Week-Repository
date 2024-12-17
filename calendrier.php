@@ -38,7 +38,7 @@
             include_once('addon/header.php');
         ?>
         <div class="filters">
-            <label for="filter-type">Type d'événement :</label>
+            <label class="label" for="filter-type">Type d'événement :</label>
             <select id="filter-type">
                 <option value="">Tous</option>
                 <?php
@@ -50,7 +50,7 @@
                 ?>
             </select>
 
-            <label for="filter-ville">Ville :</label>
+            <label class="label" for="filter-ville">Ville :</label>
             <select id="filter-ville">
                 <option value="">Toutes</option>
                 <?php 
@@ -62,7 +62,7 @@
                 ?>
             </select>
 
-            <label for="filter-departement">Département :</label>
+            <label class="label" for="filter-departement">Département :</label>
             <select id="filter-departement">
                 <option value="">Tous</option>
                 <?php 
