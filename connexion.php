@@ -6,6 +6,7 @@
         <title>Mumo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./JS/popup_erreur.js" type="text/javascript"></script>
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
 </head>
   <body>       
@@ -16,7 +17,7 @@
                 <form action="verifconnexion.php" method="POST" class="form-container">
                     <div class="form-group">
                         <label for="mail"class="letter-spacing-15">Mail</label>
-                        <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
+                        <input type="mail" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="mdp"class="letter-spacing-15">Mot de Passe*</label>
@@ -30,7 +31,7 @@
                 <form action="creeutilisateur.php" method="POST" class="form-container">
                     <div class="form-group">
                         <label for="mail"class="letter-spacing-15">Mail*</label>
-                        <input type="email" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
+                        <input type="mail" id="mail" name="mail" required placeholder="nom.prenom@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="mdp" class="letter-spacing-15">Mot de Passe*</label>
@@ -38,7 +39,7 @@
                     </div>
                     <div class="form-group">
                         <label for="mdp"class="letter-spacing-15">Confirmez le Mot de Passe*</label>
-                        <input type="password" id="confirmmdp" name="mdp" required placeholder="mot de passe">
+                        <input type="password" id="confirmmdp" name="confirmmdp" required placeholder="mot de passe">
                     </div>
                     <button type="submit" class="btn-submit">Inscription</button>
                 </form>

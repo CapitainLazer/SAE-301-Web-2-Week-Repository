@@ -6,19 +6,25 @@ try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail = filter_input(INPUT_POST, 'mail', FILTER_VALIDATE_EMAIL);
         $newmdp = $_POST['newmdp'];
-        $confirmmdp = $_POST['mdp'];
+        $confirmmdp = $_POST['confirmmdp'];
         if (!$mail) {
-            die('Adresse e-mail invalide.');
+            //die('Adresse e-mail invalide.');
+            header('Location: connexionadmin.php?error=1');
+            exit();
         }
         if ($newmdp !== $confirmmdp) {
-            die('Les mots de passe ne correspondent pas.');
+            //die('Les mots de passe ne correspondent pas.');
+            header('Location: connexionadmin.php?error=2');
+            exit();
         }
         $checkEmail = $bdd->prepare("SELECT COUNT(*) FROM compte WHERE mail = :mail");
         $checkEmail->bindParam(':mail', $mail, PDO::PARAM_STR);
         $checkEmail->execute();
 
         if ($checkEmail->fetchColumn() > 0) {
-            die('Cette adresse e-mail est déjà utilisée. Veuillez en choisir une autre.');
+            //die('Cette adresse e-mail est déjà utilisée. Veuillez en choisir une autre.');
+            header('Location: connexionadmin.php?error=3');
+            exit();
         }
         $hashedPassword = sha1($newmdp);
         $sql = "INSERT INTO compte (mail, mdp) VALUES (:mail, :mdp)";

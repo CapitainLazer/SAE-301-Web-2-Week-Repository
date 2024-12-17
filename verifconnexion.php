@@ -13,19 +13,20 @@
     $resultats2->closeCursor();
 
     foreach($compte as $c):
-        if ($_POST["mail"]==$c["mail"] && $_POST[sha1("mdp")]==$c[sha1("mdp")]) {
+        if ($_POST["mail"]==$c["mail"] && sha1($_POST["mdp"]) == $c["mdp"]) {
             header('Location: ./user/PageUser.php');
             exit();
         }
     endforeach;
 
-    if ($_POST["mail"]==$admin["mail"] && $_POST[sha1("mdp")]==$admin[sha1("mdp")]) {
+    if ($_POST["mail"]==$admin["mail"] && sha1($_POST["mdp"]) == $admin["mdp"]) {
         header('Location: ./admin/PageAdmin.php');
         exit();
     }
     
     else {
-        header('Location: index.php');
+        header('Location: connexion.php?error=4');
         exit();
     }
+    
 ?>
