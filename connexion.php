@@ -51,8 +51,8 @@
             </div>
             <br>
             <div class="tab-header">
-                <a class="link-connexion hidden">Connexion</a>
-                <a class="link-inscription">Inscription</a>
+                <button class="link-connexion boutonconect hidden">Connexion</button>
+                <button class="link-inscription boutonconect">Inscription</button>
             </div>
             <br>
         </section>
