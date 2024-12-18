@@ -65,7 +65,6 @@
                         ?>
                     </select>
                 </div>
-                
                 <div>
                     <label class="label" for="filter-departement">Département :</label>
                     <select id="filter-departement">
