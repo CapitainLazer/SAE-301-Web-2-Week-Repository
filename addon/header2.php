@@ -14,7 +14,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid ">
-        <a class="logo" href="index.php"><img src="../images/logo_MUMO.png"></a>
+        <a class="logo" href="../index.php"><img src="../images/logo_MUMO.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

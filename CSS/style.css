@@ -1027,18 +1027,18 @@ body .adminpage{
 }
 
 /* Conteneur du formulaire */
-.form-container {
+/*.form-container2 {
     width: 100%;
     max-width: 600px;
     background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px); /* Effet flou */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilité Safari */
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
 }
-
+*/
 /* Formulaire */
 /* Centrer le conteneur principal sans toucher au body */
 .center-container {
