@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 

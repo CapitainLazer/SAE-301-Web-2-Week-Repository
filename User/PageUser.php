@@ -1,5 +1,11 @@
 <?php
     session_start();
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: ../connexion.php');
+        exit();
+    }
+    $userId = $_SESSION['user_id'];
+    $userMail = $_SESSION['user_mail'];
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +21,7 @@
     <body>
         <?php include_once('../addon/header2.php');?>
         <main class="content">
-            <a href="../deconnexion.php">Déconnexion</a>
+            <a href="../deconnexion.php"><button>Déconnexion</button></a>
         </main>
         <?php include_once('../addon/Footer2.php');?>
     </body>
