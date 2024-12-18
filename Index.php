@@ -23,8 +23,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
         <script src="./JS/popup_erreur.js" type="text/javascript"></script>
+        <script src="./JS/bouton.js"></script>
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
 </head>
+<button id="backToTopBtn" class="back-to-top">↑</button>
 <body>
     <?php include_once('addon/header.php');?>
     <iframe src="https://www.youtube.com/embed/Us72CpwwGAk?si=qZzTa3i6zCPyoksm" class="video marg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

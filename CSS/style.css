@@ -627,7 +627,6 @@ label{
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
     text-align: center;
-    margin-bottom: 20px;
     font-size: 1.5rem;
     font-family: 'Frula';
 }
@@ -731,7 +730,9 @@ input:focus {
 }
 
 .tab-header {
-    position: absolute;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -15px;
     height: 30px;
     display: flex;
   }
@@ -963,4 +964,44 @@ h3 {
 #filter-ville, #filter-type, #filter-departement {
     width: auto !important;
     padding: 4px 6px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #d93636;
+}
+.boutonconect{
+    align-self: center;
+    text-align: center;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0);
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "Coolvetica";
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.boutonconect:hover {
+    background-color: #ffd9d9;
+    color: red;
+    border-color: #ffd9d9;
 }

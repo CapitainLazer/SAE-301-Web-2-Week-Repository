@@ -10,15 +10,16 @@
         <title>A Propos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./JS/bouton.js"></script>
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
         <script src="JS/popUp.js"></script>
 </head>
 <body>
     <?php include_once('addon/header.php');?>
 
-    <div class="content">
+    <div class="content marg2">
         <!-- Section : L'équipe du Musée -->
-            <p class="container card shadow marg2">
+            <p class="container card shadow ">
                 Né de la conviction que l'art est un outil d'ouverture, de partage et d'éveil au monde, MuMo est un musée mobile destiné 
                 à aller à la rencontre des enfants, en particulier ceux qui se trouvent éloignés de l'accès à la culture,
                 en se rendant directement sur leur lieu de vie : cour d'école, centre de loisirs, parking d'un quartier...<br>
