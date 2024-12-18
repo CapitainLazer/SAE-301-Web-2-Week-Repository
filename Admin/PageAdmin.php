@@ -35,7 +35,7 @@
         <script src="../JS/bouton.js"></script>
         <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
     </head>
-    <body id="adminpage">
+    <body class="adminpage">
         <?php include_once('../addon/header2.php');?>
         <div class="container">
             <h1>Page d'administration</h1>

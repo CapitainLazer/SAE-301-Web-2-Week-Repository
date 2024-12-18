@@ -18,13 +18,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
         <title>Choix des types pour l'évènement</title>
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./JS/bouton.js"></script>
+        <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
     </head>
-    <body>
-        <h1>Choix des types pour l'évènement</h1>
+    <body class="adminpage">
+    <?php include_once('../addon/header2.php');?>
+    <div class="container">
+        <br>
+        <h1 class="lienstypes">Choix des types pour l'evenement</h1><br>
         <form action="ajoutLienType.php" method="POST">    
         <input type="hidden" name="id_eve" value="<?php echo $id;?>">      
-            <h2>Types :</h2>
+            <h2 class="lienstypes2">Types :</h2>
                 <?php
                     foreach($tabtypes as $types):
                         ?>
@@ -32,7 +38,10 @@
                         <?php
                     endforeach;
                 ?>
-            <input type="submit" value=">Ajouter"/>
+                <br>
+            <input type="submit" class="boutonconect" value="Ajouter"/>
         </form><br>
+    </div>
+        <?php include_once('../addon/Footer2.php');?>
     </body>
 </html>

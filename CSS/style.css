@@ -291,6 +291,11 @@ label{
 }
 /* Media queries pour les écrans de PC */
 @media (min-width: 768px) {
+    .merci {
+        margin-left: 10rem;
+        margin-top: 4rem;
+    }
+
     .content {
         padding: 3.2rem;
     }
@@ -1008,7 +1013,7 @@ h3 {
     border-color: #ffd9d9;
 }
 
-body #adminpage{
+body .adminpage{
     height: 100vh;
 }
 
@@ -1152,4 +1157,10 @@ body #adminpage{
         font-size: 0.9rem;
         padding: 8px;
     }
+}
+.lienstypes{
+    margin-top: 15px;
+}
+.lienstypes2{
+margin-bottom: 20px;
 }
