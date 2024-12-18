@@ -35,11 +35,11 @@
         <script src="./JS/bouton.js"></script>
         <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
     </head>
-    <body>
+    <body id="adminpage">
         <?php include_once('../addon/header2.php');?>
         <div class="container">
             <h1>Page d'administration</h1>
-
+<br>
             <!-- Section Évènements -->
             <h2 class="button-container foot-link2" onclick="toggleSection('evenements')">Évènements</h2>
             <div id="evenements" class="parties">
