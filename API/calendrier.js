@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 end: event.dates_fin,
                                 description: event.description_evenements,
                                 location: event.lieu + ', ' + event.ville,
+                                likes: event.likes,
                             }));
                             successCallback(events);
                         }
@@ -48,7 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     '\nDu : ' + info.event.start.toLocaleDateString() +
                     '\nAu : ' + (info.event.end ? info.event.end.toLocaleDateString() : 'Non spécifié') +
                     '\nLieu : ' + info.event.extendedProps.location +
-                    '\nDescription : ' + info.event.extendedProps.description
+                    '\nDescription : ' + info.event.extendedProps.description +
+                    '\nLikes : ' + info.event.extendedProps.likes
                 );
             }
         });
