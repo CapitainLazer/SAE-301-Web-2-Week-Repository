@@ -2,7 +2,7 @@
     <div class="container">
     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-3 border-white"></div>
     <p class="text-footer">
-    info@musee-mobile.fr Lucie AVRIL mumo2.lucie@gmail.com Louise HARREWYN mumo2.louise@gmail.com
+    info@musee-mobile.fr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lucie AVRIL mumo2.lucie@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Louise HARREWYN mumo2.louise@gmail.com
     </p><br>
         <div class="row">
             <ul class="foot flex-row">

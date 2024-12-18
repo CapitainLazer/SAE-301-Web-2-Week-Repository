@@ -1,6 +1,9 @@
 <?php
     session_start();
 
+    $userId = $_SESSION['user_id'];
+    $userMail = $_SESSION['user_mail'];
+
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
@@ -38,7 +41,7 @@
         <title>Évènements</title>
     </head>
     <body>
-        <?php include_once('addon/header.php');?>
+        <?php include_once('./addon/header.php');?>
         <main class="container">
             <div class="filters" style="align-items: center;">
                 <div>

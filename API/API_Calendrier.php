@@ -1,12 +1,11 @@
 <?php
     include("../config/config.php");
-
     try {
         $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd, $identifiant, $mot_de_passe, $options);
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Préparation de la requête avec des filtres
-        $query = "SELECT DISTINCT e.nom_evenements, e.dates_debut, e.dates_fin, e.description_evenements, l.ville, l.lieu, 
+        $query = "SELECT DISTINCT e.id_eve, e.nom_evenements, e.dates_debut, e.dates_fin, e.description_evenements, l.ville, l.lieu, 
             COUNT(DISTINCT likes.id_likes) AS likes
             FROM evenements e
             JOIN localisation l ON e.id_loc = l.id_loc
@@ -17,7 +16,7 @@
 
         $params = [];
 
-        // Ajout des filtres dynamiquement
+        // Ajout des filtres
         if (!empty($_GET['type'])) {
             $query .= " AND t.id_type = :type";
             $params['type'] = $_GET['type'];

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 18 déc. 2024 à 14:06
+-- Généré le : mer. 18 déc. 2024 à 17:22
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -169,7 +169,8 @@ INSERT INTO `evenements` (`id_eve`, `nom_evenements`, `dates_debut`, `descriptio
 (5, 'Le dessin dans tous ses états Limoges', '2024-12-19 00:00:00', 'Portes ouvertes le samedi 21 décembre de 10h30 à 12h puis de 14h à 17h30', 5, 2, '2024-12-24 23:59:00'),
 (6, 'Le dessin dans tous ses états Limoges', '2024-12-26 00:00:00', 'Portes ouvertes le jeudi 26 et vendredi 27 décembre de 10h à 12h puis de 14h à 17h', 6, 2, '2024-12-27 23:59:00'),
 (7, 'Le dessin dans tous ses états Agen', '2024-12-30 00:00:00', 'Portes ouvertes le lundi 30, le mardi 31 décembre de 16h à 18h, le mercredi 1er janvier de 10h à 12h puis de 14h à 17h, le jeudi 2 janvier de 15h à 17h et le vendredi 3 janvier de 16h à 18h', 7, 2, '2025-01-03 23:59:00'),
-(11, 'C\'est tout un art', '2025-01-20 00:00:00', 'test modif', 5, 2, '2025-01-31 23:59:00');
+(11, 'C\'est tout un art', '2025-01-20 00:00:00', 'test modif', 5, 2, '2025-01-31 23:59:00'),
+(13, 'Horloge poireau', '2024-12-18 00:00:00', 'Pourquoi se contenter d\'une horloge quand on peut avoir une œuvre d\'art qui donne l\'heure ?', 7, 3, '2024-12-18 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -182,6 +183,23 @@ CREATE TABLE `likes` (
   `id_compte` int(11) NOT NULL,
   `id_eve` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `likes`
+--
+
+INSERT INTO `likes` (`id_likes`, `id_compte`, `id_eve`) VALUES
+(1, 1, 3),
+(2, 1, 11),
+(3, 1, 6),
+(4, 2, 1),
+(5, 3, 2),
+(6, 4, 4),
+(7, 5, 7),
+(8, 5, 3),
+(9, 1, 5),
+(10, 2, 5),
+(11, 4, 5);
 
 -- --------------------------------------------------------
 
@@ -342,7 +360,9 @@ ALTER TABLE `evenements`
 ALTER TABLE `likes`
   ADD PRIMARY KEY (`id_likes`),
   ADD KEY `id_compte` (`id_compte`),
-  ADD KEY `id_eve` (`id_eve`);
+  ADD KEY `id_eve` (`id_eve`),
+  ADD CONSTRAINT `unique_like` UNIQUE (`id_compte`, `id_eve`);
+
 
 --
 -- Index pour la table `localisation`
@@ -408,13 +428,13 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT pour la table `evenements`
 --
 ALTER TABLE `evenements`
-  MODIFY `id_eve` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_eve` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT pour la table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id_likes` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_likes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `localisation`
