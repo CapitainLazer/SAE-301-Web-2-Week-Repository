@@ -1,12 +1,3 @@
-  /* Fonction pour afficher une pop-up
-function showPopup() {
-    alert("Adresse e-mail invalide.");
-}
-  
-// Attacher la fonction à un événement de clic sur un bouton
-document.getElementById("myButton").addEventListener("click", showPopup);*/
-  
-
 // Écouteur d'événement pour exécuter des actions lorsque la page est entièrement chargée
 window.addEventListener('load', function() {
   // Récupération des paramètres d'URL
@@ -27,6 +18,6 @@ window.addEventListener('load', function() {
     alert("Le mot de passe ou l'adresse mail est invalide.");
   }
   if (error === '5') {
-    alert("Le compte n'existe pas.");
+    alert("Le compte n'existe pas avec cette adresse mail.");
   }
 });

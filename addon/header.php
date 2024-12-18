@@ -35,7 +35,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="A_Propos.php">À Propos</a>
                     </li>
-                    <a class="icon_nav" href="connexion.php">
+                    <a class="icon_nav" href="verifsession.php">
                         <div class="user-icon">👤</div>
                     </a>
                 </ul>
