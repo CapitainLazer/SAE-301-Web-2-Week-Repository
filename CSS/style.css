@@ -1008,6 +1008,12 @@ h3 {
     border-color: #ffd9d9;
 }
 
-body #adminpage{
+body .adminpage{
     height: 100vh;
+}
+.lienstypes{
+    margin-top: 15px;
+}
+.lienstypes2{
+margin-bottom: 20px;
 }
