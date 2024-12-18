@@ -6,12 +6,14 @@
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Préparation de la requête avec des filtres
-        $query = "SELECT DISTINCT e.nom_evenements, e.dates_debut, e.dates_fin, e.description_evenements, l.ville, l.lieu 
-                FROM evenements e
-                JOIN localisation l ON e.id_loc = l.id_loc
-                LEFT JOIN type_evenement te ON e.id_eve = te.id_eve
-                LEFT JOIN types t ON te.id_type = t.id_type
-                WHERE 1=1";
+        $query = "SELECT DISTINCT e.nom_evenements, e.dates_debut, e.dates_fin, e.description_evenements, l.ville, l.lieu, 
+            COUNT(DISTINCT likes.id_likes) AS likes
+            FROM evenements e
+            JOIN localisation l ON e.id_loc = l.id_loc
+            LEFT JOIN type_evenement te ON e.id_eve = te.id_eve
+            LEFT JOIN types t ON te.id_type = t.id_type
+            LEFT JOIN likes ON e.id_eve = likes.id_eve
+            WHERE 1=1";
 
         $params = [];
 
@@ -28,6 +30,8 @@
             $query .= " AND l.departement = :departement";
             $params['departement'] = $_GET['departement'];
         }
+
+        $query .= " GROUP BY e.id_eve";
 
         $stmt = $bdd->prepare($query);
         $stmt->execute($params);
