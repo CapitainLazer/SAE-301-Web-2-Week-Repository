@@ -248,6 +248,7 @@ label{
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    bottom: 0;
 }
 
 .foot {
@@ -704,6 +705,7 @@ input:focus {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 20px;
+    margin-top: 20px;
 }
 
 .img-fluid{
@@ -1009,4 +1011,8 @@ h3 {
     background-color: #ffd9d9;
     color: red;
     border-color: #ffd9d9;
+}
+
+body #adminpage{
+    height: 100vh;
 }
