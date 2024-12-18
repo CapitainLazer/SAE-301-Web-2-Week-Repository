@@ -97,7 +97,8 @@
 
         <!-- Section 4 : À propos -->
         <section class="section">
-            <div>
+            <div class="hr-with-text">
+                <hr class="custom-hr">
                 <h2>A propos</h2>
             </div>
             <p>Quelques-unes de nos œuvres.</p>
