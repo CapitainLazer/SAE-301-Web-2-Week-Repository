@@ -15,10 +15,13 @@
     </head>
     <body>
         <?php include_once('addon/header.php');?>
-        <main class="content">
-            <h1>Merci pour votre message !</h1>
-            <p>Nous vous répondrons dans les plus brefs délais.</p>
-            <a href="index.php">Retour à l'accueil</a>
+        <main class="content marg2">
+            <br>
+            <div class="merci">
+                <h1>Merci pour votre message !</h1>
+                <p>Nous vous répondrons dans les plus brefs délais.</p>
+                <a href="index.php"><button class="boutonconect">Retour à l'accueil</button></a>
+            </div>
         </main>
         <?php include_once('addon/Footer.php');?>
     </body>

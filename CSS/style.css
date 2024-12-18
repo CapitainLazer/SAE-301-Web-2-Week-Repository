@@ -290,6 +290,11 @@ label{
 }
 /* Media queries pour les écrans de PC */
 @media (min-width: 768px) {
+    .merci {
+        margin-left: 10rem;
+        margin-top: 4rem;
+    }
+
     .content {
         padding: 3.2rem;
     }
