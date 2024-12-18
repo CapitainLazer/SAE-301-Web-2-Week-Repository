@@ -38,50 +38,54 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
         <title>Modification d'un évènement</title>
     </head>
     <body>
-        <h1>Modification d'un évènement</h1>
-        <main>
-            <form action="AjoutModif.php" method="POST">
-                <p><label for="nom">Nom : <?php echo " ".$tabEve["nom_evenements"]; ?></label><br/>
-                <input type="text" name="nom" required value='<?php echo $tabEve["nom_evenements"]; ?>'/></p>
+        <div class="center-container">
+            <h1 class="form-title">Modification d'un evenement</h1>
+            <main>
+                <form action="AjoutModif.php" class="event-form" method="POST">
+                    <p class="form-group"><label for="nom" class="form-label">Nom : <?php echo " ".$tabEve["nom_evenements"]; ?></label><br/>
+                    <input type="text" name="nom" required value='<?php echo $tabEve["nom_evenements"]; ?>'/></p>
 
-                <p><label for="dates_debut">Date début : <?php echo " ".$tabEve["dates_debut"]; ?></label><br/>
-                <input type="date" name="dates_debut" required value='<?php echo $tabEve["dates_debut"]; ?>'/></p>
-                
-                <p><label for="dates_fin">Date fin : <?php echo " ".$tabEve["dates_fin"]; ?></label><br/>
-                <input type="date" name="dates_fin" required value='<?php echo $tabEve["dates_fin"]; ?>'/></p>
+                    <p class="form-group"><label for="dates_debut" class="form-label">Date début : <?php echo " ".$tabEve["dates_debut"]; ?></label><br/>
+                    <input type="date" name="dates_debut" required value='<?php echo $tabEve["dates_debut"]; ?>'/></p>
+                    
+                    <p class="form-group"><label for="dates_fin" class="form-label">Date fin : <?php echo " ".$tabEve["dates_fin"]; ?></label><br/>
+                    <input type="date" name="dates_fin" required value='<?php echo $tabEve["dates_fin"]; ?>'/></p>
 
-                <p><label for="descriptions">Description : <?php echo " ".$tabEve["description_evenements"]; ?></label><br/>
-                <input type="text" name="descriptions" required value='<?php echo $tabEve["description_evenements"]; ?>'/></p>
-                
-                <p><label for="Localisation">Lieu : <?php echo " ".$theLieu["lieu"].", ".$theLieu["ville"]." _ ".$theLieu["departement"];?></label><br/>
-                <select name="lieu" required>
-                <?php
-                    foreach($tablieu as $lieu):
-                ?>
-                    <option value="<?php echo $lieu["id_loc"];?>"><?php echo $lieu["lieu"]." ".$lieu["ville"]." ".$lieu["departement"];?></option>
-                <?php
-                    endforeach;
-                ?>
-                </select></p>
+                    <p class="form-group"><label for="descriptions" class="form-label">Description : <?php echo " ".$tabEve["description_evenements"]; ?></label><br/>
+                    <input type="text" name="descriptions" required value='<?php echo $tabEve["description_evenements"]; ?>'/></p>
+                    
+                    <p class="form-group"><label for="Localisation" class="form-label">Lieu : <?php echo " ".$theLieu["lieu"].", ".$theLieu["ville"]." _ ".$theLieu["departement"];?></label><br/>
+                    <select name="lieu" class="form-select" required>
+                    <?php
+                        foreach($tablieu as $lieu):
+                    ?>
+                        <option value="<?php echo $lieu["id_loc"];?>"><?php echo $lieu["lieu"]." ".$lieu["ville"]." ".$lieu["departement"];?></option>
+                    <?php
+                        endforeach;
+                    ?>
+                    </select></p>
 
-                <p><label for="Camion">Camion : <?php echo " ".$theCamion["nom_camion"];?></label><br/>
-                <select name="camion" required>
-                <?php
-                    foreach($tabcamion as $camion):
-                ?>
-                    <option value="<?php echo $camion["id_camion"];?>"><?php echo $camion["nom_camion"];?></option>
-                <?php
-                    endforeach;
-                ?>
-                </select></p>
+                    <p class="form-group"><label for="Camion" class="form-label">Camion : <?php echo " ".$theCamion["nom_camion"];?></label><br/>
+                    <select name="camion" class="form-select" required>
+                    <?php
+                        foreach($tabcamion as $camion):
+                    ?>
+                        <option value="<?php echo $camion["id_camion"];?>"><?php echo $camion["nom_camion"];?></option>
+                    <?php
+                        endforeach;
+                    ?>
+                    </select></p>
 
-                <input type="hidden" name="id" value="<?php echo $_POST["id"];?>" />
+                    <input type="hidden" name="id" value="<?php echo $_POST["id"];?>" />
 
-                <input type="submit" value="Modifier"/>
-            </form>
-        </main>
+                    <input type="submit" value="Modifier" class="form-submit-btn"/>
+                </form>
+            </main>
+        </div>
     </body>
 </html>
