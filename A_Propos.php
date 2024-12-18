@@ -14,7 +14,7 @@
 
     <div class="content">
         <!-- Section : L'équipe du Musée -->
-            <p class="container card shadow">
+            <p class="container card shadow marg2">
                 Né de la conviction que l'art est un outil d'ouverture, de partage et d'éveil au monde, MuMo est un musée mobile destiné 
                 à aller à la rencontre des enfants, en particulier ceux qui se trouvent éloignés de l'accès à la culture,
                 en se rendant directement sur leur lieu de vie : cour d'école, centre de loisirs, parking d'un quartier...<br>
