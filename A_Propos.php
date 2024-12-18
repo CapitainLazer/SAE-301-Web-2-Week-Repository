@@ -11,6 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
         <script src="./JS/bouton.js"></script>
+        <meta name="description" content="Une page consacrée à la liste des oeuvres, de l'équipes et des artistes de Mumo." />
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
         <script src="JS/popUp.js"></script>
 </head>
@@ -40,7 +41,10 @@
             </p>
 
         <section class="container">
+            <div class="hr-with-text">
+            <hr class="custom-hr">
             <h1>L'equipe du MuMo</h1>
+            </div>
             <br>
             <div class="row d-flex flex-row">
                 <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
@@ -126,7 +130,10 @@
         
         <!-- Section : Nos Artistes -->
         <section class="container">
+            <div class="hr-with-text">
+            <hr class="custom-hr">
             <h1>Les Artistes</h1>
+            </div>
             <p>Depuis sa création, le MuMo (le Musée Mobile) a donné à voir et à découvrir les projets spécifiques de 21 artistes, 
                 qui sont autant d'acteurs majeurs de la scène contemporaine internationale. </p>
             <br>
@@ -222,7 +229,10 @@
 
         <!-- Section : Les publications -->
         <section class="container">
+            <div class="hr-with-text">
+            <hr class="custom-hr">
             <h1>Les Publications</h1>
+            </div>
             <br>
             <div class="row d-flex flex-row justify-content-center gap-5 card-group"><!--rangement en lignes "rows" -->
 
@@ -286,7 +296,10 @@
             <div class="row d-flex flex-row">
 
                 <div class="col-12">
+                <div class="hr-with-text">
+                <hr class="custom-hr">
                     <h1>Les oeuvres</h1>
+                </div>
                     <p>Chacun des artistes sollicités a réalisé ou choisi une œuvre en direction du MuMo en tenant compte d'un contexte singulier : 
                         penser l'oeuvre dans un espace limité, prendre en compte les contraintes liées à l'itinérance du container, 
                         mais surtout imaginer la confrontation des enfants avec leurs créations.

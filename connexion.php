@@ -12,6 +12,7 @@
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
         <script src="./JS/bouton.js"></script>
         <script src="./JS/popup_erreur.js" type="text/javascript"></script>
+        <meta name="description" content="Une page consacrée à la création d’un compte ou à la connexion à un compte existant." />
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
 </head>
   <body>       

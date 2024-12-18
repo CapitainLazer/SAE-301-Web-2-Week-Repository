@@ -19,6 +19,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Le MuMo (Musée Mobile) est un musée itinérant dédié à l’art contemporain, conçu pour amener l’art directement aux enfants et aux populations éloignées des institutions culturelles traditionnelles. Installé dans un camion transformé, il parcourt les territoires pour offrir des expositions interactives et gratuites." />
         <title>Mumo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
