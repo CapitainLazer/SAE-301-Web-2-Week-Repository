@@ -9,9 +9,7 @@
     <title>Pédagogie</title>
 </head>
 <body>
-    <?php
-        include_once('addon/header.php');
-    ?>
+    <?php include_once('addon/header.php');?>
 
     <div class="container">
         <section class="content">

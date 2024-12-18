@@ -34,9 +34,7 @@
         <title>Évènements</title>
     </head>
     <body>
-        <?php
-            include_once('addon/header.php');
-        ?>
+        <?php include_once('addon/header.php');?>
         <main class="container">
             <div class="filters" style="align-items: center;">
                 <div>
