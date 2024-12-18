@@ -18,4 +18,5 @@
             </ul>
         </div>
     </div>  
+    <button id="retourHaut" class="back-to-top">↑</button> 
 </footer>

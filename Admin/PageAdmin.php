@@ -32,6 +32,7 @@
         <title>Page d'administration</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./JS/bouton.js"></script>
         <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
     </head>
     <body>

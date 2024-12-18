@@ -17,5 +17,6 @@
                 <li><a class="logo-footer" href="https://www.youtube.com/channel/UC2lgTNCAbu5Pr31qlPSCrQQ"><img src="images/youtube-play.png"></a></li>
             </ul>
         </div>
-    </div>  
+    </div>
+    <button id="retourHaut" class="back-to-top">↑</button> 
 </footer>
