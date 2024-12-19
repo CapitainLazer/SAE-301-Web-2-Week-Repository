@@ -16,6 +16,7 @@
 
     <div class="container">
         <section class="content">
+            <h1>Mentions Legales</h1>
             <div class="row">
                 <h2>1. Éditeur du site</h2>
                 <p>Le présent site, accessible à l’adresse <a href="https://mumo.antoineplane-portfolio.fr">https://mumo.antoineplane-portfolio.fr</a>, est édité par :</p>
@@ -71,7 +72,7 @@
 
             <div class="row">
                 <h2>6. Responsabilité</h2>
-                <p>L’association <em>Mumo le musée mobile</em> s’efforce d’assurer l’exactitude des informations publiées sur le site, 
+                <p>L’association <em>MuMo le musée mobile</em> s’efforce d’assurer l’exactitude des informations publiées sur le site, 
                     mais ne peut être tenue responsable des erreurs ou omissions éventuelles.
                 </p>
             </div>

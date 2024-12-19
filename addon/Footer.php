@@ -9,6 +9,7 @@
                 <li><a href="Sponsors.php" class="foot-link">Partenaires</a></li>
                 <li><a href="Contact.php" class="foot-link">Contact</a></li>
                 <li><a href="archives.php" class="foot-link">Archives</a></li>
+                <li><a href="mentions_legales.php" class="foot-link">Mentions Légales</a></li>
             </ul>
             <ul class="foot flex-row">
                 <li><a class="logo-footer" href="https://www.facebook.com/mumoxcentrepompidou/"><img src="images/facebook-new.png"></a></li>
