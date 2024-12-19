@@ -353,7 +353,7 @@ label{
     }
 
     .content {
-        padding: 0;
+        padding: 10px;
     }
 
     .header {
@@ -416,7 +416,7 @@ label{
     }
 
     .content {
-        padding: 0px;
+        padding: 10px;
     }
 
     .nav-link {
@@ -1185,4 +1185,9 @@ margin-bottom: 20px;
 .back-btn {
     margin-top: 20px;
     font-size: 1rem;
+}
+
+/* Style page compte */
+.likes {
+    margin-bottom: 0 !important;
 }
