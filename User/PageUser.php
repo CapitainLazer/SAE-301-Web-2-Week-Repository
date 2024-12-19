@@ -48,8 +48,27 @@
                 <?php echo $tabCompte["mail"];?><br>
                 <?php echo $tabCompte["telephone"];?>
                 <div class="bouton">
-                    <a href="#"><button class="h">Modifier</button></a>
+                    <a><button class="h" id="modif">Modifier</button></a>
                 </div>
+            </div>
+            <!-- Formulaire caché initialement -->
+            <div id="updateForm" style="display:none;">
+                <h3>Modifier vos informations</h3>
+                <form action="traitement-modif.php" method="POST">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" value="<?php echo $tabCompte['nom']; ?>" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" value="<?php echo $tabCompte['prenom']; ?>" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="text" id="telephone" name="telephone" value="<?php echo $tabCompte['telephone']; ?>" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                </form>
             </div>
             <br>
             <div>
@@ -70,7 +89,15 @@
                     <?php endforeach; ?>
                 </div>
             </div>
-            <a href="../deconnexion.php"><button>Déconnexion</button></a>
+            <div class="bouton">
+                <a href="../deconnexion.php"><button class="h">Déconnexion</button></a>
+            </div>
+            <script>
+                document.getElementById('modif').addEventListener('click', function(event) {
+                    event.preventDefault(); // Empêche le lien de rediriger
+                    document.getElementById('updateForm').style.display = 'block'; // Affiche le formulaire
+                });
+            </script>
         </main>
         <?php include_once('../addon/Footer2.php');?>
     </body>
