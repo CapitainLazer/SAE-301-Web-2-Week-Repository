@@ -2,7 +2,10 @@
     include("../config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
-    $requete = 'SELECT * FROM evenements';
+    $requete = 'SELECT id_eve,nom_evenements,description_evenements,id_loc, id_camion, 
+    DATE_FORMAT(dates_debut, "%d/%m/%Y") AS dates_debut, 
+    DATE_FORMAT(dates_fin, "%d/%m/%Y") AS dates_fin
+    FROM evenements';
     $resultats = $bdd->query($requete);
     $tabEvenement = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();

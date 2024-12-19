@@ -10,14 +10,13 @@
     include("../config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
-    $requete = 'SELECT e.id_eve,e.nom_evenements,e.dates_debut,e.dates_fin,e.description_evenements,l.lieu,l.ville,l.departement/*,c.nom_camion,
-    t.nom AS type_evenement*/
+    $requete = 'SELECT e.id_eve,e.nom_evenements,
+    DATE_FORMAT(dates_debut, "%d/%m/%Y") AS dates_debut, 
+    DATE_FORMAT(dates_fin, "%d/%m/%Y") AS dates_fin,
+    e.description_evenements,l.lieu,l.ville,l.departement
     FROM likes li
     JOIN evenements e ON li.id_eve = e.id_eve
     JOIN localisation l ON e.id_loc = l.id_loc
-    /*JOIN camion c ON e.id_camion = c.id_camion
-    JOIN type_evenement te ON e.id_eve = te.id_eve
-    JOIN types t ON te.id_type = t.id_type*/
     WHERE li.id_compte='.$userId;
     $resultats = $bdd->query($requete);
     $tabLikes = $resultats->fetchAll(PDO::FETCH_ASSOC);

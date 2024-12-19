@@ -38,7 +38,7 @@
                             $resultats->closeCursor();
                             foreach ($tabSponso as $Sponso): 
                             ?>
-                                <img src="<?php echo $Sponso["lien"] ?>" class="sponsor">
+                                <img src="<?php echo $Sponso["lien"];?>" class="sponsor" alt="<?php echo $Sponso["nom"];?>">
                             <?php
                             endforeach;
                         ?>

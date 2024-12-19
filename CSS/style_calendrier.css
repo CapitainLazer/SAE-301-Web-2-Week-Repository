@@ -4,7 +4,7 @@
     color: black !important;
 }
 
-.fc-h-event {
+.fc-h-event, .fc-event, .fc-event-start, .fc-event-end, .fc-event-past, .fc-daygrid-event, .fc-daygrid-dot-event {
     background-color: #D63542;
     border: 1px solid #D63542;
     display: block;
@@ -30,7 +30,7 @@
     color: #ffe6e6;
 }
 
-.fc:hover .fc-button-primary:hover{
+.fc:hover .fc-button-primary:hover {
     background-color: #ffe6e6;
     border: 1px solid #ffe6e6;
     color: #D63542;
@@ -39,6 +39,15 @@
 a {
     text-decoration: none !important;
     font-family: "Coolvetica";
+}
+
+.fc-daygrid-event-dot {
+    border: 0 !important;
+}
+
+.fc-event-title {
+    color: white;
+    font-weight: 500 !important;
 }
 
 @media (max-width: 768px) {

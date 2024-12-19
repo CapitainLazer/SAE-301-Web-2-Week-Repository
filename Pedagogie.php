@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div><br><br>
-            <div class="card" style="width: 50%;">
+            <div class="card mx-auto my-4 w-100 w-md-75 w-lg-50">
                 <div class="card-header">
                     En Cours
                 </div>
@@ -63,8 +63,11 @@
                     <h4 class="card-title">Dans les règles de l'art</h4>
                     <p class="card-text"><span>Du 27 mai au 5 octobre 2024</span><br>Une exposition imaginée par le Centre Pompidou avec les œuvres de Roland Flexner, Herbert W. Franke, Wade Guyton, Simon Hantaï, Jean-Claude Marquette, Raphael Montañez Ortiz, François Morellet, Aurélie Nemours, A. Michael Noll, Ladislav Novak, Jean-Luc Parant et Pierrick Sorin issues de la collection du Musée national d’art moderne – Centre Pompidou.</p>
                     <div class="bouton">
-                        <button class="h">Voir plus</button>
+                        <a href="https://padlet.com/mumo2projet/dans-les-r-gles-de-l-art-exposition-du-mumo-x-centre-pompido-brdopnl5bvkheseb"><button class="h">VOIR LES RESSOURCES PÉDAGOGIQUES</button></a>
+                        <br>
+                        <a href="https://www.dropbox.com/scl/fo/fg44t0agyy6ryofdx72fm/ANA1uDwDoz06NMbZKhmoPaw?rlkey=806283kr0phqqqpq5hqnlclb9&e=1&st=pe0i2lk0&dl=0"><button class="h">TÉLÉCHARGER UNE SÉLECTION DE VISUELS</button></a>
                     </div>
+                    
                 </div>
             </div>
         </section>

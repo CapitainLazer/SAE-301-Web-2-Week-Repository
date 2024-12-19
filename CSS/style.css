@@ -106,10 +106,6 @@ label{
     font-size: 1.5rem;
 }
 
-.card-body{
-    color: black;
-}
-
 /*Animation au survol d'une oeuvre*/
 .image-card:hover{
     filter: contrast(170%);
@@ -321,11 +317,33 @@ label{
         margin: 0 0; 
         padding: 6rem 11rem;
     }
+
+    .card {
+        width: 40% !important; /* Garde la largeur actuelle pour les PC */
+    }
 }
 
 
 /* Media queries pour les écrans plus petits (tablettes et téléphones) */
 @media (max-width: 768px) {
+    .event-form {
+        padding: 15px;
+        width: 90%; /* Utilise 90% de la largeur disponible sur petits écrans */
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+
+    .form-input, .form-select {
+        font-size: 0.9rem;
+    }
+
+    .form-submit-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
     #zoneFormulaire{
         max-width: 60vw;
         padding: 1.8em;
@@ -383,6 +401,11 @@ label{
         margin: 0 0; 
         padding: 2rem;
     }
+
+    .card {
+        width: 100% !important;
+        margin: 0 auto;
+    }
 }
 
 /* Pour les écrans très petits (mobiles en portrait) */
@@ -422,10 +445,14 @@ label{
         width: 100%;
         height: 20em;
     }
+
+    .card {
+        width: 100% !important; /* Prend toute la largeur de l'écran */
+        margin: 0 auto; /* Centre la carte horizontalement */
+    }
 }
+
 /*Page index*/
-
-
 .camion {
     border-radius: 8px;
     height: auto;
@@ -728,6 +755,7 @@ input:focus {
 
 .card-body {
     background-color: #FFB1B6;
+    color: black;
 }
 
 .card-header {
@@ -1138,26 +1166,6 @@ body .adminpage{
     background-color: #fff;
 }
 
-/* Styles responsive pour petits écrans */
-@media (max-width: 768px) {
-    .event-form {
-        padding: 15px;
-        width: 90%; /* Utilise 90% de la largeur disponible sur petits écrans */
-    }
-
-    .form-title {
-        font-size: 1.8rem;
-    }
-
-    .form-input, .form-select {
-        font-size: 0.9rem;
-    }
-
-    .form-submit-btn {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-}
 .lienstypes{
     margin-top: 15px;
 }
