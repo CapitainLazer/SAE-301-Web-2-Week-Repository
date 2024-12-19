@@ -21,6 +21,11 @@
     $resultats = $bdd->query($requete);
     $tabLikes = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
+
+    $requete = 'SELECT * FROM compte WHERE id_compte='.$userId;
+    $resultats = $bdd->query($requete);
+    $tabCompte = $resultats->fetch(PDO::FETCH_ASSOC);
+    $resultats->closeCursor();
 ?>
 
 <!DOCTYPE html>
@@ -35,32 +40,34 @@
     </head>
     <body>
         <?php include_once('../addon/header2.php');?>
+        <br>
         <main class="content marg2">
             <div>
                 <h2>Vos informations personnels</h2>
-                nom & prénom<br>
-                mail<br>
-                téléphone
+                <?php echo $tabCompte["nom"]." ".$tabCompte["prenom"];?><br>
+                <?php echo $tabCompte["mail"];?><br>
+                <?php echo $tabCompte["telephone"];?>
+                <div class="bouton">
+                    <a href="#"><button class="h">Modifier</button></a>
+                </div>
             </div>
             <br>
             <div>
                 <h2>Les évènements que vous avez liké</h2>
-                <div>
-                    <?php
-                    foreach ($tabLikes as $likes):
-                    ?>
-                        <p>
-                            <?php echo $likes["nom_evenements"]; ?><br>
-                            <?php echo $likes["dates_debut"]; ?><br>
-                            <?php echo $likes["dates_fin"]; ?><br>
-                            <?php echo $likes["description_evenements"]; ?><br>
-                            <?php echo $likes["lieu"]; ?><br>
-                            <?php echo $likes["ville"]; ?><br>
-                            <?php echo $likes["departement"]; ?><br>
-                        </p>
-                    <?php
-                    endforeach;
-                    ?>
+                <div class="contact">
+                    <?php foreach ($tabLikes as $likes): ?>
+                        <div class="contact-item">
+                            <p class="likes">
+                                <?php echo $likes["nom_evenements"]; ?><br>
+                                <?php echo "Du : ".$likes["dates_debut"]; ?><br>
+                                <?php echo "Au : ".$likes["dates_fin"]; ?><br>
+                                <?php echo $likes["description_evenements"]; ?><br>
+                                <?php echo $likes["lieu"]; ?><br>
+                                <?php echo $likes["ville"]; ?><br>
+                                <?php echo $likes["departement"]; ?><br>
+                            </p>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <a href="../deconnexion.php"><button>Déconnexion</button></a>

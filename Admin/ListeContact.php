@@ -55,16 +55,16 @@
             <div id="statu" class="parties">
                 <div class="contact">
                 <?php foreach($tabContactstr as $Traite): ?>
-                    <div class="contact-item">
-                        <p>
-                            <?php echo "<b>Demande de : </b>".$Contacts["nom"];?><br>
-                            <?php echo "<b>Datant du : </b>".$Contacts["dates"];?><br>
-                            <?php echo "<b>Object : </b>".$Contacts["object"];?><br>
-                            <?php echo "<b>Message : </b><br>".$Contacts["messages"];?><br>
-                            <?php echo "<b>Mail : </b>".$Contacts["mail"];?><br>
-                            <?php echo "<b>Téléphone : </b>".$Contacts["telephone"];?>
-                        </p>
-                    </div>
+                        <div class="contact-item">
+                            <p>
+                                <?php echo "<b>Demande de : </b>".$Contacts["nom"];?><br>
+                                <?php echo "<b>Datant du : </b>".$Contacts["dates"];?><br>
+                                <?php echo "<b>Object : </b>".$Contacts["object"];?><br>
+                                <?php echo "<b>Message : </b><br>".$Contacts["messages"];?><br>
+                                <?php echo "<b>Mail : </b>".$Contacts["mail"];?><br>
+                                <?php echo "<b>Téléphone : </b>".$Contacts["telephone"];?>
+                            </p>
+                        </div>
                 <?php endforeach; ?>
                 </div>
             </div>
