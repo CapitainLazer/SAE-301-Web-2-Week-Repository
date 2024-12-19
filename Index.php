@@ -38,7 +38,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6 d-flex flex-colomn align-items-center">
                     <div class="camion">
-                        <img src="images/camion.webp" class="img-fluid rounded" style="height:470px; object-fit: cover;" alt="Image des collections permanentes au musée" />
+                        <img src="images/camion.webp" class="img-fluid rounded" style="height:470px; object-fit: cover;" alt="Photo d'un des camions du musée Mumo avec ses couleurs rouge." />
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6 ">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-12 col-lg-6  col-md-12 col-sm-12">
                             <div class="collection-info">
-                                <img src="images/mumo.webp" class="img-fluid rounded" alt="Image des collections permanentes au musée" />
+                                <img src="images/mumo.webp" class="img-fluid rounded" alt="Photo du camion Mumo en collaboration avec le centre Pompidou avec les couleurs vertes." />
                             </div>
                         </div>
                     </div>
@@ -110,15 +110,15 @@
             <p>Quelques-unes de nos œuvres.</p>
             <div class="about-images">
                 <div class="image-card">
-                    <img src="./images/oeuvres/oeuvre1.png" alt="">
+                    <img src="./images/oeuvres/oeuvre1.png" alt="Photo d'une oeuvre.">
                     <p>Immagine (2011)<br><span>Maurizio Cattelan</span></p>
                 </div>
                 <div class="image-card">
-                    <img src="./images/oeuvres/oeuvre2.png" alt="">
+                    <img src="./images/oeuvres/oeuvre2.png" alt="Photo d'une oeuvre.">
                     <p>MapaMapa (2013)<br><span>Sébastien Cordoléani</span></p>
                 </div>
                 <div class="image-card">
-                    <img src="./images/oeuvres/oeuvre3.png" alt="">
+                    <img src="./images/oeuvres/oeuvre3.png" alt="Photo d'une oeuvre.">
                     <p>Six Dogs Jumping (2012)<br><span>John Baldessari</span></p>
                 </div>
             </div>
