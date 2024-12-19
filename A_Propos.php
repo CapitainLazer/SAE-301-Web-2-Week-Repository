@@ -140,84 +140,84 @@
             <div class="row d-flex flex-row"><!--rangement en lignes "rows" -->
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/ghada_amer.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/ghada_amer.webp" class="card-img-top" alt="Photo de l'artiste, Ghada AMER">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Ghada AMER</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/john_baldessari.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/john_baldessari.webp" class="card-img-top" alt="Photo de l'artiste, John BALDESSARI">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">John BALDESSARI</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/daniel_buren.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/daniel_buren.webp" class="card-img-top" alt="Photo de l'artiste, Daniel BUREN">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Daniel BUREN</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/maurizio_cattelan.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/maurizio_cattelan.webp" class="card-img-top" alt="Photo de l'artiste, Maurizio CATTELAN">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Maurizio CATTELAN</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/florence_doleac.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/florence_doleac.webp" class="card-img-top" alt="Photo de l'artiste, Florence DOLÉAC">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Florence DOLÉAC</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/pierre_huyghe.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/pierre_huyghe.webp" class="card-img-top" alt="Photo de l'artiste, Pierre HUYGHE">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Pierre HUYGHE</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/paul_mccarthy.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/paul_mccarthy.webp" class="card-img-top" alt="Photo de l'artiste, Paul McCARTHY">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Paul McCARTHY</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/roman_signer.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/roman_signer.webp" class="card-img-top" alt="Photo de l'artiste, Roman SIGNER">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Roman SIGNER</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/james_turrell.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/james_turrell.webp" class="card-img-top" alt="Photo de l'artiste, James TURRELL">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">James TURRELL</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/tursic_ mille.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/tursic_ mille.webp" class="card-img-top" alt="Photo des artistes, Ida Tursic & Wilfried Mille">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Ida Tursic & Wilfried Mille</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/nari_ward.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/nari_ward.webp" class="card-img-top" alt="Photo de l'artiste, Nari WARD">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Nari WARD</p>
                     </div>
                 </div>
 
                 <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
-                    <img src="./images/artistes/lawrence_weiner.webp" class="card-img-top" alt="...">
+                    <img src="./images/artistes/lawrence_weiner.webp" class="card-img-top" alt="Photo de l'arstite, Lawrence WEINER">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Lawrence WEINER</p>
                     </div>
