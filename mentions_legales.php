@@ -19,7 +19,7 @@
             <h1>Mentions Legales</h1>
             <div class="row">
                 <h2>1. Éditeur du site</h2>
-                <p>Le présent site, accessible à l’adresse <a href="https://mumo.antoineplane-portfolio.fr">https://mumo.antoineplane-portfolio.fr</a>, est édité par :</p>
+                <p>Le présent site, accessible à l’adresse <a href="https://mumo.antoineplane-portfolio.fr" style="color: white;">https://mumo.antoineplane-portfolio.fr</a>, est édité par :</p>
                 <ul>
                     <li><strong>Nom de l’association : </strong>Mumo le musée mobile</li>
                     <li><strong>Statut juridique : </strong>Association loi 1901</li>
@@ -39,8 +39,8 @@
                     <li><strong>Adresse : </strong></li>
                     <p><strong>- Nom de serveur : </strong>server1584</p>
                     <p><strong>- Emplacement du serveur : </strong>France</p>
-                    <li><strong>Contact : </strong><a href="https://www.hostinger.fr/contact">https://www.hostinger.fr/contact</a></li>
-                    <li><strong>Site web : </strong><a href="https://www.hostinger.fr">https://www.hostinger.fr</a></li>
+                    <li><strong>Contact : </strong><a href="https://www.hostinger.fr/contact" style="color: white;">https://www.hostinger.fr/contact</a></li>
+                    <li><strong>Site web : </strong><a href="https://www.hostinger.fr"style="color: white;">https://www.hostinger.fr</a></li>
                 </ul>
             </div>
 
@@ -64,7 +64,7 @@
 
             <div class="row">
                 <h2>5. Cookies</h2>
-                <p>Le site <a href="https://mumo.antoineplane-portfolio.fr">https://mumo.antoineplane-portfolio.fr</a> utilise des cookies pour améliorer l’expérience utilisateur et analyser la fréquentation 
+                <p>Le site <a href="https://mumo.antoineplane-portfolio.fr" style="color: white;">https://mumo.antoineplane-portfolio.fr</a> utilise des cookies pour améliorer l’expérience utilisateur et analyser la fréquentation 
                     du site. En continuant à naviguer sur ce site, vous acceptez l’utilisation des cookies. 
                     Vous pouvez configurer votre navigateur pour les désactiver.
                 </p>

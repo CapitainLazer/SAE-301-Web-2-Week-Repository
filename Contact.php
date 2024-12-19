@@ -61,7 +61,7 @@
                     <div class="col-10 my-3 d-flex flex-row gap-3">
                         <input type="checkbox" name="message" required></textarea>
                         <p style="color: white; font-size: 12px;">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées à des fins commerciales. 
-                        Pour en savoir plus sur l'utilisation de vos données, consultez notre <em>RGPD et Politique de confidentialité</em>.</p>
+                        Pour en savoir plus sur l'utilisation de vos données, consultez notre <em><a href="rgpd.php" style="color: white;">RGPD</a> et nos <a href="mentions_legales.php" style="color: white;">Mentions Légales</a></em>.</p>
                     </div>
 
                     <div class="d-flex flex-xl-row flex-column flex-gap-3">
