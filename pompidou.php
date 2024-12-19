@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 info2">
                     <div class="collection-info">
-                        <img src="images/mumo.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
+                        <img src="images/mumo.webp" class="img-fluid" alt="Photo du camion Mumo en collaboration avec le centre Pompidou avec les couleurs vertes."/>
                     </div>
                 </div>
                 <div class="col">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="collection-info">
-                        <img src="images/mumoxpompidou1.jpg" class="img-fluid" alt="Image des collections permanentes au musée"/>
+                        <img src="images/mumoxpompidou1.jpg" class="img-fluid" alt="Photo de plusieurs enfants dans le musée."/>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 info2">
                     <div class="collection-info">
-                        <img src="images/interview.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
+                        <img src="images/interview.webp" class="img-fluid" alt="Photo des deux personnes interviewer."/>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">

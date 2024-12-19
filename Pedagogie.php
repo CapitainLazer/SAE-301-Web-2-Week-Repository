@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="collection-info">
-                        <img src="images/pedagogie1.webp" class="img-fluid" alt="Image des collections permanentes au musée"/>
+                        <img src="images/pedagogie1.webp" class="img-fluid" alt="Image d'un enfant sur une tablette."/>
                     </div>
                 </div>
                 <div class="col">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="collection-info">
-                        <img src="images/pedagogie1.webp" class="img-fluid" alt="Image d'une enfant qui jour sur une tablette"/>
+                        <img src="images/pedagogie1.webp" class="img-fluid" alt="Image d'un enfant sur une tablette."/>
                     </div>
                 </div>
             </div><br><br>
@@ -58,7 +58,7 @@
                 <div class="card-header">
                     En Cours
                 </div>
-                <img src="images/pedagogie2.webp" class="card-img-top" alt="...">
+                <img src="images/pedagogie2.webp" class="card-img-top" alt="Image d'une oeuvre d'art.">
                 <div class="card-body">
                     <h4 class="card-title">Dans les règles de l'art</h4>
                     <p class="card-text"><span>Du 27 mai au 5 octobre 2024</span><br>Une exposition imaginée par le Centre Pompidou avec les œuvres de Roland Flexner, Herbert W. Franke, Wade Guyton, Simon Hantaï, Jean-Claude Marquette, Raphael Montañez Ortiz, François Morellet, Aurélie Nemours, A. Michael Noll, Ladislav Novak, Jean-Luc Parant et Pierrick Sorin issues de la collection du Musée national d’art moderne – Centre Pompidou.</p>
