@@ -45,10 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
             displayEventTime: false,
             displayEventEnd: false,
             eventClick: function(info) {
-                console.log("ID de l'événement cliqué :", info.event.id);
                 alert(
                     '' + info.event.title +
-                    '\n' + info.event.id +
                     '\nDu : ' + info.event.start.toLocaleDateString() +
                     '\nAu : ' + (info.event.end ? info.event.end.toLocaleDateString() : 'Non spécifié') +
                     '\nLieu : ' + info.event.extendedProps.location +
@@ -71,8 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                     alert(data.error);
                                 }
                             } catch (e) {
-                                console.error("Erreur de parsing JSON :", e, response);
-                                alert('Réponse inattendue du serveur.');
+                                //console.error("Erreur de parsing JSON :", e, response);
+                                //alert('Réponse inattendue du serveur.');
                             }
                         },
                         error: function(jqXHR, textStatus, errorThrown) {
