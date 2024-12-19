@@ -318,8 +318,16 @@ label{
         padding: 6rem 11rem;
     }
 
-    .card {
-        width: 40% !important; /* Garde la largeur actuelle pour les PC */
+    #carte {
+        width: 40% !important;
+    }
+
+    .container {
+        max-width: 1200px;
+        min-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 20px;
+        margin-top: 20px;
     }
 }
 
@@ -402,9 +410,16 @@ label{
         padding: 2rem;
     }
 
-    .card {
+    #carte {
         width: 100% !important;
         margin: 0 auto;
+    }
+    .container {
+        max-width: 1200px;
+        min-width: 500px;
+        margin: 0 auto;
+        padding: 4rem 20px;
+        margin-top: 20px;
     }
 }
 
@@ -446,9 +461,17 @@ label{
         height: 20em;
     }
 
-    .card {
-        width: 100% !important; /* Prend toute la largeur de l'écran */
-        margin: 0 auto; /* Centre la carte horizontalement */
+    #carte {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 1200px;
+        min-width: 400px;
+        margin: 0 auto;
+        padding: 4rem 20px;
+        margin-top: 20px;
     }
 }
 
@@ -464,7 +487,7 @@ label{
 
 .texte {
     background: #D63542;
-    border-radius: 20px; /* Coins arrondis */
+    border-radius: 20px;
     color: white;
     font-family: "Coolvetica";
     text-align: justify;
@@ -488,7 +511,6 @@ label{
 .archives {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
 }
 
 .videoarchi{
@@ -727,12 +749,6 @@ input:focus {
     backdrop-filter: blur(100px);
     height: 100%;
     margin-top: 0;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 20px;
-    margin-top: 20px;
 }
 
 .img-fluid{

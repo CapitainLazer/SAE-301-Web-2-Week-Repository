@@ -118,7 +118,7 @@
             </div>
 
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
-                <p class="chiffreCle">68 K</p>
+                <p class="chiffreCle">68&nbsp;K</p>
                 <p class="chiffreCle_texte">enfants accueillis</p>
             </div>
 

@@ -1,8 +1,8 @@
 <?php
     session_start();
 
-    $userId = $_SESSION['user_id'];
-    $userMail = $_SESSION['user_mail'];
+    $userId = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+    $userMail = isset($_SESSION['user_mail']) ? $_SESSION['user_mail'] : null;
 
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
