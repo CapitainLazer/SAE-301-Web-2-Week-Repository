@@ -17,10 +17,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Partenaires</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <script src="./JS/bouton.js"></script>
+        <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./js/bouton.js"></script>
         <meta name="description" content="Une page consacrée à la liste de tous les partenaires du MuMo." />
-        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
+        <link rel="icon" type="image/png" href="./images/favicon_MuMo.png">
 </head>
 <body>
     <?php include_once('addon/header.php');?>   
@@ -47,6 +47,6 @@
             </div>
         </div>        
     </div>
-    <?php include_once('addon/Footer.php');?>
+    <?php include_once('addon/footer.php');?>
 </body>
 </html>

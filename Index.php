@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
@@ -13,7 +12,6 @@
     $tabEvenement = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,18 +20,16 @@
         <meta name="description" content="Le MuMo (Musée Mobile) est un musée itinérant dédié à l’art contemporain, conçu pour amener l’art directement aux enfants et aux populations éloignées des institutions culturelles traditionnelles. Installé dans un camion transformé, il parcourt les territoires pour offrir des expositions interactives et gratuites." />
         <title>Mumo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <script src="./JS/popup_erreur.js" type="text/javascript"></script>
-        <script src="./JS/bouton.js"></script>
-        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
+        <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./js/popup_erreur.js" type="text/javascript"></script>
+        <script src="./js/bouton.js"></script>
+        <link rel="icon" type="image/png" href="./images/favicon_MuMo.png">
 </head>
 <button id="backToTopBtn" class="back-to-top">↑</button>
 <body>
-    <?php include_once('addon/header.php');?>
+    <?php include_once('./addon/header.php');?>
     <iframe src="https://www.youtube.com/embed/Us72CpwwGAk?si=qZzTa3i6zCPyoksm" class="video marg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
     <div class="content">
-        <!-- Section 1 : Image et Texte du Camion -->
         <section class="content">
             <div class="row align-items-center">
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6 d-flex flex-colomn align-items-center">
@@ -51,8 +47,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section 2 : En ce moment -->
         <div class="section">
             <div class="hr-with-text">
                 <hr class="custom-hr">
@@ -69,9 +63,7 @@
                     </div>
                 <?php endforeach; ?>
             </div>
-        </div>
-
-        <!-- Section 3 : MuMo/Pompidou -->
+        </div>->
         <div class="section pompidou">
             <div class="text">
                 <div class="hr-with-text">
@@ -95,13 +87,10 @@
                             </div>
                         </div>
                     </div>
-                
                 </section>
                     <a href="pompidou.php"class="bouton"><button class="h">Voir plus</button></a>
             </div>
         </div>
-
-        <!-- Section 4 : À propos -->
         <section class="section">
             <div class="hr-with-text">
                 <hr class="custom-hr">
@@ -122,9 +111,9 @@
                     <p>Six Dogs Jumping (2012)<br><span>John Baldessari</span></p>
                 </div>
             </div>
-            <a href="A_Propos.php" class="bouton"><button class="h">Voir plus</button></a>
+            <a href="a_propos.php" class="bouton"><button class="h">Voir plus</button></a>
         </section>
     </div>
-    <?php include_once('addon/Footer.php');?>
+    <?php include_once('./addon/footer.php');?>
 </body>
 </html>

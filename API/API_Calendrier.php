@@ -3,8 +3,6 @@
     try {
         $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd, $identifiant, $mot_de_passe, $options);
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        // Préparation de la requête avec des filtres
         $query = "SELECT DISTINCT e.id_eve, e.nom_evenements, e.dates_debut, e.dates_fin, e.description_evenements, l.ville, l.lieu, 
             COUNT(DISTINCT likes.id_likes) AS likes
             FROM evenements e
@@ -13,10 +11,7 @@
             LEFT JOIN types t ON te.id_type = t.id_type
             LEFT JOIN likes ON e.id_eve = likes.id_eve
             WHERE 1=1";
-
         $params = [];
-
-        // Ajout des filtres
         if (!empty($_GET['type'])) {
             $query .= " AND t.id_type = :type";
             $params['type'] = $_GET['type'];
@@ -29,16 +24,12 @@
             $query .= " AND l.departement = :departement";
             $params['departement'] = $_GET['departement'];
         }
-
         $query .= " GROUP BY e.id_eve";
-
         $stmt = $bdd->prepare($query);
         $stmt->execute($params);
-
         $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
         echo json_encode($events);
-    } 
+    }
     catch (PDOException $e) {
         echo json_encode(["error" => $e->getMessage()]);
     }

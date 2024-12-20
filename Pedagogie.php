@@ -8,15 +8,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
     <meta name="description" content="Une page consacrée à des activités pédagogiques, comme des jeux, pour le MuMo." />
-    <script src="./JS/bouton.js"></script>
+    <script src="./js/bouton.js"></script>
     <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
     <title>Pédagogie</title>
 </head>
 <body>
-    <?php include_once('addon/header.php');?>
-
+    <?php include_once('./addon/header.php');?>
     <div class="container">
         <section class="content">
             <div class="row">
@@ -67,13 +66,12 @@
                         <br>
                         <a href="https://www.dropbox.com/scl/fo/fg44t0agyy6ryofdx72fm/ANA1uDwDoz06NMbZKhmoPaw?rlkey=806283kr0phqqqpq5hqnlclb9&e=1&st=pe0i2lk0&dl=0"><button class="h">TÉLÉCHARGER UNE SÉLECTION DE VISUELS</button></a>
                     </div>
-                    
                 </div>
             </div>
         </section>
     </div>
     <?php
-        include_once('addon/Footer.php');
+        include_once('./addon/footer.php');
     ?>
 </body>
 </html>

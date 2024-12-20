@@ -1,9 +1,7 @@
 <?php
     session_start();
-
     $userId = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
     $userMail = isset($_SESSION['user_mail']) ? $_SESSION['user_mail'] : null;
-
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
 
@@ -22,7 +20,6 @@
     $tabDepartement = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -32,12 +29,12 @@
         <link href="./css/style_calendrier.css" rel="stylesheet" type="text/css"/>
         <link href="./css/style.css" rel="stylesheet" type="text/css"/>
         <script src="./js/index.global.min.js" type="text/javascript"></script>
-        <script src="./JS/bouton.js"></script>
+        <script src="./js/bouton.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./api/calendrier.js" type="text/javascript"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <meta name="description" content="Une page consacrée à la liste des événements proposés par le MuMo, présentés sous forme de calendrier interactif." />
-        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
+        <link rel="icon" type="image/png" href="./images/favicon_MuMo.png">
         <title>Évènements</title>
     </head>
     <body>
@@ -84,12 +81,9 @@
                     </select>
                 </div>
                 <button id="apply-filters" class="boutonForm" style="padding: 10px 30px; font-size: 15px;">Appliquer les filtres</button>
-
             </div>       
             <div id="calendrier"></div>
         </main>
-        <?php
-            include_once('addon/Footer.php');
-        ?>
+        <?php include_once('./addon/footer.php');?>
     </body>
 </html>

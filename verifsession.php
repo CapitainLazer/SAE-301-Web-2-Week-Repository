@@ -4,10 +4,8 @@
         header('Location: ./connexion.php');
         exit();
     }
-
     $userId = $_SESSION['user_id'];
     $userMail = $_SESSION['user_mail'];
-
-    header('Location: ./User/PageUser.php');
+    header('Location: ./user/pageuser.php');
     exit();
 ?>

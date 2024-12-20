@@ -1,7 +1,6 @@
 <?php
     include("./config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
-
     class Contact {
         private $bdd;
         private $nom;
@@ -10,11 +9,9 @@
         private $telephone;
         private $dateMessage;
         private $message;
-
         public function __construct($bdd) {
             $this->bdd = $bdd;
         }
-
         public function setData($data) {
             $this->nom = htmlspecialchars($data['userNom']);
             $this->objet = htmlspecialchars($data['objetMessage']);
@@ -23,7 +20,6 @@
             $this->dateMessage = htmlspecialchars($data['dateMessage']);
             $this->message = htmlspecialchars($data['userMessage']);
         }
-
         public function save() {
             try {
                 $sql = "INSERT INTO contact (nom, mail, telephone, dates, object, messages) 

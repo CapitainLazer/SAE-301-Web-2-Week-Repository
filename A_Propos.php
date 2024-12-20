@@ -1,25 +1,22 @@
 <?php
     session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A Propos</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <script src="./js/bouton.js"></script>
-        <meta name="description" content="Une page consacrée à la liste des oeuvres, de l'équipes et des artistes de Mumo." />
-        <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
-        <script src="./js/popup.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Propos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="./js/bouton.js"></script>
+    <meta name="description" content="Une page consacrée à la liste des oeuvres, de l'équipes et des artistes de Mumo." />
+    <link rel="icon" type="image/png" href="./images/favicon_MuMo.png">
+    <script src="./js/popup.js"></script>
 </head>
 <body>
-    <?php include_once('addon/header.php');?>
-
+    <?php include_once('./addon/header.php');?>
     <div class="content marg2">
-        <!-- Section : L'équipe du Musée -->
             <p class="container card shadow ">
                 Né de la conviction que l'art est un outil d'ouverture, de partage et d'éveil au monde, MuMo est un musée mobile destiné 
                 à aller à la rencontre des enfants, en particulier ceux qui se trouvent éloignés de l'accès à la culture,
@@ -39,7 +36,6 @@
                 pour diffuser les oeuvres des collections du Cnap et des Frac. Un troisième camion-musée, le MuMo x Centre Pompidou, 
                 est imaginé en 2022 par Hérault Arnod Architectures et l'artiste Krijn de Koning pour faire circuler les oeuvres du Centre.
             </p>
-
         <section class="container">
             <div class="hr-with-text">
             <hr class="custom-hr">
@@ -47,88 +43,69 @@
             </div>
             <br>
             <div class="row d-flex flex-row">
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/ingrid_brochard.png" class="card-img-top" alt="photo de Ingrid Brochard, fondatrice du MuMo.">
                     <div class="card-body">
                         <p class="card-text">Ingrid BROCHARD | Fondatrice du MuMo</p>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/rudy_boublil.png" class="card-img-top" alt="photo de Rudy Boublil, président du MuMo.">
                     <div class="card-body">
                         <p class="card-text">Rudy BOUBLIL | Président</p>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/jonathan_gervoson.png" class="card-img-top" alt="photo de Jonathan Gervoson, secrétaire au sein de l'équipe du MuMo">
                     <div class="card-body">
                         <p class="card-text">Jonathan GERVOSON | Secrétaire</p>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/lucie_avril.png" class="card-img-top" alt="photo de Lucie Avril, directrice opérationnelle pour le MuMo.">
                     <div class="card-body">
                         <p class="card-text">Lucie AVRIL | Directrice opérationnelle</p>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/pp_parDefaut.jpg" class="card-img-top" alt="photo de substitution en l'absence d'une photo officielle de Arno Deva, directeur artisitique du MuMo.">
                     <div class="card-body">
                         <p class="card-text">Arno DEVO | Directeur artistique</p>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/louise_harrewyn.png" class="card-img-top" alt="photo de Louise Harrewyn, reponsable opérationnelle pour le MuMo.">
                     <div class="card-body">
                         <p class="card-text">Louise HARREWYN | Responsable opérationnelle & Contact MuMo x Centre Pompidou</p>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;"><!--div pour un membre de l'équipe-->
+                <div class="card" style="width: 18rem;">
                     <img src="./images/equipeMusee/clemence_renaud.png" class="card-img-top" alt="Clémence Renaud, coordinatrice du MuMo avec les partenaires.">
                     <div class="card-body">
                         <p class="card-text">Clémence RENAUD | Coordinatrice du MuMo dédié aux Frac</p>
                     </div>
                 </div>
-
             </div>
-            
+        
         </section>
     </div>
-
-    
-    
-    <!-- Section : Chiffres Clés --  ! pas dans la div "content" car pas de padding pour le fond rouge ! -->
     <section class="container-fluid shadow" style="background: #d63542; margin: 0 0; padding: 6rem 10rem; max-width: 1920px;">
         <div class="row d-flex flex-md-row flex-column justify-content-around">
-
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
                 <p class="chiffreCle">7</p>
                 <p class="chiffreCle_texte">pays visités</p>
             </div>
-
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
                 <p class="chiffreCle">270</p>
                 <p class="chiffreCle_texte">Étapes</p>
             </div>
-
             <div class="col-6 col-md-4 d-flex flex-column align-items-center">
                 <p class="chiffreCle">68&nbsp;K</p>
                 <p class="chiffreCle_texte">enfants accueillis</p>
             </div>
-
         </div>
-
     </section>
-
-    <div class="content"><!--padding pour les marges des section suivantes ...-->
-        
-        <!-- Section : Nos Artistes -->
+    <div class="content">
         <section class="container">
             <div class="hr-with-text">
             <hr class="custom-hr">
@@ -137,106 +114,89 @@
             <p>Depuis sa création, le MuMo (le Musée Mobile) a donné à voir et à découvrir les projets spécifiques de 21 artistes, 
                 qui sont autant d'acteurs majeurs de la scène contemporaine internationale. </p>
             <br>
-            <div class="row d-flex flex-row"><!--rangement en lignes "rows" -->
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+            <div class="row d-flex flex-row">
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/ghada_amer.webp" class="card-img-top" alt="Photo de l'artiste, Ghada AMER">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Ghada AMER</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/john_baldessari.webp" class="card-img-top" alt="Photo de l'artiste, John BALDESSARI">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">John BALDESSARI</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/daniel_buren.webp" class="card-img-top" alt="Photo de l'artiste, Daniel BUREN">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Daniel BUREN</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/maurizio_cattelan.webp" class="card-img-top" alt="Photo de l'artiste, Maurizio CATTELAN">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Maurizio CATTELAN</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/florence_doleac.webp" class="card-img-top" alt="Photo de l'artiste, Florence DOLÉAC">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Florence DOLÉAC</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/pierre_huyghe.webp" class="card-img-top" alt="Photo de l'artiste, Pierre HUYGHE">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Pierre HUYGHE</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/paul_mccarthy.webp" class="card-img-top" alt="Photo de l'artiste, Paul McCARTHY">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Paul McCARTHY</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/roman_signer.webp" class="card-img-top" alt="Photo de l'artiste, Roman SIGNER">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Roman SIGNER</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/james_turrell.webp" class="card-img-top" alt="Photo de l'artiste, James TURRELL">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">James TURRELL</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/tursic_ mille.webp" class="card-img-top" alt="Photo des artistes, Ida Tursic & Wilfried Mille">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Ida Tursic & Wilfried Mille</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/nari_ward.webp" class="card-img-top" alt="Photo de l'artiste, Nari WARD">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Nari WARD</p>
                     </div>
                 </div>
-
-                <div class="card py-4" style="width: 18rem;"><!--div pour un artiste-->
+                <div class="card py-4" style="width: 18rem;">
                     <img src="./images/artistes/lawrence_weiner.webp" class="card-img-top" alt="Photo de l'arstite, Lawrence WEINER">
                     <div class="card-body rounded shadow mt-4">
                         <p class="card-text">Lawrence WEINER</p>
                     </div>
                 </div>
-
             </div>
-            
         </section>
-
-        <!-- Section : Les publications -->
         <section class="container">
             <div class="hr-with-text">
             <hr class="custom-hr">
             <h1>Les Publications</h1>
             </div>
             <br>
-            <div class="row d-flex flex-row justify-content-center gap-5 card-group"><!--rangement en lignes "rows" -->
-
-                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 1-->
+            <div class="row d-flex flex-row justify-content-center gap-5 card-group">
+                <div class="card livreMuMo" style="width: 22rem;">
                     <a href="https://www.lespressesdureel.com/ouvrage.php?id=2698&menu=0" style="text-decoration: none;">
                         <img src="./images/volume1.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 1">
                         <div class="card-body">
@@ -245,8 +205,7 @@
                         </div>
                     </a>
                 </div>
-
-                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 2-->
+                <div class="card livreMuMo" style="width: 22rem;">
                     <a href="https://www.lespressesdureel.com/ouvrage.php?id=3011" style="text-decoration: none;">
                         <img src="./images/volume2.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 2">
                         <div class="card-body">
@@ -255,8 +214,7 @@
                         </div>
                     </a>
                 </div>
-
-                <div class="card livreMuMo" style="width: 22rem;"><!--div Volume 3-->
+                <div class="card livreMuMo" style="width: 22rem;">
                     <a href="https://www.lespressesdureel.com/ouvrage.php?id=3863 " style="text-decoration: none;">
                         <img src="./images/volume3.webp" class="card-img-top" alt="couverture du magazine MuMo numéro 3">
                         <div class="card-body">
@@ -266,35 +224,24 @@
                     </a>
                 </div>
             </div>
-            
         </section>
-
     </div>
-
-        <!-- Section : Le Film -->
-        <section class="container-fluid shadow" style="max-width: 1920px;">
-            <div class="row d-flex flex-md-row flex-column" style="background: #d63542; color: white;">
-                <div class="col-md-7 col-12 texteFilm">
-                    <h1>Le film</h1>
-                    <h4>Les aventures de MuMo, le Musée Mobile</h4>
-                    <p>Trois documentaires de 26 minutes chacun ont été produits par a.p.r.e.s Production et réalisés par Gilles Coudert.
-                    Un film pour le cinéma a ensuite été monté à partir de ces documentaires, et distribué dans le réseau des salles et 
-                    les festivals. Edité en DVD, il est à la disposition des bibliothèques, médiathèques, centres d'archives, etc.<br><br>
-                    <em>Achetez le DVD en ligne</em></p>
-                </div>
-
-                <!--<img src="images/MuMo_film.jpg" class="col-5 p-0 img-fluid">-->
-
-                <div class="decoFilm col-md-5 col-12"></div>
+    <section class="container-fluid shadow" style="max-width: 1920px;">
+        <div class="row d-flex flex-md-row flex-column" style="background: #d63542; color: white;">
+            <div class="col-md-7 col-12 texteFilm">
+                <h1>Le film</h1>
+                <h4>Les aventures de MuMo, le Musée Mobile</h4>
+                <p>Trois documentaires de 26 minutes chacun ont été produits par a.p.r.e.s Production et réalisés par Gilles Coudert.
+                Un film pour le cinéma a ensuite été monté à partir de ces documentaires, et distribué dans le réseau des salles et 
+                les festivals. Edité en DVD, il est à la disposition des bibliothèques, médiathèques, centres d'archives, etc.<br><br>
+                <em>Achetez le DVD en ligne</em></p>
             </div>
-        </section>
-
-    <div class="content"><!--padding pour les marges des section suivantes ...-->
-
-        <!-- Section : Los Oeuvres -->
+            <div class="decoFilm col-md-5 col-12"></div>
+        </div>
+    </section>
+    <div class="content">
         <section class="container" style="padding: 4rem 20px 0px 20px">
             <div class="row d-flex flex-row">
-
                 <div class="col-12">
                 <div class="hr-with-text">
                 <hr class="custom-hr">
@@ -305,51 +252,38 @@
                         mais surtout imaginer la confrontation des enfants avec leurs créations.
                     </p>
                 </div>
-
                 <div class="d-flex flex-wrap about-images py-5">
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre1.png" class="card-img-top" alt="Immagine (2011) | Maurizio Cattelan">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre2.png" class="card-img-top" alt="MapaMapa (2013) | Sébastien Cordoléani">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre3.png" class="card-img-top" alt="Six Dogs Jumping (with Children Watching) (2012) | John Baldessari">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre4.png" class="card-img-top" alt="Baisers #1 (2011) | Ghada Amer">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre5.png" class="card-img-top" alt="Lace Lift (2011) | Nari Ward">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre6.png" class="card-img-top" alt="Red Rabbit (2011) | Paul McCarthy">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre7.webp" class="card-img-top" alt="Nous irons jusqu'au bout (2012) | Claude Lévêque">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre8.png" class="card-img-top" alt="Carnaval des rêves (2011) | Sam Samore">
                     </div>
-
                     <div class="image-card">
                         <img src="./images/oeuvres/oeuvre9.webp" class="card-img-top" alt="Zobop (2012), The Strokes (2012) & Zobop Gold (2013) | Jim Lambie">
                     </div>
-
                 </div> 
-
             </div>         
         </section>
-
     </div>
-    <?php include_once('addon/Footer.php');?>
+    <?php include_once('./addon/footer.php');?>
 </body>
 </html>
