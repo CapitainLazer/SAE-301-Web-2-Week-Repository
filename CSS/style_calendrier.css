@@ -9,5 +9,4 @@ a {text-decoration:none!important;font-family: "Coolvetica";}
 .fc-daygrid-event-dot {border:0 !important;}
 .fc-event-title {color: white;font-weight:500 !important;}
 @media(max-width:768px){#calendrier{min-height:535px;}}
-@media (min-width:769px) {
-#calendrier{max-height:auto;max-width: 900px;}}
+@media (min-width:769px){#calendrier{max-height:auto;max-width: 900px;}}
