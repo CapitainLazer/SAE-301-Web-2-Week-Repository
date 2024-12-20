@@ -1,10 +1,6 @@
-// Écouteur d'événement pour exécuter des actions lorsque la page est entièrement chargée
 window.addEventListener('load', function() {
-  // Récupération des paramètres d'URL
   let urlParamsZC = new URLSearchParams(window.location.search);
-  // Récupération de la valeur du paramètre 'error'
   let error = urlParamsZC.get('error');
-  // Vérification si le paramètre 'error' est défini à '1'
   if (error === '1') {
       alert('Adresse e-mail invalide.');
   }

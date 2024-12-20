@@ -1,13 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const connexionElement = document.querySelector('.connexion');
   const inscriptionElement = document.querySelector('.inscription');
-  
   const connexionLink = document.querySelector('.link-connexion');
   const inscriptionLink = document.querySelector('.link-inscription');
-  
-  /**
-   * Changer l'état des liens et des formulaires au click
-   */
   function changeStatus(){
     console.log("okok")
     if(connexionElement.classList.contains('hidden')){
@@ -24,13 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inscriptionLink.classList.add('hidden');
     }
   }
-  
-  
-  /**
-   * Ajout des listener
-   */
   connexionLink.addEventListener("click", changeStatus);
   inscriptionLink.addEventListener("click", changeStatus);
-   
-  });
+});
   

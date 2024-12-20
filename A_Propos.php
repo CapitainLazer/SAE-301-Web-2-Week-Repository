@@ -9,11 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>A Propos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <script src="./JS/bouton.js"></script>
+        <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./js/bouton.js"></script>
         <meta name="description" content="Une page consacrée à la liste des oeuvres, de l'équipes et des artistes de Mumo." />
         <link rel="icon" type="image/png" href="images/favicon_MuMo.png">
-        <script src="JS/popUp.js"></script>
+        <script src="./js/popup.js"></script>
 </head>
 <body>
     <?php include_once('addon/header.php');?>
