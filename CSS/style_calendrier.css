@@ -1,63 +1,13 @@
-#calendrier {
-    margin: 0 auto;
-    padding: 20px;
-    color: black !important;
-}
-
-.fc-h-event, .fc-event, .fc-event-start, .fc-event-end, .fc-event-past, .fc-daygrid-event, .fc-daygrid-dot-event {
-    background-color: #D63542;
-    border: 1px solid #D63542;
-    display: block;
-}
-
-.fc-col-header-cell-cushion{
-    color: black !important;
-    font-weight: lighter;
-    font-size: larger;
-}
-
-.fc-daygrid-day-number {
-    color: black !important;
-}
-
-.fc-view-harness {
-    background-color: #ffe6e6;
-}
-
-.fc .fc-button-primary {
-    background-color: #D63542;
-    border: 1px solid #D63542;
-    color: #ffe6e6;
-}
-
-.fc:hover .fc-button-primary:hover {
-    background-color: #ffe6e6;
-    border: 1px solid #ffe6e6;
-    color: #D63542;
-}
-
-a {
-    text-decoration: none !important;
-    font-family: "Coolvetica";
-}
-
-.fc-daygrid-event-dot {
-    border: 0 !important;
-}
-
-.fc-event-title {
-    color: white;
-    font-weight: 500 !important;
-}
-
-@media (max-width: 768px) {
-    #calendrier {
-        min-height: 535px;
-    }
-}
-@media (min-width: 769px) {
-    #calendrier {
-        max-height: auto;
-        max-width: 900px;
-    }
-}
+#calendrier {margin: 0 auto;padding: 20px;color: black !important;}
+.fc-h-event, .fc-event, .fc-event-start, .fc-event-end, .fc-event-past, .fc-daygrid-event, .fc-daygrid-dot-event {background-color: #D63542;border: 1px solid #D63542;display: block;}
+.fc-col-header-cell-cushion{color: black !important;font-weight: lighter;font-size: larger;}
+.fc-daygrid-day-number {color: black !important;}
+.fc-view-harness {background-color: #ffe6e6;}
+.fc .fc-button-primary {background-color: #D63542;border: 1px solid #D63542;color: #ffe6e6;}
+.fc:hover .fc-button-primary:hover {background-color: #ffe6e6;border: 1px solid #ffe6e6;color: #D63542;}
+a {text-decoration:none!important;font-family: "Coolvetica";}
+.fc-daygrid-event-dot {border:0 !important;}
+.fc-event-title {color: white;font-weight:500 !important;}
+@media(max-width:768px){#calendrier{min-height:535px;}}
+@media (min-width:769px) {
+#calendrier{max-height:auto;max-width: 900px;}}
