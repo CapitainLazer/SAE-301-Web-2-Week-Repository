@@ -2,7 +2,6 @@
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar-custom');
         const sticky = navbar.offsetTop;
-
         if (window.scrollY >= sticky) {
             navbar.classList.add('sticky');
         } else {
@@ -30,10 +29,10 @@
                         <a class="nav-link" href="pompidou.php">MuMo x Pompidou</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Pedagogie.php">Pédagogique</a>
+                        <a class="nav-link" href="pedagogie.php">Pédagogique</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="A_Propos.php">À Propos</a>
+                        <a class="nav-link" href="a_propos.php">À Propos</a>
                     </li>
                     <a class="icon_nav" href="verifsession.php">
                         <div class="user-icon">👤</div>

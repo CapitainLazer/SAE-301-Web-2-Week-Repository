@@ -1,7 +1,6 @@
 <?php
     include("../config/config.php");
     $bdd = new PDO('mysql:host='.$hote.';port='.$port.';dbname='.$nom_bd,$identifiant, $mot_de_passe,$options);
-
     $requete = 'SELECT id_eve,nom_evenements,description_evenements,id_loc, id_camion, 
     DATE_FORMAT(dates_debut, "%d/%m/%Y") AS dates_debut, 
     DATE_FORMAT(dates_fin, "%d/%m/%Y") AS dates_fin
@@ -9,23 +8,19 @@
     $resultats = $bdd->query($requete);
     $tabEvenement = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
-
     $requete = 'SELECT * FROM localisation';
     $resultats = $bdd->query($requete);
     $tablieu = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
-
     $requete = 'SELECT * FROM types';
     $resultats = $bdd->query($requete);
     $tabtypes = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
-
     $requete = 'SELECT * FROM camion';
     $resultats = $bdd->query($requete);
     $tabcamion = $resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -35,15 +30,14 @@
         <title>Page d'administration</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <script src="../JS/bouton.js"></script>
+        <script src="../js/bouton.js"></script>
         <link rel="icon" type="image/png" href="../images/favicon_MuMo.png">
     </head>
     <body class="adminpage">
         <?php include_once('../addon/header2.php');?>
         <div class="container">
             <h1>Page d'administration</h1>
-<br>
-            <!-- Section Évènements -->
+            <br>
             <h2 class="button-container foot-link2" onclick="toggleSection('evenements')">Évènements</h2>
             <div id="evenements" class="parties">
                 <h3>Suppression d'un évènement</h3>
@@ -58,7 +52,6 @@
                     <input type="hidden" name="choix" value="eve">
                     <input class="input" type="submit" value="Supprimer l'évènement"/>
                 </form> 
-                
                 <h3>Ajout d'un évènement</h3>
                 <form class="formadmin" action="ajouter.php" method="POST">
                     Nom : <input type="text" name="nom" required /><br>
@@ -86,9 +79,8 @@
                     <input type="hidden" name=choix value="eve">
                     <input class="input"type="submit" value="Ajouter l'évènement"/>
                 </form>
-
                 <h3>Modification d'un évènement</h3>
-                <form class="formadmin" action="modifEvenement.php" method="POST">
+                <form class="formadmin" action="modifevenement.php" method="POST">
                     <select name="id" size=12>
                     <?php
                         foreach($tabEvenement as $Evenement):
@@ -101,8 +93,6 @@
                     <input class="input" type="submit" value="Modifier l'évènement"/>
                 </form>
             </div>
-
-            <!-- Section Types -->
             <h2 class="button-container foot-link2" onclick="toggleSection('types')">Types</h2>
             <div id="types" class="parties">
                 <h3>Suppression d'un type d'évènement</h3>
@@ -117,7 +107,6 @@
                     <input type="hidden" name="choix" value="types">
                     <input class="input" type="submit" value="Supprimer le type d'évènement"/>
                 </form>
-
                 <h3>Ajout d'un type d'évènement</h3>
                 <form class="formadmin" action="ajouter.php" method="POST">
                     Nom : <input type="text" name="nom" required /><br>
@@ -125,8 +114,6 @@
                     <input class="input" type="submit" value="Ajouter le type d'évènement"/>
                 </form>
             </div>
-
-            <!-- Section Localisation -->
             <h2 class="button-container foot-link2" onclick="toggleSection('localisation')">Localisation</h2>
             <div id="localisation" class="parties">
                 <h3>Suppression d'un lieu</h3>
@@ -141,7 +128,6 @@
                     <input type="hidden" name="choix" value="lieu">
                     <input class="input" type="submit" value="Supprimer le lieu"/>
                 </form> 
-                
                 <h3>Ajout d'un lieu</h3>
                 <form class="formadmin" action="ajouter.php" method="POST">
                     Lieu : <input type="text" name="lieu" required /><br>
@@ -151,8 +137,6 @@
                     <input class="input" type="submit" value="Ajouter le lieu"/>
                 </form>
             </div>
-
-            <!-- Section Camions -->
             <h2 class="button-container foot-link2" onclick="toggleSection('camions')">Camions</h2>
             <div id="camions" class="parties">
                 <h3>Suppression d'un camion</h3>
@@ -167,7 +151,6 @@
                     <input type="hidden" name="choix" value="camion">
                     <input class="input" type="submit" value="Supprimer le camion"/>
                 </form>
-
                 <h3>Ajout d'un camion</h3>
                 <form class="formadmin" action="ajouter.php" method="POST">
                     Nom du camion : <input type="text" name="nom" required /><br>
@@ -175,8 +158,6 @@
                     <input class="input" type="submit" value="Ajouter le camion"/>
                 </form>
             </div>
-
-            <!-- Section Archives -->
             <h2 class="button-container foot-link2" onclick="toggleSection('archives')">Archives</h2>
             <div id="archives" class="parties">
                 <h3>Ajout dans les archives</h3>
@@ -187,8 +168,6 @@
                     <input class="input" type="submit" value="Ajouter dans les archives"/>
                 </form>
             </div>
-
-            <!-- Section Sponsors -->
             <h2 class="button-container foot-link2" onclick="toggleSection('sponsors')">Partenaires</h2>
             <div id="sponsors" class="parties">
                 <h3>Ajout d'un partenaire</h3>
@@ -211,9 +190,7 @@
                     <input class="input" type="submit" value="Ajouter un partenaire"/>
                 </form>
             </div>
-
             <script>
-                // Fonction pour afficher/masquer une section
                 function toggleSection(sectionId) {
                     const section = document.getElementById(sectionId);
                     if (section.style.display === 'none' || section.style.display === '') {
@@ -225,8 +202,8 @@
                 }
             </script>
             <br><br>
-            <a href="ListeContact.php"><button class="button-link">Voir les demandes de contact</button></a>
+            <a href="listecontact.php"><button class="button-link">Voir les demandes de contact</button></a>
         </div>
-        <?php include_once('../addon/Footer2.php');?>
+        <?php include_once('../addon/footer2.php');?>
     </body>
 </html>

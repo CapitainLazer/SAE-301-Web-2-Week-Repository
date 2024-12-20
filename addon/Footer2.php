@@ -6,8 +6,8 @@
     </p><br>
         <div class="row">
             <ul class="foot flex-row">
-                <li><a href="#" class="foot-link">Partenaires</a></li>
-                <li><a href="../Contact.php" class="foot-link">Contact</a></li>
+                <li><a href="../sponsors.php" class="foot-link">Partenaires</a></li>
+                <li><a href="../contact.php" class="foot-link">Contact</a></li>
                 <li><a href="../archives.php" class="foot-link">Archives</a></li>
                 <li><a href="../mentions_legales.php" class="foot-link">Archives</a></li>
                 <li><a href="../rgpd.php" class="foot-link">RGPD</a></li>
