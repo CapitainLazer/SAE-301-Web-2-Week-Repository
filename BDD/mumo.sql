@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 18 déc. 2024 à 17:22
+-- Généré le : ven. 20 déc. 2024 à 09:43
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -105,11 +105,12 @@ CREATE TABLE `compte` (
 --
 
 INSERT INTO `compte` (`id_compte`, `mail`, `mdp`, `nom`, `prenom`, `telephone`) VALUES
-(1, 'zoe.coutant.basket.56@gmail.com', 'df4656f4f66e27d7761fd833961468d5b950c3e4', 'COUTANT', 'Zoé', '06 12 34 56 78'),
+(1, 'zoe.coutant.basket.56@gmail.com', 'df4656f4f66e27d7761fd833961468d5b950c3e4', 'KERAVAL', 'Zoé', '06 12 34 56 78'),
 (2, 'Romaric.cathalifaud@gmail.com', '0f1f8bbc2fc70633e7cfe19c7bf2b24589f2adb4', 'CATHALIFAUD', 'Romaric', '07 98 76 54 32'),
 (3, 'Anysia.fanguin007@gmail.com', '9101e15db1d6e45a677ccb43e67430f2a1a9c278', 'FANGUIN', 'Anysia', '06 87 65 43 21'),
 (4, 'virginien.bacher@gmail.com', 'fb9211205e47d1e136331128167dbc37121b7f42', 'BACHER', 'Virginien', '07 23 45 67 89'),
-(5, 'antoineplane2@gmail.com', '916b85af636311a54306271d492405e231c88689', 'PLANE', 'Antoine', '06 54 32 10 98');
+(5, 'antoineplane2@gmail.com', '916b85af636311a54306271d492405e231c88689', 'PLANE', 'Antoine', '06 54 32 10 98'),
+(6, 'info@musee-mobile.fr', '8cb2237d0679ca88db6464eac60da96345513964', 'COUTANT', 'Sophie', '0235689741');
 
 -- --------------------------------------------------------
 
@@ -139,7 +140,8 @@ INSERT INTO `contact` (`id_contact`, `mail`, `nom`, `messages`, `dates`, `object
 (5, 'test@mail.com', 'test', 'test', '2024-12-13', 'test', '0615050406', 'Non Traité'),
 (6, 'test@mail.com', 'test', 'test', '2024-12-16', 'test', '2503689475', 'Traité'),
 (9, 'zoe.coutant@icloud.com', 'COUTANT Zoé', 'Est-ce que nous allons réussir à faire toutes les versions prévue de la SAE ?', '2024-12-17', 'SAE', '0236589475', 'Non Traité'),
-(10, 'zoe.coutant@icloud.com', 'COUTANT Zoé', 'test', '2024-12-17', 'test', '0236589475', 'Traité');
+(10, 'zoe.coutant@icloud.com', 'COUTANT Zoé', 'test', '2024-12-17', 'test', '0236589475', 'Traité'),
+(11, 'marie-therese@orange.fr', 'Marie-Thérèse KERAVAL', 'test', '2024-12-20', 'Demande de venu sur SCAËR', '0235689475', 'Traité');
 
 -- --------------------------------------------------------
 
@@ -190,16 +192,21 @@ CREATE TABLE `likes` (
 
 INSERT INTO `likes` (`id_likes`, `id_compte`, `id_eve`) VALUES
 (1, 1, 3),
-(2, 1, 11),
+(9, 1, 5),
 (3, 1, 6),
+(2, 1, 11),
 (4, 2, 1),
+(10, 2, 5),
 (5, 3, 2),
 (6, 4, 4),
-(7, 5, 7),
+(11, 4, 5),
 (8, 5, 3),
-(9, 1, 5),
-(10, 2, 5),
-(11, 4, 5);
+(7, 5, 7),
+(16, 6, 1),
+(17, 6, 2),
+(18, 6, 6),
+(15, 6, 7),
+(12, 6, 13);
 
 -- --------------------------------------------------------
 
@@ -280,7 +287,8 @@ CREATE TABLE `types` (
 
 INSERT INTO `types` (`id_type`, `nom`) VALUES
 (1, 'Exposition'),
-(2, 'Atelier');
+(2, 'Atelier'),
+(3, 'Vernissage');
 
 -- --------------------------------------------------------
 
@@ -359,10 +367,9 @@ ALTER TABLE `evenements`
 --
 ALTER TABLE `likes`
   ADD PRIMARY KEY (`id_likes`),
+  ADD UNIQUE KEY `unique_like` (`id_compte`,`id_eve`),
   ADD KEY `id_compte` (`id_compte`),
-  ADD KEY `id_eve` (`id_eve`),
-  ADD CONSTRAINT `unique_like` UNIQUE (`id_compte`, `id_eve`);
-
+  ADD KEY `id_eve` (`id_eve`);
 
 --
 -- Index pour la table `localisation`
@@ -416,13 +423,13 @@ ALTER TABLE `camion`
 -- AUTO_INCREMENT pour la table `compte`
 --
 ALTER TABLE `compte`
-  MODIFY `id_compte` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_compte` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id_contact` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_contact` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `evenements`
@@ -434,7 +441,7 @@ ALTER TABLE `evenements`
 -- AUTO_INCREMENT pour la table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id_likes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_likes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT pour la table `localisation`
@@ -452,7 +459,7 @@ ALTER TABLE `sponsors`
 -- AUTO_INCREMENT pour la table `types`
 --
 ALTER TABLE `types`
-  MODIFY `id_type` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_type` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `type_evenement`
