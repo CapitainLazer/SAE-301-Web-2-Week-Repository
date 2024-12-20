@@ -63,7 +63,7 @@
                     </div>
                 <?php endforeach; ?>
             </div>
-        </div>->
+        </div>
         <div class="section pompidou">
             <div class="text">
                 <div class="hr-with-text">
